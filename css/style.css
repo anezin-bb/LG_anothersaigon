@@ -1,0 +1,103 @@
+/* APPLICATION 
+------------------------------------------------------------------------*/
+/* page */
+.login_a_page {
+  background: url("../image/00_login/kv_gate_2@2x.png");
+  background-size: 100%;
+}
+.top_title h1 {
+  font-family: "LG_head";
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 28px; /* 100% */
+}
+.top_title img {
+  display: block;
+}
+
+.bottom_content {
+  margin-top: auto;
+}
+
+.sns_login_a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sns_login_a li a {
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  align-items: center;
+  border-radius: 24px;
+  gap: 10px;
+}
+.sns_login_a li a.sns_facebook {
+  background-color: #0B84EE;
+}
+.sns_login_a li a.sns_facebook .txt {
+  color: #fff;
+}
+.sns_login_a li a.sns_google {
+  background-color: #fff;
+}
+.sns_login_a li a.sns_google .txt {
+  color: #000;
+}
+.sns_login_a li a.sns_apple {
+  background-color: #000;
+}
+.sns_login_a li a.sns_apple .txt {
+  color: #fff;
+}
+.sns_login_a li a.sns_amazon {
+  background-color: #fff;
+}
+.sns_login_a li a.sns_amazon .txt {
+  color: #000;
+}
+.sns_login_a li a img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.sns_login_a li a span.line {
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sns_login_a li a span.txt {
+  color: #000000;
+  font-family: "LG_head";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.link_wrap {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.line_link {
+  color: #000000;
+  font-family: "LG_head";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  text-decoration: underline;
+}
+.line_link:hover {
+  text-decoration: underline;
+}
+
+.survey_pop .content {
+  background-color: #F0ECE4;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* APPLICATION 
+------------------------------------------------------------------------*/
+
+@import "./scss/utilities/variables";
+@import "./scss/utilities/mixins";
+
+/* 레이아웃 */
+//전체 너비 콘테이너
+@import "./scss/layout/container";
+//헤더
+@import "./scss/layout/header";
+//하단 메뉴, 버튼 등
+@import "./scss/layout/bottom";
+
+/* 컴포넌트 */
+@import "./scss/components/btn";
+@import "./scss/components/form";
+@import "./scss/components/popup";
+@import "./scss/components/slider";

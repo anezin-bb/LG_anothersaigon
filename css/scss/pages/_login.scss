@@ -1,0 +1,86 @@
+.login_a_page {
+	background: url('../image/00_login/kv_gate_2@2x.png');
+	background-size: 100%;
+	.container {
+		
+	}
+}
+.top_title {
+	h1 {
+		font-family: "LG_head";
+		color: $txt-sub-w1;
+		text-align: center;
+		font-size: 28px;
+		font-weight: 300;
+		line-height: 28px; /* 100% */
+	}
+	img {
+		display: block;
+	}
+}
+.bottom_content {
+	margin-top: auto;
+}
+.sns_login_a {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	li {
+		a {
+			display: flex;
+			width: 100%;
+			padding: 8px 16px;
+			align-items: center;
+			border-radius: 24px;
+			gap: 10px;
+			&.sns_facebook {
+				background-color: #0B84EE;
+				.txt {color: #fff;}
+			}
+			&.sns_google {
+				background-color: #fff;
+				.txt {color: #000;}
+			}
+			&.sns_apple {
+				background-color: #000;
+				.txt {color: #fff;}
+			}
+			&.sns_amazon {
+				background-color: #fff;
+				.txt {color: #000;}
+			}
+			img {
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+			}
+			span.line {
+				display: inline-block;
+				width: 1px;
+				height: 32px;
+				background-color: $line_w;
+			}
+			span.txt {
+				@include font-head-m400;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+.link_wrap {
+	padding: 40px 0;
+	text-align: center;
+}
+.line_link {
+	color: $txt-main-b1;
+	font-family : "LG_head";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: underline;
+	}
+}

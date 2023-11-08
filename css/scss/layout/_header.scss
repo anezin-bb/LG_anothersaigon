@@ -1,0 +1,63 @@
+// iOS 11.0 버전
+constant(safe-area-inset-top)
+constant(safe-area-inset-right)
+constant(safe-area-inset-bottom)
+constant(safe-area-inset-left)
+// iOS 11.2 이상
+env(safe-area-inset-top)
+env(safe-area-inset-right)
+env(safe-area-inset-bottom)
+env(safe-area-inset-left)
+header {
+	width: 100%;
+	height: 40px;
+}
+.language {
+	position: absolute;
+	width: 80px;
+	top:4px;
+	right:16px;
+	background: white;
+	border-radius: 16px;
+	z-index: 13;
+	&:hover {
+		height: auto;
+	}
+	li {
+		list-style-type: none;
+		padding: 8px;
+		display: none;
+		a {
+			display: block;
+			width: 100%;
+			color: $txt-main-b1;
+			text-align: right;
+			font-family : "LG_head";
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			padding-right: 16px;
+			&:hover {
+				
+			}
+		}
+		&.current {
+			&:after {
+				content: '';
+				background-image: url('../image/common/icn_dropdown.svg');
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				top: 8px;
+				right: 8px;
+			}
+		}
+	}
+	&:hover li,li.current {
+		display: block;
+	}
+	&:hover li.current:after {
+		background-image: url('../image/common/icn_dropdown_on.svg');
+	}
+}
