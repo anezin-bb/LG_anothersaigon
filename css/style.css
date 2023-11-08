@@ -1,10 +1,12 @@
+@charset "UTF-8";
 /* APPLICATION 
 ------------------------------------------------------------------------*/
 /* page */
-.login_a_page {
-  background: url("../image/00_login/kv_gate_2@2x.png");
+.login_a_page .container {
+  background: url("../image/00_login/kv_gate_2.png");
   background-size: 100%;
 }
+
 .top_title h1 {
   font-family: "LG_head";
   color: #FFFFFF;
@@ -15,6 +17,14 @@
 }
 .top_title img {
   display: block;
+}
+
+.img_login_kv {
+  display: block;
+  position: absolute;
+  top: 23.5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bottom_content {
@@ -98,6 +108,169 @@
   text-decoration: underline;
 }
 
-.survey_pop .content {
+/*
+팝업
+*/
+.popup_wrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.pop_content {
+  position: relative;
+}
+
+.survey_pop .pop_content {
   background-color: #F0ECE4;
+}
+
+.btn_pop_close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-image: url("../image/common/btn_cancel.svg");
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+
+/* 개인정보정책 */
+.policy_wrap {
+  display: block;
+  position: relative;
+  height: calc(100% - 144px);
+  overflow-y: scroll;
+  background-color: #E6E1D6;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+}
+.policy_wrap p {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+/*
+info
+공간안내
+*/
+.info_section {
+  margin-top: -40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.info_section .info_top_wrap h2 {
+  color: #000000;
+  font-family: "LG_head";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.info_section .info_top_wrap p {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.info_time_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: #E6E1D6;
+}
+.info_time_wrap .info_time_title h3 {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+.info_time_wrap .info_time_title h3:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 1px;
+  height: 14px;
+  background-color: #000000;
+  margin-left: 8px;
+}
+.info_time_wrap .info_time_list {
+  padding-left: 12px;
+}
+.info_time_wrap .info_time_list li {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-align: left;
+}
+
+.info_sns_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info_sns_wrap h3 {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+.info_sns_wrap .info_sns_list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.info_floor_sec {
+  padding-top: 40px;
+}
+.info_floor_sec .info_floor_title {
+  display: flex;
+  flex-direction: row;
+}
+.info_floor_sec .info_floor_title h3 {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+.info_floor_sec .floor h4 {
+  color: #000000;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  color: #716F6A;
+  text-align: left;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

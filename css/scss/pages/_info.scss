@@ -1,0 +1,83 @@
+/*
+info
+공간안내
+*/
+.info_section {
+	margin-top: -40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	.info_top_wrap {
+		h2 {
+			@include font-head-l;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		p {
+			@include font-txt-m400;
+		}
+	}
+}
+.info_time_wrap {
+	display: flex;
+	flex-direction: row;
+	padding: 16px 20px;
+	border-radius: 10px;
+	background-color: $bg-beige-2;
+	.info_time_title {
+		h3 {
+			@include font-txt-m700;
+			&:after {
+				content: '';
+				display: inline-block;
+				position: relative;
+				top: 2px;
+				width: 1px;
+				height: 14px;
+				background-color: $txt-main-b1;
+				margin-left: 8px;
+			}
+		}
+	}
+	.info_time_list {
+		padding-left: 12px;
+		li {
+			@include font-txt-m400;
+			text-align: left;
+		}
+	}
+}
+.info_sns_wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	h3 {
+		@include font-txt-m700;
+	}
+	.info_sns_list {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		margin: 0 auto;
+	}
+}
+.info_floor_sec {
+	padding-top: 40px;
+	
+	.info_floor_title {
+		display: flex;
+		flex-direction: row;
+		h3 {
+			@include font-txt-m700;
+		}
+	}
+	.floor {
+		h4 {
+			@include font-txt-m700;
+			color: $txt-sub-b1;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+	}
+}

@@ -1,1 +1,150 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover">
+	<title>LG Another Saigon</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="../css/components.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body class="info_page">
+	<div class="container">
+		<header>
+			<h1><img src="../image/common/logo.png" alt="Another Saigon by LG"></h1>
+			<ul class="language">
+				<li class="current"><a href="#">English</a></li>
+				<li><a href="#">Vietnam</a></li>
+			</ul>
+		</header>
+		<div class="info_top_img"><img src="../image/02_info/img_infotop@2x.png" alt="about this"></div>
+		<section class="info_section gap">
+			<!-- info_top_wrap start -->
+			<div class="info_top_wrap">
+				<h2>Another Saigon_</h2>
+				<p>Just like Vietnam, ever changing and ever new, <br />
+					We welcome you to this very special space.
+					<br /><br />
+					Dare to dream of these life-changing moments. 
+					Our Creativity, reserved for new changes.<br />
+					And all the Careful Innovation we’ll create together.
+					<br /><br />
+					Take one step forward from the ordinary<br />
+					to enjoy the Good Life with LG 
+					<br /><br />
+					Say hello to<br />
+					Another Saigon
+				</p>
+			</div>
+			<!-- info_top_wrap end -->
+
+			<!-- info_time_wrap start -->
+			<div class="info_time_wrap">
+				<div class="info_time_title">
+					<h3>운영시간</h3>
+				</div>
+				<ul class="info_time_list">
+					<li>평일 : 14:00~22:00</li>
+					<li>주말(공휴일) : 10:00~22:00</li>
+				</ul>
+			</div>
+			<!-- info_time_wrap end -->
+
+			<!-- info_sns_wrap start -->
+			<div class="info_sns_wrap">
+				<h3>소식 더 보기</h3>
+				<ul class="info_sns_list">
+					<li><a href="#"><img src="../image/02_info/icn_info_lg.svg" alt=""></a></li>
+					<li><a href="#"><img src="../image/02_info/icn_info_facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="../image/02_info/icn_info_instagram.svg" alt=""></a></li>
+					<li><a href="#"><img src="../image/02_info/icn_info_youtube.svg" alt=""></a></li>
+					<li><a href="#"><img src="../image/02_info/icn_info_tictok.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- info_sns_wrap end -->
+		</section>
+		<!-- info_floor_sec start -->
+		<section class="info_floor_sec">
+			<div class="info_floor_title gap">
+				<h3>층별 안내</h3>
+				<img src="../image/common/btn_info.svg" class="ml4" alt="infomation">
+			</div>
+			<!-- floor g -->
+			<div class="floor_g floor">
+				<h4>[G] Hello, LG</h4>
+				<div class="floor_g_slide floor_slide">
+					<div class="slide">
+						<figure class="slide_img" style="background-image: url('../image/common/img_info_gf_01.png');"><a href="">LINK</a></figure>
+						<div class="slide_cont">
+							<h5>Dong Dong x LG</h5>
+							<h6>Good Friend #1</h6>
+							<p>Get ready for our collaboration with Dong Dong, bringing you fun, sustainable, and unique fashion accessories. Visit the Brand Zone to find out more.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<figure class="slide_img" style="background-image: url('../image/common/img_info_gf_01.png');"><a href="">LINK</a></figure>
+						<div class="slide_cont">
+							<h5>Dong Dong x LG</h5>
+							<h6>Good Friend #1</h6>
+							<p>Get ready for our collaboration with Dong Dong, bringing you fun, sustainable, and unique fashion accessories. Visit the Brand Zone to find out more.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- info_floor_sec end -->
+
+	</div>
+	
+	<ul class="bottom_gnb">
+		<li><a href=""><span class="bottom_icn"></span><span class="bottom_menutxt">Space Info</span></a></li>
+		<li><a href=""><span class="bottom_icn"></span><span class="bottom_menutxt">Mission</span></a></li>
+		<li><a href=""><span class="bottom_icn"></span><span class="bottom_menutxt">Event</span></a></li>
+	</ul>
+
+	<!-- popup start -->
+	<div id="" class="popup_wrap survey_pop">
+		<!--  -->
+		<div class="pop_content gap">
+			<div class="title_area">
+				<h1>관심사 선택하고 <br />
+					체험 공간 추천 받기</h1>
+			</div>
+			<button onclick="popClose()" class="btn_pop_close">닫기</button>
+			
+		</div>
+	</div>
+	<!-- popup end -->
+	<script>
+		// 층별안내 슬라이더
+		$(document).ready(function(){
+			$('.floor_g_slide').slick({
+				infinite: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: false,
+				fade: false,
+				centerMode: true,
+				variableWidth: true,
+				arrows: false,
+				dots: true,
+				customPaging: function(slider, i) {
+					var width = 100 / slider.slideCount;
+					return '<span style="width: ' + width + '%"></span>';
+				}
+			});
+			
+		});
+	</script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 .login_a_page {
-	background: url('../image/00_login/kv_gate_2@2x.png');
-	background-size: 100%;
+	
 	.container {
-		
+		background: url('../image/00_login/kv_gate_2.png');
+		background-size: 100%;
 	}
 }
 .top_title {
@@ -17,6 +17,13 @@
 	img {
 		display: block;
 	}
+}
+.img_login_kv {
+	display: block;
+    position: absolute;
+    top: 23.5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .bottom_content {
 	margin-top: auto;
