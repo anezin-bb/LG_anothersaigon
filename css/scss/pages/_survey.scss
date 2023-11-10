@@ -1,0 +1,129 @@
+/*
+Survey
+미션
+*/
+.survey_sec {
+	padding-bottom: 136px;
+}
+/* survey 타이틀 */
+.survey_bar {
+	display: flex;
+	width: 100%;
+	background: $line_b;
+	span {
+		display: inline-block;
+		height: 4px;
+		border-radius: 0px 100px 100px 0px;
+		background: $txt-main-b2;
+		&.per10 {
+			width: 5%;
+		}
+		&.per40 {
+			width: 40%;
+		}
+		&.per70 {
+			width: 70%;
+		}
+		&.per100 {
+			width: 100%;
+		}
+	}
+}
+.num_title {
+	color: $txt-main-b1;
+	font-family : "LG_head";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px; /* 100% */
+	padding-top: 10px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	display: inline-flex;
+    align-items: center;
+    gap: 4px;
+	strong {
+		display: inline-flex;
+		padding: 2px;
+		width: 16px;
+		height: 16px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20px;
+		background-color: $txt-main-b2;
+		color: $white;
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+.q_title_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+}
+.q_title_s {
+	color: $txt-main-b1;
+	font-family: "LG_text";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px; /* 100% */
+}
+.q_title_m {
+	@include font-txt-m700;
+	padding-top: 4px;
+}
+.q_subtitle {
+	color: $txt-sub-b1;
+	font-family: "LG_text";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	margin-top: 10px;
+}
+.q_wrap {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 16px;
+}
+.example_degree {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	padding-top: 10px;
+	span {
+		color: $txt-sub-b1;
+		font-family: "LG_text";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+}
+.q_hidden_wrap {
+	background-color: $bg-beige-1;
+	.chk_long_txt {
+		border: 1px solid $white;
+	}
+	textarea {
+		border: 1px solid $white;
+	}
+}
+.survey_bottom_btns {
+	position: fixed;
+    bottom: 40px;
+	@include center_ab;
+	z-index: 10;
+}
+.q_branding {
+	display: flex;
+	padding: 16px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	background-color: $bg-beige-1;
+	margin-top: 20px;
+	p {
+		@include font-txt-m400;
+		text-align: center;
+	}
+}

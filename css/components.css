@@ -35,10 +35,27 @@
 header {
   width: 100%;
   height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 header h1 {
   padding: 4px;
   text-align: center;
+}
+
+header.blank_bg {
+  background-color: transparent;
+  border-bottom: 0;
+}
+
+.btn_header_back {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../image/common/icn_arr_back_m.svg");
+  text-indent: -9999px;
 }
 
 .language {
@@ -50,12 +67,12 @@ header h1 {
   border-radius: 16px;
   z-index: 13;
 }
-.language:hover {
+.language:active, .language:focus {
   height: auto;
 }
 .language li {
   list-style-type: none;
-  padding: 8px;
+  padding: 6px 8px;
   display: none;
 }
 .language li a {
@@ -79,10 +96,10 @@ header h1 {
   top: 8px;
   right: 8px;
 }
-.language:hover li, .language li.current {
+.language:active li, .language li.current, .language.active li {
   display: block;
 }
-.language:hover li.current:after {
+.language:active li.current:after {
   background-image: url("../image/common/icn_dropdown_on.svg");
 }
 
@@ -98,6 +115,7 @@ header h1 {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #fff;
 }
 .bottom_gnb li {
   width: 33.3%;
@@ -152,78 +170,85 @@ header h1 {
 }
 
 /* 컴포넌트 */
+/* 버튼모음 */
 .btn_pop_circle {
   width: 56px;
   height: 56px;
   text-indent: -9999px;
 }
 
+.btn_bottom_full {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 480px;
+  padding: 16px;
+  color: #000000;
+  font-family: "LG_head";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  background-color: #FD312E;
+  color: #FFFFFF;
+}
+
+.chk_circle {
+  background-image: url("../image/common/btn_check_disable.svg");
+}
+
+.chk_circle.active {
+  background-image: url("../image/common/btn_check.svg");
+}
+
+.btn_next {
+  background-image: url("../image/common/btn_next_disable.svg");
+}
+
+.btn_next.active {
+  background-image: url("../image/common/btn_next.svg");
+}
+
+/* input, textarea */
+input {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #716F6A;
+  font-family: "LG_text";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #716F6A;
+  font-family: "LG_text";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 16px;
+}
+
 /*
 체크박스 checkbox
 */
-.customCheck {
+/* 모든 체크, 라디오박스 숨김 */
+.survey_radio, .chk_circle2, .chk_long, .chk_short {
   position: relative;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  display: flex;
-  align-items: center;
+  display: table;
+  width: 100%;
 }
-.customCheck * {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.customCheck input,
-.customCheck input:checked ~ .checkmark {
-  background-color: white;
-  border-color: #000;
-}
-
-.customCheck input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.customCheck .checkmark:after {
-  display: block;
-  left: 6px;
-  top: 3px;
-  width: 6px;
-  height: 9px;
-  border: solid #000;
-  border-width: 0px 1px 1px 0;
-  transform: rotate(45deg);
-}
-
-.customCheck input:checked ~ .checkmark {
-  background-color: #000;
-  border-color: #000;
-}
-
-.customCheck input:checked ~ .checkmark:after {
-  border: solid #fff;
-  border-width: 0px 1px 1px 0;
-}
-
-.checkmark {
-  margin-right: 8px;
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  border: solid 1px var(--line);
-  border-radius: 50%;
-  position: relative;
-  top: 1px;
-  background-color: white;
-  border-color: #000;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.checkmark input {
+.survey_radio input, .chk_circle2 input, .chk_long input, .chk_short input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -231,20 +256,144 @@ header h1 {
   width: 0;
   display: inline-block;
 }
-.checkmark input:checked {
+.survey_radio input:checked, .chk_circle2 input:checked, .chk_long input:checked, .chk_short input:checked {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-.checkResult {
-  display: inline-block;
-  position: relative;
-  left: 1px;
-  top: -2px;
-  width: 8px;
-  height: 11px;
-  border: solid var(--main-text-btn);
-  border-width: 0px 2.7px 2.7px 0;
-  transform: rotate(45deg);
+/* 관심사 선택 */
+.survey_radios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.survey_radio input:checked ~ .survey_radio_txt {
+  color: #fff;
+  background: #FD312E;
+}
+
+.survey_radio_txt {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  color: #000000;
+  text-align: center;
+  font-family: "LG_head";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10px;
+}
+
+/* 만족도 설문 survey 페이지 checkbox */
+.example {
+  margin-top: 20px;
+  display: flex;
+}
+
+/* 원형 */
+.chk_circle2_list {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.chk_circle2 {
+  display: flex;
+  width: auto;
+}
+
+.chk_circle2 input:checked ~ .chk_circle2_txt {
+  color: #fff;
+  background: #FD312E;
+  border: 1px solid #FD312E;
+}
+
+.chk_circle2_txt {
+  display: table-cell;
+  width: 48px;
+  height: 48px;
+  padding: 14px;
+  text-align: center;
+  font-family: "LG_head";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #fff;
+  color: #716F6A;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+/* 세로로 긴 */
+.chk_long_list {
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.chk_long input:checked ~ .chk_long_txt {
+  color: #fff;
+  background: #FD312E;
+  border: 1px solid #FD312E;
+}
+
+.chk_long_txt {
+  display: table-cell;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  text-align: center;
+  font-family: "LG_head";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.chk_short_list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.chk_short {
+  width: calc(50% - 5px);
+}
+
+.chk_short input:checked ~ .chk_short_txt {
+  color: #fff;
+  background: #FD312E;
+  border: 1px solid #FD312E;
+}
+
+.chk_short_txt {
+  display: table-cell;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  text-align: center;
+  font-family: "LG_head";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }/*# sourceMappingURL=components.css.map */

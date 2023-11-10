@@ -1,5 +1,28 @@
+/* 버튼모음 */
 .btn_pop_circle {
 	width: 56px;
 	height: 56px;
 	text-indent: -9999px;
+}
+.btn_bottom_full {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 480px;
+	padding: 16px;
+	@include font-head-m700;
+	background-color: $LG-red-act;
+	color: $txt-sub-w1;
+}
+.chk_circle {
+	background-image: url('../image/common/btn_check_disable.svg');
+}
+.chk_circle.active {
+	background-image: url('../image/common/btn_check.svg');
+}
+.btn_next {
+	background-image: url('../image/common/btn_next_disable.svg');
+}
+.btn_next.active {
+	background-image: url('../image/common/btn_next.svg');
 }

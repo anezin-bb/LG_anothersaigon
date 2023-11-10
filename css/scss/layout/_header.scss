@@ -1,10 +1,25 @@
 header {
 	width: 100%;
 	height: 40px;
+	background-color: $white;
+	border-bottom: 1px solid $line_b;
 	h1 {
 		padding: 4px;
 		text-align: center;
 	}
+}
+header.blank_bg {
+	background-color: transparent;
+	border-bottom: 0;
+}
+.btn_header_back {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	width: 16px;
+	height: 16px;
+	background-image: url('../image/common/icn_arr_back_m.svg');
+	text-indent: -9999px;
 }
 .language {
 	position: absolute;
@@ -14,12 +29,12 @@ header {
 	background: white;
 	border-radius: 16px;
 	z-index: 13;
-	&:hover {
+	&:active, &:focus {
 		height: auto;
 	}
 	li {
 		list-style-type: none;
-		padding: 8px;
+		padding: 6px 8px;
 		display: none;
 		a {
 			display: block;
@@ -45,10 +60,10 @@ header {
 			}
 		}
 	}
-	&:hover li,li.current {
+	&:active li,li.current,&.active li {
 		display: block;
 	}
-	&:hover li.current:after {
+	&:active li.current:after {
 		background-image: url('../image/common/icn_dropdown_on.svg');
 	}
 }

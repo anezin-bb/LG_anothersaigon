@@ -1,0 +1,318 @@
+/*
+Mission
+미션
+*/
+/* 미션 안내 about */
+.mission_about {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding-bottom: 60px;
+}
+.about_title {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	.about_floor {
+		@include font-txt-m700;
+		text-align: center;
+		&::before {
+			content: '';
+			background-image: url('../image/common/icn_pin.svg');
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			position: relative;
+			top: 2px;
+		}
+	}
+	h2 {
+		color: $txt-main-b1;
+		font-family: "LG_text";
+		font-size: 20px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 20px;
+	}
+	p {
+		@include font-txt-m400;
+		text-align: center;
+	}
+}
+.about_howto {
+	h3 {
+		@include font-txt-m700;
+		line-height: 16px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		li {
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			.img_wrap {
+				background: url('../image/03_mission/m_step_img_bg.svg');
+				background-size: 100% 100%;
+				display: flex;
+				align-items: center;
+			}
+			img {
+				width: 80px;
+				height: 100px;
+			}
+			.about_step {
+				position: relative;
+				background-color: $bg-beige-1;
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 100%;
+				padding: 16px 10px 16px 0px;
+				margin-left: 25px;
+				width: calc(100% - 105px);
+				border-radius: 0 10px 10px 0;
+				&:before {
+					content: '';
+					background-image: url('../image/03_mission/m_step_bg_left.svg');
+					background-size: auto 100%;
+					width: 30px;
+					height: 100%;
+					display: block;
+					position: absolute;
+					top: 0;
+					left: -29px;
+				}
+				h4 {
+					@include font-txt-m700;
+					line-height: 16px;
+					margin-bottom: 4px;
+				}
+				p {
+					@include font-txt-m400;
+				}
+			}
+		}
+	}
+}
+/* 미션 scan */
+.scan_wrap {
+	background-color: black;
+	padding: 16px;
+	.scan_line_images {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding-bottom: 100%;
+		border: 1px solid $line_w;
+		img {
+			position: absolute;
+			display: inline-block;
+			&.lefttop {
+				left: -1px;
+				top: -1px;
+			}
+			&.righttop {
+				right: -1px;
+				top: -1px;
+			}
+			&.leftbottom {
+				left: -1px;
+				bottom: -1px;
+			}
+			&.rightbottom {
+				right: -1px;
+				bottom: -1px;
+			}
+			&.scan_center {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+.mission01_scan {
+	display: flex;
+	flex-direction: column;
+	background-color: $blur_b;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+.mission02_scan {
+	display: flex;
+	flex-direction: column;
+	background-color: $blur_b;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	.scan_wrap {
+		width: 100%;
+		height: 100%;
+		.scan_line_images {
+			background-image: url(../image/03_mission/scan_m02.png);
+			height: 100%;
+			padding-bottom: 0;
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
+.scan_cam {
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	bottom: 40px;
+	@include center_ab
+}
+/* 제품 월드컵 worldcup */
+.worldcup_sec {
+	background-color: $bg-beige-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.worldcup_title {
+	padding-top: 40px;
+	text-align: center;
+	h2 {
+		color: $txt-main-b1;
+		font-family: "LG_text";
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px;
+		text-align: center;
+	}
+	b {
+		color: $txt-sub-b1;
+		font-family: "LG_text";
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 14px;
+		text-align: center;
+		display: block;
+		margin-top: 10px;
+	}
+	p {
+		@include font-txt-m400;
+		text-align: center;
+		margin-top: 24px;
+	}
+}
+.worldcup_list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	padding-top: 10px;
+}
+.worldcup_item {
+	display: flex;
+	border-radius: 10px;
+	background-color: $white;
+	width: 100%;
+	align-items: center;
+	border: 1px solid $white;
+	&:active, &.active {
+		border: 1px solid $LG-red-act;
+	}
+	.img_wrap {
+		width: 120px;
+	}
+	.txt_wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: calc(100% - 120px);
+		padding: 20px;
+		align-items: flex-start;
+		text-align: left;
+		height: 100%;
+		justify-content: center;
+		border-radius: 0 10px 10px 0;
+		h3 {
+			color: $txt-main-b1;
+			font-family: "LG_text";
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 16px;
+		}
+		p {
+			color: $txt-main-b1;
+			font-family: "LG_text";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 16px;
+		}
+		.minitxt {
+			color: $txt-sub-b1;
+			font-family: "LG_text";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 14px;
+		}
+	}
+	&.active .txt_wrap, &:active .txt_wrap {
+		background-color: $LG-red-act;
+		* {
+			color: #fff;
+		}
+	}
+}
+/* 제품 월드컵 worldcup */
+.m05_wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.m05_hashtag {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 16px;
+	border-radius: 10px;
+	background: $LG-red-act;
+	p {
+		text-align: center;
+		color: $txt-sub-w1;
+		b {
+			@include font-head-m700;
+			color: $txt-sub-w1;
+			margin: 0 2px;
+		}
+	}
+	button {
+		display: block;
+		width: 100%;
+		padding: 16px;
+		border-radius: 24px;
+		color: $txt-main-b1;
+		background-color: $white;
+		font-family : "LG_head";
+		text-align: center;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 16px;
+	}
+}
+.m05_minitxt {
+	color: $txt-sub-b1;
+	text-align: center;
+	font-family: "LG_text";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14px;
+	margin-top: -10px;
+}

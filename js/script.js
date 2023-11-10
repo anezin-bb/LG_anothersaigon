@@ -13,3 +13,14 @@ function popClose() {
     $('html').css({'position':'relative'}); 
 	return false;
 };
+/* 터치시 active 클래스가 나타나는 js */
+$(document).ready(function() {
+	$('.active_toggle').on('touchstart', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+	$('.language').on('touchstart', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+});

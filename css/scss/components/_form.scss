@@ -1,65 +1,40 @@
+/* input, textarea */
+input {
+	border-radius: 10px;
+	border: 1px solid $line_b;
+	background: $white;
+	color: $txt-sub-b1;
+	font-family: "LG_text";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px; 
+}
+textarea {
+	border-radius: 10px;
+	border: 1px solid $line_b;
+	background: $white;
+	color: $txt-sub-b1;
+	font-family: "LG_text";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	padding: 16px;
+}
 /*
 체크박스 checkbox
 */
-.customCheck {
+/* 모든 체크, 라디오박스 숨김 */
+.survey_radio,.chk_circle2,.chk_long,.chk_short {
 	position: relative;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	display: flex;
-	align-items: center;
-	* {
-		display: inline-block;
-		vertical-align: top;
-	}
-}
-.customCheck input,
-.customCheck input:checked ~ .checkmark {
-	background-color: white;
-	border-color: #000;
-}
-.customCheck input:checked ~ .checkmark:after {
-	display: block;
-}
-.customCheck .checkmark:after {
-	display: block;
-	left: 6px;
-	top: 3px;
-	width: 6px;
-	height: 9px;
-	border: solid #000;
-	border-width: 0px 1px 1px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.customCheck input:checked ~ .checkmark {
-	background-color: #000;
-	border-color: #000;
-}
-.customCheck input:checked ~ .checkmark:after {
-	border: solid #fff;
-	border-width: 0px 1px 1px 0;
-}
-//checkmark = 체크박스 모양
-.checkmark {
-	margin-right: 8px;
-	display: inline-block;
-	width: 2rem;
-	height: 2rem;
-	border: solid 1px var(--line);
-	border-radius: 50%;
-	position: relative;
-	top: 1px;
-	background-color: white;
-	border-color: #000;
-	&:after {
-		content: "";
-		position: absolute;
-		display: none;
-	}
+	display: table;
+	width: 100%;
 	input {
 		position: absolute;
 		opacity: 0;
@@ -67,24 +42,131 @@
 		height: 0;
 		width: 0;
 		display: inline-block;
-		
-		&:checked {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-		}
+	}
+	input:checked {
+		position: absolute;
+		top: 0px;
+		left: 0px;
 	}
 }
-.checkResult {
-	display: inline-block;
-	position: relative;
-	left: 1px;
-	top: -2px;
-	width: 8px;
-	height: 11px;
-	border: solid var(--main-text-btn);
-	border-width: 0px 2.7px 2.7px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+/* 관심사 선택 */
+.survey_radios {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+	margin-top: 20px;
+}
+.survey_radio input:checked ~ .survey_radio_txt {
+	color: $white;
+	background: $LG-red-act;
+}
+.survey_radio_txt {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+	color: $txt-main-b1;
+	text-align: center;
+	font-family : "LG_head";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	background-color: $white;
+	color: $txt-main-b1;
+	border-radius: 10px;
+}
+/* 만족도 설문 survey 페이지 checkbox */
+.example {
+	margin-top: 20px;
+	display: flex;
+}
+/* 원형 */
+.chk_circle2_list {
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+.chk_circle2 {
+	display: flex;
+	width: auto;
+}
+.chk_circle2 input:checked ~ .chk_circle2_txt {
+	color: $white;
+	background: $LG-red-act;
+	border: 1px solid $LG-red-act;
+}
+.chk_circle2_txt {
+	display: table-cell;
+	width: 48px;
+	height: 48px;
+	padding: 14px;
+	text-align: center;
+	font-family : "LG_head";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	background-color: $white;
+	color: $txt-sub-b1;
+	border: 1px solid $line_b;
+	border-radius: 25px;
+}
+/* 세로로 긴 */
+.chk_long_list {
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+.chk_long input:checked ~ .chk_long_txt {
+	color: $white;
+	background: $LG-red-act;
+	border: 1px solid $LG-red-act;
+}
+.chk_long_txt {
+	display: table-cell;
+	width: 100%;
+	height: auto;
+	padding: 16px;
+	text-align: center;
+	font-family : "LG_head";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	background-color: $white;
+	color: $txt-main-b1;
+	border: 1px solid $line_b;
+	border-radius: 10px;
+}
+.chk_short_list {
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10px;
+}
+.chk_short {
+	width: calc(50% - 5px);
+}
+.chk_short input:checked ~ .chk_short_txt {
+	color: $white;
+	background: $LG-red-act;
+	border: 1px solid $LG-red-act;
+}
+.chk_short_txt {
+	display: table-cell;
+	width: 100%;
+	height: auto;
+	padding: 16px;
+	text-align: center;
+	font-family : "LG_head";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	background-color: $white;
+	color: $txt-main-b1;
+	border: 1px solid $line_b;
+	border-radius: 10px;
 }
