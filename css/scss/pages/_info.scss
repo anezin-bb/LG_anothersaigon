@@ -24,7 +24,7 @@ info
 	flex-direction: row;
 	padding: 16px 20px;
 	border-radius: 10px;
-	background-color: $bg-beige-2;
+	background-color: $bg-beige-1;
 	.info_time_title {
 		h3 {
 			@include font-txt-m700;
@@ -104,7 +104,7 @@ info
 		border: 1px solid $txt-main-w1;
 		color: $txt-main-w1;
 		text-align: center;
-		font-family: LG EI Headline;
+		font-family : "LG_head";
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 16px;
@@ -151,7 +151,7 @@ info
 .floor_slide {
 	margin-bottom: 32px;
 	.slide_cont {
-		background-color: $bg-beige-2;
+		background-color: $bg-beige-1;
 	}
 	.slick-slide {
 		width: calc(100vw - 28px);

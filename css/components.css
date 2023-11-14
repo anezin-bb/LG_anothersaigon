@@ -6,11 +6,14 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100dvh;
   max-width: 480px;
   min-width: 320px;
   min-height: 640px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .gap {
@@ -37,6 +40,10 @@ header {
   height: 40px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 header h1 {
   padding: 4px;
@@ -79,12 +86,12 @@ header.blank_bg {
   display: block;
   width: 100%;
   color: #000000;
-  text-align: right;
+  text-align: left;
   font-family: "LG_head";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  padding-right: 16px;
+  padding-right: 12px;
 }
 .language li.current:after {
   content: "";

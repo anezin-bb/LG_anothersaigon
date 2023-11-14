@@ -3,6 +3,10 @@ header {
 	height: 40px;
 	background-color: $white;
 	border-bottom: 1px solid $line_b;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 	h1 {
 		padding: 4px;
 		text-align: center;
@@ -40,12 +44,12 @@ header.blank_bg {
 			display: block;
 			width: 100%;
 			color: $txt-main-b1;
-			text-align: right;
+			text-align: left;
 			font-family : "LG_head";
 			font-size: 14px;
 			font-style: normal;
 			font-weight: 400;
-			padding-right: 16px;
+			padding-right: 12px;
 		}
 		&.current {
 			&:after {

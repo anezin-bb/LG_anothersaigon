@@ -476,7 +476,7 @@ info
   flex-direction: row;
   padding: 16px 20px;
   border-radius: 10px;
-  background-color: #E6E1D6;
+  background-color: #F0ECE4;
 }
 .info_time_wrap .info_time_title h3 {
   color: #000000;
@@ -580,7 +580,7 @@ info
   border: 1px solid #F6F3EB;
   color: #F6F3EB;
   text-align: center;
-  font-family: LG EI Headline;
+  font-family: "LG_head";
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -628,7 +628,7 @@ info
   margin-bottom: 32px;
 }
 .floor_slide .slide_cont {
-  background-color: #E6E1D6;
+  background-color: #F0ECE4;
 }
 .floor_slide .slick-slide {
   width: calc(100vw - 28px);
@@ -823,6 +823,7 @@ Mission
 }
 
 .m_banner_slide {
+  overflow: hidden;
   margin-bottom: 80px !important;
 }
 .m_banner_slide .slick-dots {
@@ -868,7 +869,7 @@ Mission
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 76px;
 }
 
 .about_title {
@@ -1096,6 +1097,7 @@ Mission
   text-align: center;
   display: block;
   margin-top: 10px;
+  margin-bottom: 24px;
 }
 .worldcup_title p {
   color: #000000;
@@ -1105,7 +1107,6 @@ Mission
   font-style: normal;
   line-height: 24px;
   text-align: center;
-  margin-top: 24px;
 }
 
 .worldcup_list {

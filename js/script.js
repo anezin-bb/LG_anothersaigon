@@ -20,7 +20,17 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 	$('.language').on('touchstart', function(e) {
-        e.preventDefault();
+        e.preventDefault();  // 기본 동작 방지
+        e.stopPropagation(); // 이벤트 전파 방지
         $(this).toggleClass('active');
     });
+});
+/* */
+function setScreenSize() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+$(document).ready(function() {
+	setScreenSize();
+    window.addEventListener('resize', setScreenSize);
 });

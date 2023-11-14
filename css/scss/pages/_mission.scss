@@ -133,6 +133,7 @@ Mission
 	}
 }
 .m_banner_slide {
+	overflow: hidden;
 	margin-bottom: 80px !important;
 	.slick-dots {
 		position: absolute;
@@ -179,7 +180,7 @@ Mission
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	padding-bottom: 60px;
+	padding-bottom: 76px;
 }
 .about_title {
 	display: flex;
@@ -374,11 +375,11 @@ Mission
 		text-align: center;
 		display: block;
 		margin-top: 10px;
+		margin-bottom: 24px;
 	}
 	p {
 		@include font-txt-m400;
 		text-align: center;
-		margin-top: 24px;
 	}
 }
 .worldcup_list {
