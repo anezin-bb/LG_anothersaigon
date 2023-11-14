@@ -74,7 +74,7 @@ header.blank_bg {
   border-radius: 16px;
   z-index: 13;
 }
-.language:active, .language:focus {
+.language:active, .language {
   height: auto;
 }
 .language li {
@@ -103,10 +103,10 @@ header.blank_bg {
   top: 8px;
   right: 8px;
 }
-.language:active li, .language li.current, .language.active li {
+.language:active li, .language li.current, .language li.active,.language li.active a {
   display: block;
 }
-.language:active li.current:after {
+.language li.active.current:after {
   background-image: url("../image/common/icn_dropdown_on.svg");
 }
 
@@ -227,7 +227,7 @@ input {
   background: #fff;
   color: #716F6A;
   font-family: "LG_text";
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -239,7 +239,7 @@ textarea {
   background: #fff;
   color: #716F6A;
   font-family: "LG_text";
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -415,4 +415,4 @@ input[type=password]::-webkit-inner-spin-button {
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}/*# sourceMappingURL=components.css.map */
+}

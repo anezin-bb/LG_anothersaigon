@@ -15,14 +15,14 @@ function popClose() {
 };
 /* 터치시 active 클래스가 나타나는 js */
 $(document).ready(function() {
-	$('.active_toggle').on('touchstart', function(e) {
+    $('.active_toggle').on('click touchstart', function(e) {
         e.preventDefault();
         $(this).toggleClass('active');
     });
-	$('.language').on('touchstart', function(e) {
+
+    $('.language li').on('click touchstart', function(e) {
         e.preventDefault();  // 기본 동작 방지
-        e.stopPropagation(); // 이벤트 전파 방지
-        $(this).toggleClass('active');
+        $('.language li').toggleClass('active');
     });
 });
 /* */

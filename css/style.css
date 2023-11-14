@@ -9,7 +9,15 @@
 
 .login_b_page .container {
   background: url("../image/01_login/kv_1.png");
-  background-size: auto 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.login_b_page.bg02 .container {
+  background-image: url("../image/01_login/kv_2.png");
+}
+.login_b_page.bg03 .container {
+  background-image: url("../image/01_login/kv_3.png");
 }
 .login_b_page .top_title {
   padding-top: 20px;
@@ -130,7 +138,6 @@
   display: flex;
   padding-bottom: 12px;
   justify-content: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .login_chat p {
   position: relative;
@@ -660,7 +667,9 @@ info
 .floor_slide .slick-dots li.slick-active {
   background-color: #262626;
 }
-
+.floor_slide .slick-dots li button:before {
+  font-size: 0;
+}
 .slick-slide h5 img {
   display: inline-block;
 }
@@ -1189,6 +1198,10 @@ Mission
 .m05_hashtag p {
   text-align: center;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .m05_hashtag p b {
   color: #000000;
@@ -1602,4 +1615,4 @@ Survey
   font-style: normal;
   line-height: 24px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
