@@ -1,0 +1,135 @@
+<!-- board_list.html은 같은 페이지며, 미션 횟수에 따라 나타나는 요소가 달라집니다.
+	(tag, image, css 등등 변경되거나 추가됩니다. )
+	step 04 : 미션 일부 진행완료, 설문조사 진행 완료. 마지막 페이지. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover">
+	<title>LG Another Saigon</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="../css/components.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body class="mission00_dashboard">
+	<div class="container">
+		<header>
+			<h1><img src="../image/common/logo.png" alt="Another Saigon by LG"></h1>
+			<ul class="language">
+				<li class="current"><a href="#">English</a></li>
+				<li><a href="#">Vietnam</a></li>
+			</ul>
+		</header>
+		<section class="mission_board">
+			<div class="m_dashboard gap">
+				<div class="m_dashboard_title">
+					<h2>미션 대시보드<span class="count">5회차</span></h2>
+					<!-- 2회차 이상 재방문시 노출 -->
+					<p class="revisit">다시 방문하셨군요?</p> 
+					<p>Enjoy the Good Life Solution</p>
+				</div>
+				<div class="m_stamp_list">
+					<!-- 미션 클리어시 바뀐 이미지입니다. -->
+					<img src="../image/03_mission/stamp_complete_01.svg" alt="missin 01 
+					complete">
+					<img src="../image/03_mission/stamp_complete_02.svg" alt="missin 02 
+					complete">
+					<img src="../image/03_mission/stamp_complete_03.svg" alt="missin 03 
+					complete">
+					<img src="../image/03_mission/stamp_complete_04.svg" alt="missin 04 
+					complete">
+					<img src="../image/03_mission/stamp_complete_05.svg" alt="missin 05 
+					complete">
+				</div>
+			</div>
+			<!-- 미션 전부 완료, 서베이까지 완료시 다시 비활성화 되며 텍스트가 변경됩니다. -->
+			<div class="m_btn_wrap">
+				<button class="btn_not_survey btn_middle_full">GF에서 리워드 받기!</button>
+			</div>
+			
+			<div class="mission_box">
+				<!-- 미션 완료된 미션들입니다. -->
+				<div id="mission01" class="mission_complate mission gap">
+					<div class="text_wrap">
+						<h3>스타일러 시향 체험</h3>
+						<p>4가지 아로마 시트 중 나의 최애 향은?</p>
+					</div>
+					<img src="../image/03_mission/stamp_mission_01.svg" alt="">
+					<div class="clear"><h3>Clear!</h3></div>
+				</div>
+				<div id="mission02" class="mission_complate mission gap">
+					<div class="text_wrap">
+						<h3>My Objet Color</h3>
+						<p>나만의 무드업 냉장고 컬러 조합은?</p>
+					</div>
+					<img src="../image/03_mission/stamp_mission_02.svg" alt="">
+					<div class="clear"><h3>Clear!</h3></div>
+				</div>
+				<div id="mission03" class="mission_complate mission gap">
+					<div class="text_wrap">
+						<h3>오브제갤러리 제품 월드컵</h3>
+						<p>나의 원픽 오브제 컬렉션은?</p>
+					</div>
+					<img src="../image/03_mission/stamp_mission_03.svg" alt="">
+					<div class="clear"><h3>Clear!</h3></div>
+				</div>
+				<div id="mission04" class="mission_complate mission gap">
+					<div class="text_wrap">
+						<h3>숨은 QR 찾기</h3>
+						<p>숨겨진 미니 제품들 사이 어디에 QR이?</p>
+					</div>
+					<img src="../image/03_mission/stamp_mission_04.svg" alt="">
+					<div class="clear"><h3>Clear!</h3></div>
+				</div>
+				<div id="mission05" class="mission_complate mission gap">
+					<div class="text_wrap">
+						<h3>SNS 공유하기</h3>
+						<p>가장 재미있게 즐기는 나의 모습은?</p>
+					</div>
+					<img src="../image/03_mission/stamp_mission_05.svg" alt="">
+					<div class="clear"><h3>Clear!</h3></div>
+				</div>
+			</div>
+			<!-- 미션 및 서베이까지 다 하면 생기는 버튼입니다. -->
+			<div class="link_wrap">
+				<button id="link_m_password" class="line_link" onclick="location.href='./05/password.html'">운영 스텝 체크</button>
+			</div>
+			<div class="m_banner_slide">
+				<div class="slide">
+					<a href="https://www.lge.co.kr/lg-tiiun/l023e1" target="_blank"><img src="../image/03_mission/img_banner.png" alt="틔운 미니, LG 홈페이지에서"></a>
+				</div>
+				<div class="slide">
+					<a href="https://www.lge.co.kr/lg-tiiun/l023e1" target="_blank"><img src="../image/03_mission/img_banner.png" alt="틔운 미니, LG 홈페이지에서"></a>
+				</div>
+				<div class="slide">
+					<a href="https://www.lge.co.kr/lg-tiiun/l023e1" target="_blank"><img src="../image/03_mission/img_banner.png" alt="틔운 미니, LG 홈페이지에서"></a>
+				</div>
+			</div>
+			
+		</section>
+	</div>
+	<!-- 하단 메뉴 -->
+	<ul class="bottom_gnb">
+		<li><a href="../02_info/info.html"><span class="bottom_icn1 bottom_icn"></span><span class="bottom_menutxt">Space Info</span></a></li>
+		<li><a href="../03_mission/board_list_01.html" class="active"><span class="bottom_icn2 bottom_icn"></span><span class="bottom_menutxt">Mission</span></a></li>
+		<li><a href="../04_event/list.html"><span class="bottom_icn3 bottom_icn"></span><span class="bottom_menutxt">Event</span></a></li>
+	</ul>
+	<!-- 하단 메뉴 -->
+	<script>
+		$('.m_banner_slide').slick({
+			arrows: false,
+			dots: true,
+			speed: 300,
+			slidesToShow: 1,
+		});
+	</script>
+</body>
+</html>

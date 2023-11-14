@@ -2,6 +2,177 @@
 Mission
 미션
 */
+/* 미션 대시보드 dashboard */
+.m_dashboard {
+	padding: 40px 16px;
+	background-color: #F0ECE4;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	h2 {
+		@include font-head-l;
+		display: flex;
+		margin-bottom: 10px;
+		justify-content: center;
+		align-items: center;
+		.count {
+			display: inline-flex;
+			border-radius: 14px;
+			background: #262626;
+			color: #F6F3EB;
+			text-align: center;
+			font-family: "LG_head";
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			padding: 0 8px;
+			margin-left: 4px;
+		}
+	}
+	p {
+		@include font-txt-m400;
+		text-align: center;
+	}
+}
+.m_btn_wrap {
+	background-color: #F0ECE4;
+}
+.btn_middle_full {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 16px;
+	font-family: "LG_head";
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 24px;
+	color: $txt-main-w1;
+}
+.btn_not_survey {
+	background: $txt-sub-b1;
+	color: rgba(246, 243, 235, 0.40);
+	cursor: default;
+}
+.btn_goto_survey {
+	background: $LG-red-act;
+	cursor: pointer;
+}
+.m_stamp_list {
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+}
+
+.mission_box {
+	width: 100%;
+}
+.mission {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 16px;
+	gap: 20px;
+	width: 100%;
+	border-bottom: 1px solid $line_b;
+	.text_wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: calc(100% - 84px);
+		h3 {
+			color: $txt-main-b1;
+			font-family: "LG_text";
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+		}
+		p {
+			@include font-txt-m400;
+			line-height: 16px;
+		}
+	}
+	.img {
+		width: 64px;
+	}
+	&.mission_complate {
+		cursor: default;
+	}
+	.clear {
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: $blur_b;
+		backdrop-filter: blur(12.5px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		h3 {
+			color: $txt-main-w1;
+			font-family : "LG_head";
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 32px; /* 133.333% */
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background-image: url('../image/common/icn_mission_w.svg');
+				margin-right: 4px;
+			}
+		}
+	}
+}
+.m_banner_slide {
+	margin-bottom: 80px !important;
+	.slick-dots {
+		position: absolute;
+		bottom: auto;
+		top: 16px;
+		left: 16px;
+		display: flex;
+		flex-direction: row;
+		gap: 4px;
+
+		li {
+			width: auto;
+			height: auto;
+			margin: 0;
+			button {
+				width: 4px;
+				height: 4px;
+				padding: 0;
+				background-color: $blur_w;
+				border-radius: 100%;
+			}
+			button::before {
+				font-size: 0px;
+				opacity: 0;
+			}
+		}
+	}
+	.slick-dots li.slick-active button {
+		background-color: $LG-red-act;
+	}
+}
+.mission_board {
+	.link_wrap {
+		padding: 20px 0;
+		.line_link {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
 /* 미션 안내 about */
 .mission_about {
 	padding-top: 40px;

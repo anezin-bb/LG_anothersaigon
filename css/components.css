@@ -138,7 +138,7 @@ header.blank_bg {
   background-image: url("../image/common/icn_space.svg");
 }
 .bottom_gnb a .bottom_icn2 {
-  background-image: url("../image/common/icn_misson.svg");
+  background-image: url("../image/common/icn_mission.svg");
 }
 .bottom_gnb a .bottom_icn3 {
   background-image: url("../image/common/icn_event.svg");
@@ -160,7 +160,7 @@ header.blank_bg {
   background-image: url("../image/common/icn_space_on.svg");
 }
 .bottom_gnb a.active .bottom_icn2 {
-  background-image: url("../image/common/icn_misson_on.svg");
+  background-image: url("../image/common/icn_mission_on.svg");
 }
 .bottom_gnb a.active .bottom_icn3 {
   background-image: url("../image/common/icn_event_on.svg");
@@ -233,6 +233,14 @@ textarea {
   font-weight: 400;
   line-height: 22px;
   padding: 16px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button,
+input[type=password]::-webkit-outer-spin-button,
+input[type=password]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*
