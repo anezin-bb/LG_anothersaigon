@@ -17,9 +17,15 @@ function popClose() {
 $(document).ready(function() {
     $('.active_toggle').on('click touchstart', function(e) {
         e.preventDefault();
-        $(this).toggleClass('active');
+        var isBlurPopFlex = $('.blur_pop').css('display') === 'flex';
+        
+        if (isBlurPopFlex) {
+            $(this).removeClass('active');
+        } else {
+            $(this).toggleClass('active');
+        }
     });
-
+    
     $('.language li').on('click touchstart', function(e) {
         e.preventDefault();  // 기본 동작 방지
         $('.language li').toggleClass('active');

@@ -416,3 +416,49 @@ input[type=password]::-webkit-inner-spin-button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+/*
+pc 화면 디자인
+*/
+.pc_section {
+  width: 100vw;
+  height: 100vh;
+  min-width: 480px;
+}
+header.pc_header {
+  height: 64px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  background: #E6E1D6;
+}
+.pc_container {
+  padding: 0 65px;
+  background: #F0ECE4;
+}
+header.pc_header > .pc_container {
+  background: transparent;
+}
+header.pc_header h1 {
+  text-align: left;
+  padding: 16px 0;
+}
+.pc_section > .pc_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.pc_flex_center {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.pc_flex_center p {
+  color: #000;
+  text-align: center;
+  font-family: "LG_head";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+  text-transform: capitalize;
+}

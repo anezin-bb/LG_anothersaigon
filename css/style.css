@@ -2,203 +2,46 @@
 /* APPLICATION 
 ------------------------------------------------------------------------*/
 /* page */
-.login_a_page .container {
-  background: url("../image/01_login/kv_gate_2.png");
-  background-size: 100%;
-}
+/*
+로그인
+*/
+.login_a_page .container{background:url('../image/01_login/kv_gate_2.png');background-size:100%}
+.login_b_page .container{background:url('../image/01_login/kv_1.png');background-size:100% auto;background-repeat:no-repeat;background-position:center top}
+.login_b_page.bg02 .container{background-image:url('../image/01_login/kv_2.png')}
+.login_b_page.bg03 .container{background-image:url('../image/01_login/kv_3.png')}
+.login_b_page .top_title{padding-top:20px}
 
-.login_b_page .container {
-  background: url("../image/01_login/kv_1.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-.login_b_page.bg02 .container {
-  background-image: url("../image/01_login/kv_2.png");
-}
-.login_b_page.bg03 .container {
-  background-image: url("../image/01_login/kv_3.png");
-}
-.login_b_page .top_title {
-  padding-top: 20px;
-}
+.top_title h1{font-family:"LG_head";color:#000;text-align:center;font-size:28px;font-weight:300;line-height:28px}
+.top_title img{display:block;margin-left:auto}
+.img_login_kv{display:block;position:absolute;top:23.5%;left:50%;transform:translateX(-50%)}
+.bottom_content{margin-top:auto;text-align:center}
 
-.top_title h1 {
-  font-family: "LG_head";
-  color: #000000;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 28px; /* 100% */
-}
-.top_title img {
-  display: block;
-  margin-left: auto;
-}
+.sns_login_a{display:flex;flex-direction:column;gap:10px}
+.sns_login_a li a{display:flex;width:100%;padding:8px 16px;align-items:center;border-radius:24px;gap:10px}
+.sns_login_a li a.sns_facebook{background-color:#0B84EE}
+.sns_login_a li a.sns_facebook .txt{color:#fff}
+.sns_login_a li a.sns_google{background-color:#fff}
+.sns_login_a li a.sns_google .txt{color:#000}
+.sns_login_a li a.sns_apple{background-color:#000}
+.sns_login_a li a.sns_apple .txt{color:#fff}
+.sns_login_a li a.sns_amazon{background-color:#fff}
+.sns_login_a li a.sns_amazon .txt{color:#000}
+.sns_login_a li a img{display:inline-block;width:32px;height:32px}
+.sns_login_a li a span.line{display:inline-block;width:1px;height:32px;background-color:rgba(255,255,255,0.1)}
+.sns_login_a li a span.txt{color:#000;font-family:"LG_head";font-size:16px;font-weight:400;font-style:normal;line-height:24px;width:100%;text-align:center}
 
-.img_login_kv {
-  display: block;
-  position: absolute;
-  top: 23.5%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+.login_text{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.login_text h2{color:#000;text-align:center;font-family:"LG_head";font-size:16px;font-weight:700;line-height:16px}
+.login_text p{color:#000;text-align:center;font-family:"LG_head";font-size:14px;font-weight:400;line-height:20px}
+.login_chat{margin-top:24px;position:relative;display:flex;padding-bottom:12px;justify-content:center}
+.login_chat p{position:relative;display:inline-block;background:#fff;padding:4px 20px;border-radius:40px;color:#000;text-align:center;font-family:"LG_text";font-size:16px;font-style:normal;font-weight:700;line-height:24px;letter-spacing:-.32px}
+.login_chat p:after{content:"";background-image:url('../image/01_login/chat_polygon.svg');display:block;width:14px;height:9px;position:absolute;bottom:-9px;left:50%;transform:translateX(-50%)}
 
-.bottom_content {
-  margin-top: auto;
-  text-align: center;
-}
+.sns_login_b{display:inline-flex;align-items:center;padding:10px 20px;align-items:flex-start;gap:10px;border-radius:1000px;border:1px solid var(--White,#FFF);background:var(--Blur_W,rgba(255,255,255,0.3));-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);width:auto;justify-content:center;margin:0 auto}
 
-.sns_login_a {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sns_login_a li a {
-  display: flex;
-  width: 100%;
-  padding: 8px 16px;
-  align-items: center;
-  border-radius: 24px;
-  gap: 10px;
-}
-.sns_login_a li a.sns_facebook {
-  background-color: #0B84EE;
-}
-.sns_login_a li a.sns_facebook .txt {
-  color: #fff;
-}
-.sns_login_a li a.sns_google {
-  background-color: #fff;
-}
-.sns_login_a li a.sns_google .txt {
-  color: #000;
-}
-.sns_login_a li a.sns_apple {
-  background-color: #000;
-}
-.sns_login_a li a.sns_apple .txt {
-  color: #fff;
-}
-.sns_login_a li a.sns_amazon {
-  background-color: #fff;
-}
-.sns_login_a li a.sns_amazon .txt {
-  color: #000;
-}
-.sns_login_a li a img {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-}
-.sns_login_a li a span.line {
-  display: inline-block;
-  width: 1px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.sns_login_a li a span.txt {
-  color: #000000;
-  font-family: "LG_head";
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-  width: 100%;
-  text-align: center;
-}
-
-.login_text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-}
-.login_text h2 {
-  color: #000000;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-}
-.login_text p {
-  color: #000000;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.login_chat {
-  margin-top: 24px;
-  position: relative;
-  display: flex;
-  padding-bottom: 12px;
-  justify-content: center;
-}
-.login_chat p {
-  position: relative;
-  display: inline-block;
-  background: white;
-  padding: 4px 20px;
-  border-radius: 40px;
-  color: #000000;
-  text-align: center;
-  font-family: "LG_text";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.32px;
-}
-.login_chat p:after {
-  content: "";
-  background-image: url("../image/01_login/chat_polygon.svg");
-  display: block;
-  width: 14px;
-  height: 9px;
-  position: absolute;
-  bottom: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sns_login_b {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 1000px;
-  border: 1px solid var(--White, #FFF);
-  background: var(--Blur_W, rgba(255, 255, 255, 0.3));
-  -webkit-backdrop-filter: blur(18px);
-          backdrop-filter: blur(18px);
-  width: auto;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.link_wrap {
-  padding: 20px 0 40px;
-  text-align: center;
-}
-
-.line_link {
-  color: #000000;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 14px;
-  text-decoration: underline;
-}
-.line_link:hover {
-  text-decoration: underline;
-}
+.link_wrap{padding:20px 0 40px;text-align:center}
+.line_link{color:#000;font-family:"LG_head";font-size:14px;font-style:normal;font-weight:700;line-height:14px;text-decoration:underline}
+.line_link:hover{text-decoration:underline}
 
 /*
 팝업
@@ -309,6 +152,30 @@
 .survey_result_floor {
   padding-top: 24px;
 }
+.place_pin {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #F6F3EB;
+  text-align: center;
+  font-family: "LG_text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.place_pin::before {
+  content: "";
+  background-image: url("../image/common/icn_pin_w.svg");
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
 
 /* 해시태그 팝업 */
 .popupToast_wrap {
@@ -352,6 +219,7 @@
   justify-content: center;
   gap: 10px;
   z-index: 2;
+  padding: 0 16px;
 }
 .blur_pop .pop_content h2 {
   color: #000000;
@@ -448,6 +316,24 @@
   background: #494949;
 }
 
+/* 스플래시 팝업 */
+#splash_screen {
+  position: fixed; /* 고정 위치 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F0ECE4; /* 배경색 */
+  z-index: 1000; /* 다른 요소들보다 상위에 위치 */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 1s ease;
+}
+#splash_screen img {
+  width: 100%;
+  max-width: 480px;
+}
 /*
 info
 공간안내
@@ -628,7 +514,6 @@ info
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  padding-bottom: 16px;
 }
 
 .floor_slide {
@@ -1139,6 +1024,8 @@ Mission
 }
 .worldcup_item .img_wrap {
   width: 120px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .worldcup_item .txt_wrap {
   display: flex;

@@ -3,16 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LG Another Saigon</title>
-	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/utility.css">
-	<link rel="stylesheet" href="../css/components.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery-3.5.1.min.js"></script>
-	
-	<script src="../js/script.js"></script>
+	<title>Another Saigon by LG</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/utility.css">
+	<link rel="stylesheet" href="./css/components.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- 사이트 최초 1회 진입시 스플래시 화면이 잠깐 나타났다 사라지는 스플래시 화면을
+	login페이지에 임시로 구현했습니다. 실제 개발 화면에서도 구현이 필요합니다. -->
+	<script>
+        window.onload = function() {
+			// 로컬 스토리지에서 스플래시 화면 표시 여부 확인
+			var isFirstVisit = localStorage.getItem('firstVisit') !== 'done';
+
+			var splashScreen = document.getElementById('splash_screen');
+			var containers = document.getElementsByClassName('container');
+
+			if (isFirstVisit) {
+				// 최초 방문 시 스플래시 화면 표시
+				setTimeout(function() {
+					if (splashScreen) {
+						splashScreen.style.opacity = '0';
+
+						// Fade out 애니메이션이 끝난 후 처리
+						setTimeout(function() {
+							splashScreen.style.display = 'none';
+							for(var i = 0; i < containers.length; i++) {
+								containers[i].style.display = 'flex';
+							}
+						}, 500); // 0.5초 후 실행
+					}
+				}, 3000); // 3초 후 실행
+
+				// 로컬 스토리지에 방문 기록 저장
+				localStorage.setItem('firstVisit', 'done');
+			} else {
+				// 최초 방문이 아닐 경우 컨테이너 바로 표시
+				if (splashScreen) splashScreen.style.display = 'none';
+				for(var i = 0; i < containers.length; i++) {
+					containers[i].style.display = 'flex';
+				}
+			}
+		};
+    </script>
 </head>
 <body>
+	<!-- 스플래시 화면 이미지 -->
+	<div id="splash_screen">
+        <img src="./image/01_login/A_splash.png" alt="스플래시 화면">
+    </div>
+	<!-- 스플래시 화면 이미지 end -->
 	<div class="container gap">
 		<div class="img_wrap"><img src="./image/01_login/img_main.png" alt="Another Saigon by LG"></div>
 		<h1 class="t_center" style="font-style: 20px;">퍼블리싱 파일 목록</h1>
@@ -22,7 +64,10 @@
 			<li><a class="t_center" href="./03_mission/board_list_03.html">미션 미진행</a>, <a class="t_center" href="./03_mission/board_list_03.html">미션 (서베이필요)</a>, <a class="t_center" href="./03_mission/board_list_04.html">미션 전부 완성했을때</a></li>
 			<li><a class="t_center" href="./03_mission/02/scan02.html">2번째 미션 결과값 패널 결과 팝업</a></li>
 			<li><a class="t_center" href="./03_mission/03/worldcup02.html">3번째 미션 결과값 월드컵 결과 팝업</a></li>
+			<li><a class="t_center" href="./04_event/list.html">이벤트 리스트</a></li>
+			<li><a class="t_center" href="./04_event/view_01.html">이벤트 상세 종류 1</a>, <a class="t_center" href="./04_event/view_02.html">이벤트 상세 종류 2</a>, <a class="t_center" href="./04_event/view_03.html">이벤트 상세 종류 3</a></li>
 			<li><a class="t_center" href="./05_survey/about.html">서베이</a></li>
+			<li><a class="t_center" href="./pc.html">PC로 접속시 나타나는 화면</a></li>
 		</ul>
 	</div>
 </body>
