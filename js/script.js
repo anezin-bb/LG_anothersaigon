@@ -2,9 +2,11 @@
 function popupOpen(targetId) {
     $('html').css({'overflow':'hidden'});
     $('html').css({'position':'fixed'});
-    $('#'+targetId).fadeIn(100);
-	$('#'+targetId).css("display", "flex");
-	return false;
+    $('#'+targetId).css("display", "flex");
+    requestAnimationFrame(() => {
+        $('#'+targetId).find('.blur_bg').addClass('active');
+    });
+    return false;
 };
 function popClose() {
 	$('.popup_wrap').css("display", "none");
@@ -17,13 +19,10 @@ function popClose() {
 $(document).ready(function() {
     $('.active_toggle').on('click touchstart', function(e) {
         e.preventDefault();
-        var isBlurPopFlex = $('.blur_pop').css('display') === 'flex';
-        
-        if (isBlurPopFlex) {
-            $(this).removeClass('active');
-        } else {
-            $(this).toggleClass('active');
-        }
+        $(this).addClass('active');
+        setTimeout(function() {
+            $('.active_toggle').removeClass('active');
+        }, 300);
     });
     
     $('.language li').on('click touchstart', function(e) {
