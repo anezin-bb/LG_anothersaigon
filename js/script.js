@@ -8,6 +8,7 @@ function popupOpen(targetId) {
     });
     return false;
 };
+/* 팝업 닫기 */
 function popClose() {
 	$('.popup_wrap').css("display", "none");
     $('html').css({'overflow':'unset'});
@@ -22,15 +23,15 @@ $(document).ready(function() {
         $(this).addClass('active');
         setTimeout(function() {
             $('.active_toggle').removeClass('active');
-        }, 300);
+        }, 500);
     });
     
     $('.language li').on('click touchstart', function(e) {
-        e.preventDefault();  // 기본 동작 방지
+        e.preventDefault();
         $('.language li').toggleClass('active');
     });
 });
-/* */
+/* 모바일 브라우저 세로 높이값 측정 */
 function setScreenSize() {
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
