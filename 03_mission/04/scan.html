@@ -21,7 +21,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -53,7 +53,7 @@
 	<!-- 팝업 end -->
 	<!-- 촬영 완료시 노출 팝업 -->
 	<div id="m04_scan_clear" class="popup_wrap blur_pop" style="display: flex;">
-		<div class="blur_bg"></div>
+		<div class="blur_bg active"></div>
 		<div class="pop_content">
 			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
 			<h2>숨겨진 QR코드를 발견하셨네요!</h2>
@@ -61,7 +61,7 @@
 				최신 LG 가전 제품 정보를 찾고 비교할 수 있으며,<br />
 				제품 구매나 기술 지원과 같은 도움도 얻을 수 있어요.</p>
 			<div class="pop_bottom_btns">
-				<button onclick="popClose()" id="btn_m1_close" class="ok_circle btn_pop_circle">닫기</button>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m4_close" class="ok_circle btn_pop_circle">닫기</button>
 			</div>
 		</div>
 	</div>

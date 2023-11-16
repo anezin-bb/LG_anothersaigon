@@ -23,7 +23,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -55,10 +55,34 @@
 						</div>
 					</div>
 				</div>
-				<button onclick="#" id="event_go_link03" class="btn_event_bottom">신청하기</button>
+				<!-- 참여완료 했을때는 버튼이 disabled="disabled" 되며, 텍스트가 바뀝니다.
+				<button onclick="#" id="event_go_link03" class="btn_event_bottom" disabled="disabled">참여 완료</button>
+				-->
+				<button onclick="#" id="event_go_link03" class="btn_event_bottom" disabled="disabled">신청하기</button>
 			</form>
 		</div>
 	</div>
+	<script>
+		// HTML 요소와 버튼을 가져옵니다.
+		var event_nameInput = document.getElementById("event_name");
+		var event_mail1Input = document.getElementById("event_mail1");
+		var event_mail2Input = document.getElementById("event_mail2");
+		var event_go_link03Button = document.getElementById("event_go_link03");
 	
+		// 입력 필드에 입력이 발생할 때마다 활성화 여부를 확인하는 함수를 정의합니다.
+		function checkInputs() {
+			// 모든 입력 필드의 값이 비어 있지 않은 경우에만 버튼을 활성화합니다.
+			if (event_nameInput.value.trim() !== "" && event_mail1Input.value.trim() !== "" && event_mail2Input.value.trim() !== "") {
+				event_go_link03Button.removeAttribute("disabled");
+			} else {
+				event_go_link03Button.setAttribute("disabled", "disabled");
+			}
+		}
+	
+		// 각 입력 필드에 이벤트 리스너를 추가하여 입력이 발생할 때마다 checkInputs 함수를 호출합니다.
+		event_nameInput.addEventListener("input", checkInputs);
+		event_mail1Input.addEventListener("input", checkInputs);
+		event_mail2Input.addEventListener("input", checkInputs);
+	</script>
 </body>
 </html>

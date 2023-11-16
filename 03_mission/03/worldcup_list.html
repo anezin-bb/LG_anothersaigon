@@ -1,3 +1,5 @@
+<!-- 이 페이지는 내부에서 입력할 데이터, 결과값을 전부 적은 페이지입니다. 외부 노출용 x 
+3번째 미션에서 선택할 데이터, 결과 팝업 모았습니다. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -35,6 +37,7 @@
 				<p>어떤 가전이 나의 취향인지 선택해주세요.</p>
 			</div>
 			<div class="worldcup_list">
+				<!-- 18개 월드컵 항목 목록 -->
 				<!-- 임시로 버튼 클릭시 내용 안에 있는 제품 우승시 노출되는 팝업으로 연결했습니다. 숫자별로 제품 나열했습니다. -->
 				
 				<!-- 제품 1  img_01_LG CordZero (A9) -->
@@ -52,7 +55,7 @@
 				<button type="button" onclick="popupOpen('m03_scan_clear_img_02')" ontouchstart="popupOpen('m03_scan_clear_img_02')" class="worldcup_item active_toggle">
 					<span class="img_wrap"><img src="../../image/03_mission/img_02_LG_Puricare360.png" alt="img_02_LG Puricare 360˚ (1 stage)"></span>
 					<span class="txt_wrap">
-						<h3>LG Puricare 360˚ (1 stage)</h3>
+						<h3>LG Puricare 360˚ <br />(1 stage)</h3>
 						<p>퓨리케어만 가능한<br />
 							공기청정</p>
 					</span>
@@ -63,7 +66,7 @@
 				<button type="button" onclick="popupOpen('m03_scan_clear_img_03')" ontouchstart="popupOpen('m03_scan_clear_img_03')" class="worldcup_item active_toggle">
 					<span class="img_wrap"><img src="../../image/03_mission/img_03_LG_PuriCare360.png" alt="img_03_LG PuriCare 360˚ (2 stage)"></span>
 					<span class="txt_wrap">
-						<h3>LG PuriCare 360˚ (2 stage)</h3>
+						<h3>LG PuriCare 360˚ <br />(2 stage)</h3>
 						<p>탈취 성능이 더 강력해진<br />
 							1등 공기청정기</p>
 					</span>
@@ -272,7 +275,7 @@
 		<div class="blur_bg"></div>
 		<div class="pop_content">
 			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
-			<h2>나의 픽 가전은 LG Puricare 360˚ (1 stage) 입니다!</h2>
+			<h2>나의 픽 가전은 LG Puricare 360˚ <br />(1 stage) 입니다!</h2>
 			<p>여러분의 의견을 바탕으로 <br />
 				새로운 제품이 론칭될 예정이에요.</p>
 			<p>LG Puricare 360˚ (1 stage)는 빈틈 없는 360˚로 먼지를 흡입하고 깨끗하게 청정합니다.</p>
@@ -288,9 +291,10 @@
 		<div class="blur_bg"></div>
 		<div class="pop_content">
 			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
-			<h2>나의 픽 가전은 LG PuriCare 360˚ (2 stage) 입니다!</h2>
+			<h2>나의 픽 가전은 LG PuriCare 360˚ <br />(2 stage) 입니다!</h2>
+			<p>여러분의 의견을 바탕으로 <br />
+				새로운 제품이 론칭될 예정이에요.</p>
 			<p>LG PuriCare 360˚ (2 stage)는 스스로 공기질을 판단하는 인공지능과 필터 맞춤 업그레이드를 할 수 있습니다.</p>
-			<p></p>
 			<div class="pop_bottom_btns">
 				<button onclick="popClose()" id="btn_m03_img_03_close" class="ok_circle btn_pop_circle">닫기</button>
 			</div>
@@ -306,7 +310,7 @@
 			<h2>나의 픽 가전은 LG Aero Tower 입니다!</h2>
 			<p>여러분의 의견을 바탕으로 <br />
 				새로운 제품이 론칭될 예정이에요.</p>
-				<p>LG Aero Tower는 깨끗한 공기를 원하는 온도에 맞춰 사계절 청정 라이프를 제공합니다.</p>
+			<p>LG Aero Tower는 깨끗한 공기를 원하는 온도에 맞춰 사계절 청정 라이프를 제공합니다.</p>
 			<div class="pop_bottom_btns">
 				<button onclick="popClose()" id="btn_m03_img_04_close" class="ok_circle btn_pop_circle">닫기</button>
 			</div>

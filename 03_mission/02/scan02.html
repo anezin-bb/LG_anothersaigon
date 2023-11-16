@@ -21,7 +21,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -34,7 +34,7 @@
 	</div>
 	<!-- 촬영 완료시 노출 팝업 -->
 	<div id="m02_scan_clear" class="popup_wrap blur_pop" style="display: flex;">
-		<div class="blur_bg"></div>
+		<div class="blur_bg active"></div>
 		<div class="pop_content">
 			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
 			<h2>나만의 컬러 조합을 확인했습니다.</h2>
@@ -42,20 +42,20 @@
 				새로운 제품이 론칭될 예정이에요.</p>
 			<ul class="m02_color_list">
 				<li>
-					<figure class="pink"></figure>
+					<figure class="color_m_pink"></figure>
 					<p>[MIST]<br />PINK</p>
 				</li>
 				<li>
-					<figure class="cream"></figure>
+					<figure class="color_n_creamwhite"></figure>
 					<p>[NATURE]<br />CREAM WHITE</p>
 				</li>
 				<li>
-					<figure class="midnight"></figure>
+					<figure class="color_s_midnight"></figure>
 					<p>[SOLID]<br />MANHATTAN MIDNIGHT</p>
 				</li>
 			</ul>
 			<div class="pop_bottom_btns">
-				<button onclick="popClose()" id="btn_m1_close" class="ok_circle btn_pop_circle">닫기</button>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m2_close" class="ok_circle btn_pop_circle">닫기</button>
 			</div>
 		</div>
 	</div>

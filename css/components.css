@@ -2,463 +2,96 @@
 /* APPLICATION 
 ------------------------------------------------------------------------*/
 /* 레이아웃 */
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 95vh;
-  height: calc(var(--vh, 1vh) * 100);
-  height: 100dvh;
-  max-width: 480px;
-  min-width: 320px;
-  min-height: 640px;
-  margin: 0 auto;
-  padding-top: 40px;
-}
+.container{  display:flex;   flex-direction:column;   width:100vw;   height:95vh;   height:calc(var(--vh,1vh) * 100);   height:100dvh;   max-width:480px;   min-width:320px;   min-height:640px;   margin:0 auto;   padding-top:40px}
+.gap{  padding-left:16px;   padding-right:16px}
+.title_area{  text-align:center;   padding-top:40px}
+.title_area h1{  color:#000;   color:#000;   font-family:"LG_head";   font-size:20px;   font-style:normal;   font-weight:700;   line-height:28px}
+header{  width:100%;   height:40px;   background-color:#fff;   border-bottom:1px solid rgba(0,0,0,0.1);   position:fixed;   top:0;   left:0;   z-index:10}
+header h1{  padding:4px;   text-align:center}
+header.blank_bg{  background-color:transparent;   border-bottom:0}
+.btn_header_back{  position:absolute;   top:12px;   left:16px;   width:16px;   height:16px;   background-image:url("../image/common/icn_arr_back_m.svg");   text-indent:-9999px}
+.language{  position:absolute;   width:80px;   top:4px;   right:16px;   background:white;   border-radius:16px;   z-index:13}
+.language:active, .language{  height:auto}
+.language li{  list-style-type:none;   padding:6px 8px;   display:none}
+.language li a{  display:block;   width:100%;   color:#000;   text-align:left;   font-family:"LG_head";   font-size:14px;   font-style:normal;   font-weight:400;   padding-right:12px}
+.language li.current:after{  content:"";   background-image:url("../image/common/icn_dropdown.svg");   display:block;   position:absolute;   width:16px;   height:16px;   top:8px;   right:8px}
+.language:active li, .language li.current, .language li.active, .language li.active a{  display:block}
+.language li.active.current:after{  background-image:url("../image/common/icn_dropdown_on.svg")}
+header.blank_bg .language{  top:16px}
 
-.gap {
-  padding-left: 16px;
-  padding-right: 16px;
-}
+.pd_bottom{  padding-bottom:100px}
 
-.title_area {
-  text-align: center;
-  padding-top: 40px;
-}
-.title_area h1 {
-  color: #000000;
-  color: #000000;
-  font-family: "LG_head";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-}
-
-header {
-  width: 100%;
-  height: 40px;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-header h1 {
-  padding: 4px;
-  text-align: center;
-}
-
-header.blank_bg {
-  background-color: transparent;
-  border-bottom: 0;
-}
-
-.btn_header_back {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  width: 16px;
-  height: 16px;
-  background-image: url("../image/common/icn_arr_back_m.svg");
-  text-indent: -9999px;
-}
-
-.language {
-  position: absolute;
-  width: 80px;
-  top: 4px;
-  right: 16px;
-  background: white;
-  border-radius: 16px;
-  z-index: 13;
-}
-.language:active, .language {
-  height: auto;
-}
-.language li {
-  list-style-type: none;
-  padding: 6px 8px;
-  display: none;
-}
-.language li a {
-  display: block;
-  width: 100%;
-  color: #000000;
-  text-align: left;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  padding-right: 12px;
-}
-.language li.current:after {
-  content: "";
-  background-image: url("../image/common/icn_dropdown.svg");
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 8px;
-  right: 8px;
-}
-.language:active li, .language li.current, .language li.active,.language li.active a {
-  display: block;
-}
-.language li.active.current:after {
-  background-image: url("../image/common/icn_dropdown_on.svg");
-}
-
-header.blank_bg .language {
-  top: 16px;
-}
-
-.pd_bottom {
-  padding-bottom: 100px;
-}
-
-.bottom_gnb {
-  position: fixed;
-  bottom: -1px;
-  max-width: 480px;
-  display: flex;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-}
-.bottom_gnb li {
-  width: 33.3%;
-}
-.bottom_gnb a {
-  display: flex;
-  padding: 19px 0px;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-}
-.bottom_gnb a .bottom_icn {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-.bottom_gnb a .bottom_icn1 {
-  background-image: url("../image/common/icn_space.svg");
-}
-.bottom_gnb a .bottom_icn2 {
-  background-image: url("../image/common/icn_mission.svg");
-}
-.bottom_gnb a .bottom_icn3 {
-  background-image: url("../image/common/icn_event.svg");
-}
-.bottom_gnb a .bottom_menutxt {
-  color: #262626;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  margin-top: 4px;
-}
-.bottom_gnb a.active {
-  border-top: 2px solid #262626;
-  background: linear-gradient(180deg, #F0F0F0 0%, rgba(240, 240, 240, 0) 100%), #fff;
-}
-.bottom_gnb a.active .bottom_icn1 {
-  background-image: url("../image/common/icn_space_on.svg");
-}
-.bottom_gnb a.active .bottom_icn2 {
-  background-image: url("../image/common/icn_mission_on.svg");
-}
-.bottom_gnb a.active .bottom_icn3 {
-  background-image: url("../image/common/icn_event_on.svg");
-}
-.bottom_gnb a.active .bottom_menutxt {
-  font-weight: 700;
-}
+.bottom_gnb{  position:fixed;   bottom:-1px;   max-width:480px;   display:flex;   width:100%;   left:50%;   transform:translateX(-50%);   background-color:#fff}
+.bottom_gnb li{  width:33.3%}
+.bottom_gnb a{  display:flex;   padding:19px 0px;   flex-direction:column;   align-items:center;   gap:4px;   border-top:1px solid rgba(0,0,0,0.1);   background:#fff}
+.bottom_gnb a .bottom_icn{  display:block;   width:24px;   height:24px}
+.bottom_gnb a .bottom_icn1{  background-image:url("../image/common/icn_space.svg")}
+.bottom_gnb a .bottom_icn2{  background-image:url("../image/common/icn_mission.svg")}
+.bottom_gnb a .bottom_icn3{  background-image:url("../image/common/icn_event.svg")}
+.bottom_gnb a .bottom_menutxt{  color:#262626;   text-align:center;   font-family:"LG_head";   font-size:14px;   font-weight:400;   line-height:14px;   margin-top:4px}
+.bottom_gnb a.active{  border-top:2px solid #262626;   background:linear-gradient(180deg,#F0F0F0 0%,rgba(240,240,240,0) 100%),#fff}
+.bottom_gnb a.active .bottom_icn1{  background-image:url("../image/common/icn_space_on.svg")}
+.bottom_gnb a.active .bottom_icn2{  background-image:url("../image/common/icn_mission_on.svg")}
+.bottom_gnb a.active .bottom_icn3{  background-image:url("../image/common/icn_event_on.svg")}
+.bottom_gnb a.active .bottom_menutxt{ font-weight:700}
 
 /* 컴포넌트 */
 /* 버튼모음 */
-.btn_pop_circle {
-  width: 56px;
-  height: 56px;
-  text-indent: -9999px;
-}
-
-.btn_bottom_full {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 480px;
-  padding: 16px;
-  color: #000000;
-  font-family: "LG_head";
-  font-size: 16px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 24px;
-  background-color: #FD312E;
-  color: #FFFFFF;
-}
-
-.chk_circle {
-  background-image: url("../image/common/btn_check_disable.svg");
-}
-
-.chk_circle.active {
-  background-image: url("../image/common/btn_check.svg");
-}
-
-.btn_next {
-  background-image: url("../image/common/btn_next_disable.svg");
-}
-
-.btn_next.active {
-  background-image: url("../image/common/btn_next.svg");
-}
+.btn_pop_circle{  width:56px;   height:56px;   text-indent:-9999px}
+.btn_bottom_full{  position:fixed;   bottom:0;   width:100%;   max-width:480px;   padding:16px;   color:#000;   font-family:"LG_head";   font-size:16px;   font-weight:700;   font-style:normal;   line-height:24px;   background-color:#FD312E;   color:#FFF}
+.chk_circle{  background-image:url("../image/common/btn_check_disable.svg")}
+.chk_circle.active{  background-image:url("../image/common/btn_check.svg")}
+.btn_next{  background-image:url("../image/common/btn_next_disable.svg")}
+.btn_next.active{  background-image:url("../image/common/btn_next.svg")}
 
 /* input, textarea */
-input {
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-  color: #716F6A;
-  font-family: "LG_text";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
+input{ border-radius:10px;  border:1px solid rgba(0,0,0,0.1);  background:#fff;  color:#716F6A;  font-family:"LG_text";  font-size:16px;  font-style:normal;  font-weight:400;  line-height:22px}
+textarea{ border-radius:10px;  border:1px solid rgba(0,0,0,0.1);  background:#fff;  color:#716F6A;  font-family:"LG_text";  font-size:16px;  font-style:normal;  font-weight:400;  line-height:22px;  padding:16px}
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=password]::-webkit-outer-spin-button, 
+input[type=password]::-webkit-inner-spin-button{ -webkit-appearance:none;  margin:0}
 
-textarea {
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-  color: #716F6A;
-  font-family: "LG_text";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  padding: 16px;
-}
-
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button,
-input[type=password]::-webkit-outer-spin-button,
-input[type=password]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
 /*
 체크박스 checkbox
 */
 /* 모든 체크, 라디오박스 숨김 */
-.survey_radio, .chk_circle2, .chk_long, .chk_short {
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  display: table;
-  width: 100%;
-}
-.survey_radio input, .chk_circle2 input, .chk_long input, .chk_short input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-  display: inline-block;
-}
-.survey_radio input:checked, .chk_circle2 input:checked, .chk_long input:checked, .chk_short input:checked {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
+.survey_radio, .chk_circle2, .chk_long, .chk_short{ position:relative;  cursor:pointer;  -webkit-user-select:none;  -moz-user-select:none;  user-select:none;  display:table;  width:100%}
+.survey_radio input, .chk_circle2 input, .chk_long input, .chk_short input{ position:absolute;  opacity:0;  cursor:pointer;  height:0;  width:0;  display:inline-block}
+.survey_radio input:checked, .chk_circle2 input:checked, .chk_long input:checked, .chk_short input:checked{ position:absolute;  top:0px;  left:0px}
 /* 관심사 선택 */
-.survey_radios {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.survey_radio input:checked ~ .survey_radio_txt {
-  color: #fff;
-  background: #FD312E;
-}
-
-.survey_radio_txt {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  padding: 16px;
-  color: #000000;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  background-color: #fff;
-  color: #000000;
-  border-radius: 10px;
-}
-
+.survey_radios{ display:flex;  flex-direction:column;  width:100%;  gap:10px;  margin-top:20px}
+.survey_radio input:checked ~ .survey_radio_txt{ color:#fff;  background:#FD312E}
+.survey_radio_txt{ display:table-cell;  width:100%;  height:100%;  padding:16px;  color:#000;  text-align:center;  font-family:"LG_head";  font-size:16px;  font-style:normal;  font-weight:400;  line-height:24px;  background-color:#fff;  color:#000;  border-radius:10px}
 /* 만족도 설문 survey 페이지 checkbox */
-.example {
-  margin-top: 20px;
-  display: flex;
-}
+.example { margin-top: 20px; display: flex; }
 
 /* 원형 */
-.chk_circle2_list {
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.chk_circle2 {
-  display: flex;
-  width: auto;
-}
-
-.chk_circle2 input:checked ~ .chk_circle2_txt {
-  color: #fff;
-  background: #FD312E;
-  border: 1px solid #FD312E;
-}
-
-.chk_circle2_txt {
-  display: table-cell;
-  width: 48px;
-  height: 48px;
-  padding: 14px;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  background-color: #fff;
-  color: #716F6A;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-}
+.chk_circle2_list{ flex-direction:row;  width:100%;  justify-content:space-between}
+.chk_circle2{ display:flex;  width:auto}
+.chk_circle2 input:checked ~ .chk_circle2_txt{ color:#fff;  background:#FD312E;  border:1px solid #FD312E}
+.chk_circle2_txt{ display:table-cell;  width:48px;  height:48px;  padding:14px;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:400;  line-height:20px;  background-color:#fff;  color:#716F6A;  border:1px solid rgba(0,0,0,0.1);  border-radius:25px}
 
 /* 세로로 긴 */
-.chk_long_list {
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
-}
+.chk_long_list{ flex-direction:column;  width:100%;  gap:10px}
+.chk_long input:checked ~ .chk_long_txt{ color:#fff;  background:#FD312E;  border:1px solid #FD312E}
+.chk_long_txt{ display:table-cell;  width:100%;  height:auto;  padding:16px;  text-align:center;  font-family:"LG_head";  font-size:14px;  font-style:normal;  font-weight:400;  line-height:22px;  background-color:#fff;  color:#000;  border:1px solid rgba(0,0,0,0.1);  border-radius:10px}
 
-.chk_long input:checked ~ .chk_long_txt {
-  color: #fff;
-  background: #FD312E;
-  border: 1px solid #FD312E;
-}
+/* 50% 숏 */
+.chk_short_list{ flex-direction:row;  flex-wrap:wrap;  width:100%;  gap:10px}
+.chk_short{ width:calc(50% - 5px)}
+.chk_short input:checked ~ .chk_short_txt{ color:#fff;  background:#FD312E;  border:1px solid #FD312E}
+.chk_short_txt{ display:table-cell;  width:100%;  height:auto;  padding:16px;  text-align:center;  font-family:"LG_head";  font-size:14px;  font-style:normal;  font-weight:400;  line-height:22px;  background-color:#fff;  color:#000;  border:1px solid rgba(0,0,0,0.1);  border-radius:10px}
 
-.chk_long_txt {
-  display: table-cell;
-  width: 100%;
-  height: auto;
-  padding: 16px;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.chk_short_list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 10px;
-}
-
-.chk_short {
-  width: calc(50% - 5px);
-}
-
-.chk_short input:checked ~ .chk_short_txt {
-  color: #fff;
-  background: #FD312E;
-  border: 1px solid #FD312E;
-}
-
-.chk_short_txt {
-  display: table-cell;
-  width: 100%;
-  height: auto;
-  padding: 16px;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
 /*
 pc 화면 디자인
 */
-.pc_section {
-  width: 100vw;
-  height: 100vh;
-  min-width: 480px;
-}
-header.pc_header {
-  height: 64px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
-  background: #E6E1D6;
-}
-.pc_container {
-  padding: 0 65px;
-  background: #F0ECE4;
-}
-header.pc_header > .pc_container {
-  background: transparent;
-}
-header.pc_header h1 {
-  text-align: left;
-  padding: 16px 0;
-}
-.pc_section > .pc_container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-.pc_flex_center {
-  padding-top: 64px;
-  display: flex;
-  flex-direction: column;
-}
-.pc_flex_center p {
-  color: #000;
-  text-align: center;
-  font-family: "LG_head";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px; /* 140% */
-  text-transform: capitalize;
-}
+.pc_section{ width:100vw;  height:100vh;  min-width:480px}
+header.pc_header{ height:64px;  border-bottom:1px solid rgba(0,0,0,0.10);  background:#E6E1D6}
+.pc_container{ padding:0 65px;  background:#F0ECE4}
+header.pc_header >.pc_container{ background:transparent}
+header.pc_header h1{ text-align:left;  padding:16px 0}
+.pc_section >.pc_container{ display:flex;  width:100vw;  height:100vh;  align-items:center;  justify-content:center}
+.pc_flex_center{ padding-top:64px;  display:flex;  flex-direction:column}
+.pc_flex_center p{ color:#000;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:700;  line-height:28px;  text-transform:capitalize}

@@ -20,10 +20,7 @@ function popClose() {
 $(document).ready(function() {
     $('.active_toggle').on('click touchstart', function(e) {
         e.preventDefault();
-        $(this).addClass('active');
-        setTimeout(function() {
-            $('.active_toggle').removeClass('active');
-        }, 500);
+        $(this).toggleClass('active');
     });
     
     $('.language li').on('click touchstart', function(e) {

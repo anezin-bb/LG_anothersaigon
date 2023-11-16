@@ -21,7 +21,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -43,7 +43,7 @@
 	</div>
 	<!-- QR코드가 안찍혔거나 오류 났을때 노출 팝업 -->
 	<div id="m02_scan_close" class="popup_wrap blur_pop" style="display: flex;">
-		<div class="blur_bg"></div>
+		<div class="blur_bg active"></div>
 		<div class="pop_content">
 			<h2>패널 인식이 불가합니다.<br />
 				3개의 컬러 패널을 부착하고 <br />그림자 가이드에 맞춰 촬영해주세요.

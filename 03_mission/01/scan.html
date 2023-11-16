@@ -21,7 +21,7 @@
 	<div class="container">
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
-			<button onclick="history.go(-1)" class="btn_header_back">back</button>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<ul class="language">
 				<li class="current"><a href="javascript:void(0);">English</a></li>
 				<li><a href="javascript:void(0);">Vietnam</a></li>
@@ -41,7 +41,7 @@
 	</div>
 	<!-- QR코드가 안찍혔거나 오류 났을때 노출 팝업 -->
 	<div id="m01_scan_close" class="popup_wrap blur_pop">
-		<div class="blur_bg"></div>
+		<div class="blur_bg active"></div>
 		<div class="pop_content">
 			<h2>QR코드 확인이 불가합니다. <br />
 				시향 병에 부착된 QR을 스캔해주세요.</h2>
@@ -53,17 +53,17 @@
 	<!-- 팝업 end -->
 	<!-- 촬영 완료시 노출 팝업 -->
 	<div id="m01_scan_clear" class="popup_wrap blur_pop" style="display: flex;">
-		<div class="blur_bg"></div>
+		<div class="blur_bg active"></div>
 		<div class="pop_content">
 			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
 			<h2>윌 유 메리미를 선택하셨네요!</h2>
 			<p>사랑과 만남을 모티브로 한 경쾌하고 <br />
 				발랄한 분위기의 상큼하고 사랑스러운 향.<br />
 				윌 유 메리미 향으로 스타일러/슈케어를 경험해보세요.</p>
-			<div class="pop_bottom_btns">
+			<div class="pop_bottom_btns w90per">
 				<p>확인 버튼을 누르기 전 <br />
 					운영 스텝에게 화면을 보여주세요.</p>
-				<button onclick="popClose()" id="btn_m1_close" class="ok_circle btn_pop_circle">닫기</button>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m1_close" class="ok_circle btn_pop_circle">닫기</button>
 			</div>
 		</div>
 	</div>
