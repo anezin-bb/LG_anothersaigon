@@ -71,7 +71,7 @@ input[type=password]::-webkit-inner-spin-button{ -webkit-appearance:none;  margi
 .chk_circle2_list{ flex-direction:row;  width:100%;  justify-content:space-between}
 .chk_circle2{ display:flex;  width:auto}
 .chk_circle2 input:checked ~ .chk_circle2_txt{ color:#fff;  background:#FD312E;  border:1px solid #FD312E}
-.chk_circle2_txt{ display:table-cell;  width:48px;  height:48px;  padding:14px;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:400;  line-height:20px;  background-color:#fff;  color:#716F6A;  border:1px solid rgba(0,0,0,0.1);  border-radius:25px}
+.chk_circle2_txt{ display:table-cell;  width:48px;  height:48px;  padding:14px;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:700;  line-height:20px;  background-color:#fff;  color:#716F6A;  border:1px solid rgba(0,0,0,0.1);  border-radius:25px}
 
 /* 세로로 긴 */
 .chk_long_list{ flex-direction:column;  width:100%;  gap:10px}
@@ -94,4 +94,6 @@ header.pc_header >.pc_container{ background:transparent}
 header.pc_header h1{ text-align:left;  padding:16px 0}
 .pc_section >.pc_container{ display:flex;  width:100vw;  height:100vh;  align-items:center;  justify-content:center}
 .pc_flex_center{ padding-top:64px;  display:flex;  flex-direction:column}
-.pc_flex_center p{ color:#000;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:700;  line-height:28px;  text-transform:capitalize}
+.pc_flex_center h2 {color:#000;  text-align:center;  font-family:"LG_head";  font-size: 30px; font-weight: 700; line-height: 46px; margin-bottom: 24px;}
+.pc_flex_center p{ color:#000;  text-align:center;  font-family:"LG_head";  font-size:20px;  font-style:normal;  font-weight:700;  line-height:28px;  text-transform:capitalize;}
+.pc_flex_center button {margin-top: 40px;}

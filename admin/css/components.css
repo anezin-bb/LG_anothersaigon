@@ -1,0 +1,244 @@
+@charset "UTF-8"; 
+/* APPLICATION 
+------------------------------------------------------------------------*/
+/* 레이아웃 */
+body *{ font-family:"Spoqa",sans-serif}
+
+/* flex로 왼, 오른, 위, 아래 중력배치 */
+.flex_wrap{ display:flex;  width:100%;  height:100%}
+.flex_row{ display:flex;  width:100%;  flex-direction:row;  align-items:center}
+.flex_column{ display:flex;  width:100%;  flex-direction:column}
+.flex_wrap .left{ margin-right:auto}
+.flex_wrap .right{ margin-left:auto}
+.flex_wrap .top{ margin-bottom:auto}
+.flex_wrap .bottom{ margin-top:auto}
+.left{ right:auto;  left:0;  margin-right:auto}
+.right{ left:auto;  right:0;  margin-left:auto}
+.top{ top:0;  bottom:auto;  margin-bottom:auto}
+.bottom{ bottom:0;  top:auto;  margin-top:auto}
+.bg_w{ background:#fff;  border-radius:8px}
+
+/* main container */
+main{ margin-left:256px;  width:calc(100% - 256px);  height:100%;  min-height:100vh;  background-color:#f4f4f4}
+
+.adm_section{ display:flex;  flex-direction:column;  width:100%;  min-height:calc(100vh - 84px);  padding:40px;  gap:40px}
+.adm_section .left{ display:flex;  align-items:center}
+.adm_section .right{ margin-left:auto;  display:flex;  flex-direction:row;  align-items:center}
+
+/* adm_top_section */
+.adm_top_section{  display:flex;   flex-direction:row;   padding:17px 40px;   width:100%;   align-items:center;   background-color:#fff}
+
+.top_nav_list{  display:flex;   flex-direction:row}
+.top_nav_list li{  font-size:16px;   font-weight:700;   color:#FD312E}
+.top_nav_list li h2{  font-weight:700}
+
+.top_nav_list .prev_nav:after{  content:">";   display:inline-block;   height:20px;   margin:0 8px;   position:relative}
+
+.dropdown_top{  width:230px}
+.dropdown_top .dropbtn{  padding:13px 20px;   font-weight:500}
+.dropdown_top .dropbtn::after{  content:"";   display:inline-block;   width:24px;   height:24px;   background:url("../image/icn_category_open.svg");  position:absolute;  top:8px;  right:13px}
+.dropdown_top:hover .dropbtn::after{ transform:rotate(180deg)}
+.dropdown_top:hover .dropbtn{ border-radius:10px 10px 0px 0px}
+.dropdown_top:hover .drop_cont{ top:43px;  border-radius:0px 0px 10px 10px}
+
+/* adm_gnb 어드민 좌측메뉴 */
+.adm_gnb{  width:256px;   display:flex;   flex-direction:column;   position:fixed;   height:100vh;   box-shadow:4px 0px 10px rgba(0,0,0,0.1);   z-index:2}
+
+.adm_logo{  padding:53px 39px}
+.adm_logo img{  display:block;   margin:0 auto}
+
+.adm_menulist{  padding-top:32px;   padding-left:16px;   display:flex;   flex-direction:column;   align-items:flex-start;   width:100%;   gap:24px}
+.adm_menulist li{  padding:0 20px}
+.adm_menulist li a{  display:block;   padding-left:30px;   background-repeat:no-repeat;   background-position:left center;   background-size:contain;   color:#000;   font-size:16px;   font-style:normal;   font-weight:400;   transform-origin:top;   transition:all 0.2s ease-out;   line-height:20px}
+.adm_menulist li .adm_menulist_sub{  width:100%;   height:0;   opacity:0;   transform:scaleY(0);   transform-origin:top;   transition:all 0.35s ease-out;   position:relative;   display:flex;   flex-direction:column;   gap:4px}
+.adm_menulist li .adm_menulist_sub li{  padding:0}
+.adm_menulist li .adm_menulist_sub li a{  background:transparent}
+
+.adm_menulist li a.active, .adm_menulist li a:hover, .adm_menulist li a:focus{  color:#FD312E;   font-weight:500}
+.adm_menulist li a.menu_link01{  background-image:url("../image/icn_lnb01_off.svg")}
+.adm_menulist li a.menu_link02{  background-image:url("../image/icn_lnb02_off.svg")}
+.adm_menulist li a.menu_link03{  background-image:url("../image/icn_lnb03_off.svg")}
+.adm_menulist li a.menu_link04{  background-image:url("../image/icn_lnb04_off.svg")}
+.adm_menulist li a.menu_link05{  background-image:url("../image/icn_lnb05_off.svg")}
+.adm_menulist li a.menu_link06{  background-image:url("../image/icn_lnb06_off.svg")}
+.adm_menulist li a.menu_link07{  background-image:url("../image/icn_lnb07_off.svg")}
+.adm_menulist li a.menu_link08{  background-image:url("../image/icn_lnb08_off.svg")}
+
+.adm_menulist li a.menu_link01.active, .adm_menulist li a.menu_link01:hover, .adm_menulist li a.menu_link01:focus{  background-image:url("../image/icn_lnb01_on.svg")}
+.adm_menulist li a.menu_link02.active, .adm_menulist li a.menu_link02:hover, .adm_menulist li a.menu_link02:focus{  background-image:url("../image/icn_lnb02_on.svg")}
+.adm_menulist li a.menu_link03.active, .adm_menulist li a.menu_link03:hover, .adm_menulist li a.menu_link03:focus{  background-image:url("../image/icn_lnb03_on.svg")}
+.adm_menulist li a.menu_link04.active, .adm_menulist li a.menu_link04:hover, .adm_menulist li a.menu_link04:focus{  background-image:url("../image/icn_lnb04_on.svg")}
+.adm_menulist li a.menu_link04.active, .adm_menulist li a.menu_link04:hover, .adm_menulist li a.menu_link04:focus{  background-image:url("../image/icn_lnb04_on.svg")}
+.adm_menulist li a.menu_link05.active, .adm_menulist li a.menu_link05:hover, .adm_menulist li a.menu_link05:focus{  background-image:url("../image/icn_lnb05_on.svg")}
+.adm_menulist li a.menu_link06.active, .adm_menulist li a.menu_link06:hover, .adm_menulist li a.menu_link06:focus{  background-image:url("../image/icn_lnb06_on.svg")}
+.adm_menulist li a.menu_link07.active, .adm_menulist li a.menu_link07:hover, .adm_menulist li a.menu_link07:focus{  background-image:url("../image/icn_lnb07_on.svg")}
+.adm_menulist li a.menu_link08.active, .adm_menulist li a.menu_link08:hover, .adm_menulist li a.menu_link08:focus{  background-image:url("../image/icn_lnb08_on.svg")}
+.adm_menulist li a.active ~ .adm_menulist_sub, .adm_menulist li:hover .adm_menulist_sub{  padding-top:8px;   height:auto;   opacity:1;   transform:scaleY(1)}
+
+.gnb_bottom{  display:flex;   flex-direction:column;   gap:24px;   margin-top:auto;   padding:40px 16px}
+.gnb_bottom button{  color:#000;   font-family:"spoqa";   font-size:16px;   font-style:normal;   font-weight:400;   line-height:16px}
+#menu_link_adm::before{  content:"";   display:inline-block;   width:20px;   height:20px;   background:url("../image/icn_lnb09_off.svg") no-repeat top center;   position:relative;   top:4px;   margin-right:10px}
+#menu_link_adm:hover, #menu_link_adm.active{  font-weight:500;   color:#FD312E}
+#menu_link_adm:hover::before, #menu_link_adm.active::before{  background-image:url("../image/icn_lnb09_on.svg")}
+
+.dropdown_bottom{ /* &:hover .dropbtn::after{  background-image:url('../image/icn_dropdown_on.svg')}
+*/
+}
+.dropdown_bottom .dropbtn{  padding:12px 16px}
+.dropdown_bottom .dropbtn::after{  content:"";   display:inline-block;   width:20px;   height:20px;   background:url("../image/icn_dropdown.svg");  position:absolute;  top:auto;  right:12px}
+.dropdown_bottom:hover .dropbtn{ border-radius:0px 0px 10px 10px}
+.dropdown_bottom:hover .drop_cont{ bottom:40px;  border-radius:10px 10px 0px 0px}
+
+/* 컴포넌트 */
+/* input, textarea */
+input{  display:inline-block;   border:1px solid #000;   outline:none;   box-shadow:0px 0px 0px transparent;   border:1px solid transparent;   color:var(--black);   width:auto;   min-width:100px;   height:50px;   padding:0 1.6rem;   font-size:14px;   box-sizing:border-box;   border-radius:8px}
+input[type=text], input[type=email], input[type=tel], input[type=submit], input[type=password], input[type=image], input[type=button], textarea{  border-radius:8px}
+input:disabled{  background-color:transparent}
+select{  display:inline-block;   font-size:16px;   color:var(--gray);   text-align:left;   border:1px solid var(--line);   outline:none;   background-color:#fff;   border-radius:8px;   -webkit-appearance:none;   -moz-appearance:none;   appearance:none;   word-wrap:normal;   text-align:center;   height:44px;   line-height:42px;   background:#fff url("../images/icn_select.svg") no-repeat 95% 50%;   padding:0px 40px 0px 20px}
+
+input:focus, 
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=submit]:focus, input[type=password]:focus, textarea:focus{  outline:none;   color:#000}
+input[type=search]::-webkit-search-cancel-button{  -webkit-appearance:none;   width:12px;   height:12px;   padding:5px;   background:#fff url("../images/icn_admin_close.svg") right no-repeat;   cursor:pointer}
+input[type=file]{  -webkit-appearance:none;      -moz-appearance:none;           appearance:none;   background-color:initial;   cursor:default;   text-overflow:ellipsis;   white-space:pre;   text-align:start !important;   padding:initial;   border:initial;   opacity:0;   overflow:hidden !important}
+
+form{  position:relative}
+
+textarea{  width:100%;   border:1px solid var(--line);   background-color:#fff;   padding:10px 20px;   font-size:14px;   box-sizing:border-box;   height:102px;   overflow-y:auto}
+textarea::-moz-placeholder{  font-size:14px;   color:var(--disable)}
+textarea::placeholder{  font-size:14px;   color:var(--disable)}
+textarea:-moz-read-only, textarea:-moz-read-only:focus{  border-color:#f2f2f2;   background-color:#f2f2f2}
+textarea:read-only, 
+textarea:read-only:focus{  border-color:#f2f2f2;   background-color:#f2f2f2}
+textarea:focus{  outline:none;   border:solid 1px var(--btn-hover);   box-sizing:border-box}
+textarea::-webkit-scrollbar{  width:6px}
+textarea::-webkit-scrollbar-track{  background-color:transparent}
+textarea::-webkit-scrollbar-thumb{  border-radius:4px;   background-color:gray;   border:1px solid transparent}
+textarea::-webkit-scrollbar-button{  width:0;   height:0}
+
+datalist{  position:absolute;   top:5px;   left:0;   background-color:#fff;   border-radius:5px;   width:100%;   padding:5px;   max-height:10rem;   overflow-y:auto;   outline:none;   -webkit-appearance:none;   -moz-appearance:none;   appearance:none}
+
+option{  background-color:#fff;   text-align:center;   color:var(--black);   margin:0;   padding:0;   margin-bottom:5px;   font-size:16px;   cursor:pointer;   outline:none;   -webkit-appearance:none;   -moz-appearance:none;   appearance:none;   text-indent:0px}
+
+select >option{  width:100%;   text-align:center}
+
+datalist option:hover, 
+datalist option:focus{  color:var(--main-text-btn);   background-color:var(--input-disable);   outline:0 none}
+
+input::-webkit-calendar-picker-indicator{  display:none;   opacity:0}
+input-datalist::-webkit-calendar-picker-indicator{  opacity:0}
+input-datalist{  background:url("../image/icn_category_open.svg") no-repeat 99% 50%}
+
+input.border_input{  border:1px solid #e4e4e7}
+input.line_input{  border:1px solid var(--line)}
+input.round_input{  border-radius:1rem;   margin-top:1.6rem}
+
+.input_date{  background:#fff url("../image/icn-rr-calendar.svg") no-repeat 12px center;  padding-left:40px;  border:1px solid rgba(0,0,0,0.1)}
+
+/*
+달력 선택
+*/
+.ui-widget.ui-widget-content{  border:0;   box-shadow:2px 4px 12px rgba(9,30,36,0.14);   padding:16px 20px;   width:auto;   margin-top:1px;   border-radius:8px}
+.ui-state-default{  font-size:14px;   font-weight:400;   color:#F0ECE4;   border:0px;   background-color:#fff}
+.ui-widget-content .ui-state-default{  border:0px;   background-color:#fff;   color:#666}
+.ui-widget-content .ui-state-highlight{  border:0px solid transparent;   background:transparent;   color:#000;   border-bottom:2px solid #000}
+
+.ui-datepicker .ui-datepicker-header{  border:0px;   color:#000;   text-align:center;   font-size:14px;   font-weight:700;   line-height:16px;   background-color:#fff;   padding:0 0 16px 0}
+.ui-datepicker thead th{  color:#666;   text-align:center;   font-size:11px;   font-weight:700;   line-height:16px;   padding:8px 0}
+.ui-datepicker .ui-datepicker-prev{  width:24px;   height:24px;   display:block;   background:#fff no-repeat center;   background-size:contain;   left:0;   top:0;   background-image:url("../image/icn_rr_calendar_prev.svg")}
+.ui-datepicker .ui-datepicker-next{  width:24px;   height:24px;   display:block;   background:#fff no-repeat center;   background-size:contain;   right:0;   top:0;   background-image:url("../image/icn_rr_calendar_next.svg")}
+.ui-datepicker .ui-datepicker-prev-hover{  border:0;   opacity:0.7;   background-image:url("../image/icn_rr_calendar_prev.svg")}
+.ui-datepicker .ui-datepicker-next-hover{  border:0;   opacity:0.7;   background-image:url("../image/icn_rr_calendar_next.svg")}
+.ui-datepicker table{ margin-bottom:0}
+.ui-datepicker table td span{ display:block;  padding:4px 10px;  text-align:right;  text-decoration:none;  font-size:14px;  text-align:center;  color:#666}
+.ui-datepicker table td a{ font-size:14px;  color:#666;  display:block;  padding:4px 10px;  text-align:right;  text-decoration:none;  font-weight:300;  text-align:center}
+.ui-datepicker table td:first-child a{ color:#A50034}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{ float:left}
+
+/* file 커스터마이징 */
+.filebox{ display:flex;  width:calc(100% - 160px);  flex-wrap:wrap}
+.filebox input[type=file]{ position:absolute;  width:0;  height:0;  padding:0;  overflow:hidden;  border:0}
+.filebox .upload{ display:inline-block;  height:50px;  padding:0 16px;  vertical-align:middle;  border:1px solid rgba(0,0,0,0.1);  width:78%;  width:calc(100% - 178px);  color:#000}
+.filebox .upload::-moz-placeholder{ color:#716F6A}
+.filebox .upload::placeholder{ color:#716F6A}
+.filebox label{ display:inline-block;  padding:0px 20px;  color:#fff;  vertical-align:middle;  background-color:#716F6A;  cursor:pointer;  height:50px;  margin-left:10px;  border-radius:8px;  text-align:center;  font-size:16px;  font-weight:500;  line-height:50px;  width:168px}
+
+.mini_text{ display:block;  width:100%;  color:#716F6A;  font-size:14px;  font-weight:400;  line-height:14px;  margin-top:10px}
+
+/* 버튼모음 */
+/* btn 기본 속성 */
+.btn{ position:relative;  display:inline-block;  width:auto;  min-width:90px;  height:50px;  line-height:50px;  text-align:center;  -o-object-fit:contain;  object-fit:contain;  border-radius:8px;  background-color:#FD312E;  padding:0px 10px;  color:#fff;  cursor:pointer;  border:0px;  font-size:16px;  font-weight:700}
+.btn:hover{ text-decoration:none;  opacity:0.8}
+.btn:focus{ text-decoration:none;  opacity:0.8}
+.btn:disabled{ background-color:rgba(38,38,38,0.4);  cursor:default}
+.btn:disabled:hover, .btn:disabled:focus{ opacity:1}
+
+/* btn 크기별 */
+/* 상단 검색 버튼:btn_s, 다운로드 버튼 btn_m */
+.btn_full, .btn_100per{ width:100%}
+.btn_harf{ width:calc(50% - 14px);  margin:0px 5px}
+.btn.btn_xs{ width:80px;  min-width:80px;  padding:0 10px;  height:44px;  line-height:44px;  font-weight:500;  margin:0 2px}
+.btn.btn_s{ width:96px}
+.btn.btn_m{ width:168px;  height:44px;  line-height:44px}
+
+/* btn 컬러별 */
+.btn_black{ background-color:#262626}
+.btn_lightgray{ background-color:rgba(38,38,38,0.4)}
+.btn_darkgray{ background-color:#716F6A}
+
+/* dropdown 기본 형태 */
+.dropdown{ position:relative;  display:inline-block}
+.dropdown .dropbtn{ width:100%;  display:block;  font-size:16px;  font-weight:400;  line-height:16px;  cursor:pointer;  border-radius:8px;  border:1px solid rgba(0,0,0,0.1);  color:#000;  text-align:left}
+.dropdown .drop_cont{ width:100%;  position:absolute;  min-width:160px;  z-index:1;  border-radius:8px;  border:1px solid rgba(0,0,0,0.1);  background-color:#fff;  flex-direction:column;  height:0;  opacity:0;  transform:scaleY(0);  transform-origin:top}
+.dropdown .drop_cont a{ color:#000;  padding:10px 16px;  text-decoration:none;  display:block}
+.dropdown:hover .drop_cont{ display:block;  height:auto;  opacity:1;  transform:scaleY(1)}
+
+/*
+체크박스 checkbox
+*/
+/* 체크박스(기본형태) */
+.chk{ position:relative;  -webkit-user-select:none;  -moz-user-select:none;  user-select:none;  display:inline-flex;  align-items:center;  cursor:default}
+.chk *{ display:inline-block;  vertical-align:top}
+.chk input{ position:absolute;  opacity:0;  height:0;  width:0;  display:inline-block}
+.chk input:checked{ position:absolute;  top:0px;  left:0px}
+
+.chkmark{ display:inline-block;  width:20px;  height:20px;  border:solid 1px #000;  border-radius:20px;  position:relative;  top:1px;  background-color:#fff;  cursor:pointer}
+.chkmark::after{ content:"";  position:absolute;  display:none;  left:5.5px;  top:3px;  width:7px;  height:9px;  border:solid #fff;  border-width:0px 2px 2px 0;  transform:rotate(45deg)}
+.chk input:checked ~ .chkmark{ background-color:#FD312E;  border-color:#FD312E}
+.chk input:checked ~ .chkmark::after{ display:block}
+.chkText{ padding-left:8px;  line-height:1em;  font-size:16px;  text-align:left;  color:#000;  letter-spacing:-0.32px;  cursor:pointer}
+.chk input:disabled ~ .chkmark{ opacity:0.4;  cursor:default}
+.chk input:disabled ~ .chkText{ opacity:0.4;  cursor:default}
+.chk input:checked:disabled ~ .chkmark{ opacity:1}
+.chk input:checked:disabled ~ .chkText{ opacity:1}
+
+/* 관리자 테이블 */
+table.adm_table{ width:100%}
+table.adm_table tr{ width:100%}
+table.adm_table tr th, table.adm_table tr td{ color:#000;  font-size:16px;  font-weight:500;  line-height:normal;  text-align:center}
+table.adm_table tr th{ padding:15px 20px;  background-color:#F0ECE4}
+table.adm_table tr th:first-child{ border-radius:8px 0px 0px 8px}
+table.adm_table tr th:last-child{ border-radius:0px 8px 8px 0px}
+table.adm_table tr td{ height:64px;  padding:20px;  border-bottom:1px solid rgba(0,0,0,0.1)}
+table.adm_table tr td a{ color:#000;  text-decoration:underline}
+
+/* 페이징 */
+.pagination{  font-size:0;   display:inline-flex}
+.pagination li{  display:inline-block;   position:relative;   vertical-align:middle;   background-color:#fff}
+.pagination button:hover{  opacity:0.7}
+.pagination button.on{  color:#fff;   background:#262626}
+.pagination .page{  padding:0px 16px;   color:#000;   border:1px solid rgba(0,0,0,0.1);   border-right:0;   height:38px;   line-height:36px}
+.pagination .next, .pagination .prev, .pagination .first, .pagination .last{  margin:0px;   position:relative;   display:inline-block;   width:36px;   height:38px;   vertical-align:middle;   background-repeat:no-repeat;   background-size:20px 20px;   padding:8px;   background-position:center;   cursor:pointer;   border:1px solid rgba(0,0,0,0.1)}
+.pagination .prev{  background-image:url("../image/pagi_prev.svg");   border-radius:0px}
+.pagination .prev:disabled{  opacity:1;   cursor:default}
+.pagination .first{  background-image:url("../image/pagi_first.svg");   border-radius:8px 0px 0px 8px;   border-right:0}
+.pagination .first:disabled{  opacity:1;   cursor:default}
+.pagination .next{  background-image:url("../image/pagi_next.svg");   border-radius:0px}
+.pagination .next:disabled{  opacity:1;   cursor:default}
+.pagination .last{  background-image:url("../image/pagi_last.svg");  border-radius:0px 8px 8px 0px;  border-left:0}
+.pagination .last:disabled{ opacity:1;  cursor:default}
+
+/* .scrollbar 커스텀 스크롤바 */
+/* 스크롤바의 폭 너비 */
+.scrollbar::-webkit-scrollbar{ width:0px;  height:4px;  border:0}
+.scrollbar::-webkit-scrollbar-thumb{ background:#000; /* 스크롤바 색상 */ border-radius:10px; /* 스크롤바 둥근 테두리 */}
+.scrollbar::-webkit-scrollbar-track{ background:#D9D9D9; /*스크롤바 뒷 배경 색상*/ border-radius:10px}/*# sourceMappingURL=components.css.map */

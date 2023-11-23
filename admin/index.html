@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Another Saigon by LG - Admin</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/utility.css">
+	<link rel="stylesheet" href="./css/jquery-ui.css">
+	<link rel="stylesheet" href="./css/components.css">
+	<link rel="stylesheet" href="./css/admin.css">
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/admin.js"></script>
+</head>
+<body>
+	<main class="main_login">
+		<div class="login_container flex_column">
+			<h2 class="logo"><img src="./image/logo.svg" alt="Another Saigon by LG"></h2>
+			<h1>어나더사이공 관리시스템</h1>
+			<form action="" class="input_box">
+				<!--  -->
+				<div class="input_login">
+					<label for="adminID" class="label_login">아이디</label>
+					<!-- 오류가 났을때는 class에 input_warning이 붙습니다. -->
+					<input type="text" name="adminLogin" id="adminID" class="input_id" placeholder="아이디를 입력해 주세요">
+				</div>
+				<div class="input_login">
+					<label for="adminPW" class="label_login">비밀번호</label>
+					<!-- 오류가 났을때는 class에 input_warning이 붙습니다. -->
+					<input type="password" name="adminLogin" id="adminPW" placeholder="비밀번호를 입력해 주세요" class="input_pw">
+					<span class="pw_eye"></span>
+				</div>
+				<!-- 오류가 났을때 오류 텍스트를 아래 p태그로 나타냅니다.
+					<p class="warning_text">* 아이디 또는 패스워드가 일치하지 않습니다.</p>
+				 -->
+				<div class="w100per btnWrap"><button id="btn_login" type="button" class="btn_login btn" disabled>로그인</button></div>
+			</form>
+		</div>
+	</main>
+</body>
+<script>
+	$(document).ready(function() {
+		// input_login 내의 모든 input 필드가 변경될 때 이벤트를 감지합니다.
+		$('.input_login input').on('input', function() {
+			// 모든 필드가 채워져 있는지 확인합니다.
+			var allFilled = true;
+			$('.input_login input').each(function() {
+				// 하나라도 비어 있다면, allFilled를 false로 설정합니다.
+				if ($(this).val() === '') {
+					allFilled = false;
+					return false; // 반복 중지
+				}
+			});
+
+			// 모든 필드가 채워져 있다면, 버튼의 disabled 속성을 제거합니다.
+			if (allFilled) {
+				$('.btn_login').prop('disabled', false);
+			} else {
+				// 그렇지 않으면 버튼을 비활성화합니다.
+				$('.btn_login').prop('disabled', true);
+			}
+		});
+		$('.btn_login').on('click', function() {
+			event.preventDefault();  // 폼의 기본 제출 동작을 중단
+			alert('로그인이 되었습니다');
+			window.location.href = './01_dashboard/dashboard.html';
+		});
+	});
+</script>
+</html>

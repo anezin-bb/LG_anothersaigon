@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/script.js"></script>
+	<script src="../js/language-pack.js"></script>
 	<!-- 사이트 최초 1회 진입시 스플래시 화면이 잠깐 나타났다 사라지는 스플래시 화면을
 	login페이지에 임시로 구현했습니다. 실제 개발 화면에서도 구현이 필요합니다. -->
 	<script>
@@ -71,7 +72,7 @@
 		</div>
 		<div class="bottom_content gap">
 			<div class="login_text">
-				<h2>Enjoy the Good Life Solution</h2>
+				<h2 id="TITLE">Enjoy the Good Life Solution</h2>
 				<p>Connect to a better daily life where you can <br />
 					experience new taste of your dream</p>
 			</div>
@@ -101,4 +102,7 @@
 	</div>
 	<!-- 관심사 선택 팝업이 컨펌 미확정 상태라 추후 제작 예정입니다. -->
 </body>
+<script>
+	loadLanguage('E','LOGIN');
+</script>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Another Saigon by LG - Admin</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/components.css">
+	<link rel="stylesheet" href="../css/admin.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/admin.js"></script>
+</head>
+<body>
+	<!-- header adm_gnb 메뉴 시작 -->
+	<header class="adm_gnb">
+		<h1 class="adm_logo"><a href="../01_dashboard/dashboard.html"><img src="../image/logo_side.svg" alt="Another Saigon by LG"></a></h1>
+		<!-- adm_menulist -->
+		<ul class="adm_menulist">
+			<li><a href="../01_dashboard/dashboard.html" class="menu_link01">대시보드</a></li>
+			<li><a href="../02_member/member_list.html" class="menu_link02">회원리스트</a></li>
+			<li>
+				<a href="../03_mission/data.html" class="menu_link03">체험리스트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../03_mission/data.html" class="menu_link031">데이터</a></li>
+					<li><a href="../03_mission/mission01.html" class="menu_link032">스타일러 시향 체험</a></li>
+					<li><a href="../03_mission/mission02.html" class="menu_link033">My Objet Color</a></li>
+					<li><a href="../03_mission/mission03.html" class="menu_link034">오브제갤러리 제품 월드컵</a></li>
+					<li><a href="../03_mission/mission04.html" class="menu_link035">숨은 QR 찾기</a></li>
+					<li><a href="../03_mission/mission05.html" class="menu_link036">SNS 공유하기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../04_survey/survey_data.html" class="menu_link04">서베이</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../04_survey/survey_data.html" class="menu_link041">데이터</a></li>
+					<li><a href="../04_survey/survey_table.html" class="menu_link042">테이블</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../05_event/event_list.html" class="menu_link05">이벤트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../05_event/event_list.html" class="menu_link051">리스트</a></li>
+					<li><a href="../05_event/esg.html" class="menu_link052">ESG 서명하기</a></li>
+					<li><a href="../05_event/join.html" class="menu_link053">닷컴 회원가입</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../06_about/vietnam_about.html" class="menu_link06">공간 소개</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../06_about/vietnam_about.html" class="menu_link061">베트남어</a></li>
+					<li><a href="../06_about/english_about.html" class="menu_link062">영어</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../07_banner/vietnam_banner.html" class="menu_link07">미션 배너</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../07_banner/vietnam_banner.html" class="menu_link071">베트남어</a></li>
+					<li><a href="../07_banner/english_banner.html" class="menu_link072">영어</a></li>
+				</ul>
+			</li>
+			<li><a href="../08_obs/obs_scan.html" class="active menu_link08">OBS 스캔</a></li>
+		</ul>
+		<!-- adm_menulist end -->
+		<div class="gnb_bottom">
+			<button id="menu_link_adm" onclick="location.href='../09_admpeople/admpeople_list.html'">관리자 관리</button>
+			<div class="dropdown_bottom dropdown">
+				<button class="dropbtn">한국어</button>
+				<div class="drop_cont">
+					<a href="#">한국어</a>
+					<a href="#">ENGLISH</a>
+					<a href="#">Tiếng Việt</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header adm_gnb end -->
+	<main>
+		<!-- top : adm_top_section -->
+		<section class="adm_top_section">
+			<div class="left">
+				<ul class="top_nav_list">
+					<li class="current_nav"><h2>OBS 스캔</h2></li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="dropdown_top dropdown">
+					<button class="dropbtn">어나더사이공</button>
+					<div class="drop_cont">
+						<a href="#">어나더사이공</a>
+						<a href="#">화담숲</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- top : adm_top_section end -->
+		<section class="adm_section">
+			<div class="topsch_area">
+				<form action="">
+					<div class="date_row flex_row">
+						<h3 class="adm_top_title inblock">기간</h3>
+						<div class="date_sch_wrap">
+							<input type="text" name="date_input_8" id="date_input_8_1" class="input_date" placeholder="날짜 선택">
+							<span class="date_during">~</span>
+							<input type="text" name="date_input_8" id="date_input_8_2" class="input_date" placeholder="날짜 선택">
+							<button id="btn_obssch" class="btn_date btn_s btn_black btn" disabled>검색</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- topsch_area end -->
+			<div class="adm_table_wrap flex_column bg_w">
+				<div class="adm_table_top">
+					<div class="right">
+						<button id="down_survey_data" class="btn_m btn_primary btn">다운로드</button>
+					</div>
+				</div>
+				<!-- adm_table_cont -->
+				<div class="adm_table_cont_obs adm_table_cont">
+					<table class="adm_table">
+						<colgroup>
+							<col style="width: 32%; min-width: 200px;" />
+							<col style="width: 34%; min-width: 240px;" />
+							<col style="width: 34%; min-width: 240px;" />
+						</colgroup>
+						<tr>
+							<th>No.</th>
+							<th>QR NAME</th>
+							<th>횟수</th>
+						</tr>
+						<!-- 해당 표만 역순이 아닙니다. -->
+						<tr><td>1</td><td>Instaview_GR-X257JS</td><td>000</td></tr>
+						<tr><td>2</td><td>Instaview_GR-X257BL</td><td>000</td></tr>
+						<tr><td>3</td><td>Instaview_GR-X257BG</td><td>000</td></tr>
+						<tr><td>4</td><td>Smart Inverter™_GN-D372BLA</td><td>000</td></tr>
+						<tr><td>5</td><td>Smart Inverter™ _GN-B392BG</td><td>000</td></tr>
+						<tr><td>6</td><td>Washtower_WT2116SHEG</td><td>000</td></tr>
+						<tr><td>7</td><td>Washtower_WT1410NHE</td><td>000</td></tr>
+						<tr><td>8</td><td>Washtower_WT1410NHB</td><td>000</td></tr>
+						<tr><td>9</td><td>AI DD™_FV1412S3BA</td><td>000</td></tr>
+						<tr><td>10</td><td>AI DD™_TV2520DV7J</td><td>000</td></tr>
+						<tr><td>11</td><td>LG Styler _S5MB</td><td>000</td></tr>
+						<tr><td>12</td><td>LG Styler _S5GOC</td><td>000</td></tr>
+						<tr><td>13</td><td>LG Styler _S5BOC</td><td>000</td></tr>
+						<tr><td>14</td><td>LG Styler _S3MFC</td><td>000</td></tr>
+						<tr><td>15</td><td>LG Styler _S3WF</td><td>000</td></tr>
+						<tr><td>16</td><td>LG CordZero All-in-one Tower_A9T-ULTRA</td><td>000</td></tr>
+						<tr><td>17</td><td>AeroFurniture_AS20GPYU0</td><td>000</td></tr>
+						<tr><td>18</td><td>AeroFurniture_AS20GPRU0</td><td>000</td></tr>
+						<tr><td>19</td><td>PuriCare AeroFurniture _AS20GPWU0</td><td>000</td></tr>
+						<tr><td>20</td><td>PuriCare360 Alpha PET_AS10GDBY0</td><td>000</td></tr>
+						<tr><td>21</td><td>PuriCare360 Alpha PET_AS65GDBY0</td><td>000</td></tr>
+						<tr><td>22</td><td>AeroTower Hit_FS15GPBK0</td><td>000</td></tr>
+						<tr><td>23</td><td>Air Purify_V10APFUV</td><td>000</td></tr>
+						<tr><td>24</td><td>Artcool_V13APIG</td><td>000</td></tr>
+						<tr><td>25</td><td>Artcool_V13APIB</td><td>000</td></tr>
+						<tr><td>26</td><td>(미정)</td><td>000</td></tr>
+						<tr><td>27</td><td>(미정)</td><td>000</td></tr>
+					</table>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

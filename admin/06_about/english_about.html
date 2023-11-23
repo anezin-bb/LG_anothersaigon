@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Another Saigon by LG - Admin</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/components.css">
+	<link rel="stylesheet" href="../css/admin.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/admin.js"></script>
+</head>
+<body>
+	<!-- header adm_gnb 메뉴 시작 -->
+	<header class="adm_gnb">
+		<h1 class="adm_logo"><a href="../01_dashboard/dashboard.html"><img src="../image/logo_side.svg" alt="Another Saigon by LG"></a></h1>
+		<!-- adm_menulist -->
+		<ul class="adm_menulist">
+			<li><a href="../01_dashboard/dashboard.html" class="menu_link01">대시보드</a></li>
+			<li><a href="../02_member/member_list.html" class="menu_link02">회원리스트</a></li>
+			<li>
+				<a href="../03_mission/data.html" class="menu_link03">체험리스트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../03_mission/data.html" class="menu_link031">데이터</a></li>
+					<li><a href="../03_mission/mission01.html" class="menu_link032">스타일러 시향 체험</a></li>
+					<li><a href="../03_mission/mission02.html" class="menu_link033">My Objet Color</a></li>
+					<li><a href="../03_mission/mission03.html" class="menu_link034">오브제갤러리 제품 월드컵</a></li>
+					<li><a href="../03_mission/mission04.html" class="menu_link035">숨은 QR 찾기</a></li>
+					<li><a href="../03_mission/mission05.html" class="menu_link036">SNS 공유하기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../04_survey/survey_data.html" class="menu_link04">서베이</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../04_survey/survey_data.html" class="menu_link041">데이터</a></li>
+					<li><a href="../04_survey/survey_table.html" class="menu_link042">테이블</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../05_event/event_list.html" class="menu_link05">이벤트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../05_event/event_list.html" class="menu_link051">리스트</a></li>
+					<li><a href="../05_event/esg.html" class="menu_link052">ESG 서명하기</a></li>
+					<li><a href="../05_event/join.html" class="menu_link053">닷컴 회원가입</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../06_about/vietnam_about.html" class="active menu_link06">공간 소개</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../06_about/vietnam_about.html" class="menu_link061">베트남어</a></li>
+					<li><a href="../06_about/english_about.html" class="active menu_link062">영어</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../07_banner/vietnam_banner.html" class="menu_link07">미션 배너</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../07_banner/vietnam_banner.html" class="menu_link071">베트남어</a></li>
+					<li><a href="../07_banner/english_banner.html" class="menu_link072">영어</a></li>
+				</ul>
+			</li>
+			<li><a href="../08_obs/obs_scan.html" class="menu_link08">OBS 스캔</a></li>
+		</ul>
+		<!-- adm_menulist end -->
+		<div class="gnb_bottom">
+			<button id="menu_link_adm" onclick="location.href='../09_admpeople/admpeople_list.html'">관리자 관리</button>
+			<div class="dropdown_bottom dropdown">
+				<button class="dropbtn">한국어</button>
+				<div class="drop_cont">
+					<a href="#">한국어</a>
+					<a href="#">ENGLISH</a>
+					<a href="#">Tiếng Việt</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header adm_gnb end -->
+	<main>
+		<!-- top : adm_top_section -->
+		<section class="adm_top_section">
+			<div class="left">
+				<ul class="top_nav_list">
+					<li class="prev_nav">공간소개</li>
+					<li class="current_nav"><h2>영어</h2></li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="dropdown_top dropdown">
+					<button class="dropbtn">어나더사이공</button>
+					<div class="drop_cont">
+						<a href="#">어나더사이공</a>
+						<a href="#">화담숲</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- top : adm_top_section end -->
+		<section class="about_section adm_section">
+			<div class="adm_form_wrap bg_w">
+				<form action="">
+					<!-- adm_form_top -->
+					<div class="adm_form_top right">
+						<button id="goto_about_modify" type="button" onclick="location.href='./english_modify.html'" class="btn_m btn_black btn">수정하기</button>
+					</div>
+					<!-- adm_form_top end -->
+					<!-- 상단 고정 -->
+					<div class="about_top input_box bg_beige">
+						<div class="input_row">
+							<h4>타이틀 이미지</h4>
+							<!-- 기본 file기능만 넣어서 jpg, png 용량 제한은 기능추가가 필요합니다. -->
+							<!-- 예시용으로 value값을 넣었습니다. -->
+							<div class="filebox">
+								<input class="upload" value="첨부파일" placeholder="첨부파일" disabled>
+								<label for="file1">파일 찾기</label> 
+								<input type="file" id="file1" disabled>
+								<p class="mini_text">*0000*0000 해상도 JPG 또는 PNG</p>
+							</div>
+						</div>
+						<div class="input_row">
+							<h4>타이틀</h4>
+							<input type="text" placeholder="타이틀을 작성해 주세요." value="제목텍스트제목텍스트" disabled>
+						</div>
+						<div class="input_row">
+							<h4>서브텍스트</h4>
+							<input type="text" placeholder="서브텍스트를 작성해 주세요." value="서브텍스트서브텍스트" disabled>
+						</div>
+						<div class="input_row">
+							<h4>운영시간</h4>
+							<div class="flex_column">
+								<!-- time_sch_wrap -->
+								<div class="time_sch_wrap">
+									<h5>평일</h5>
+									<select name="" id="" disabled>
+										<option value="00:00">00:00</option>
+										<option value="01:00">01:00</option>
+										<option value="02:00">02:00</option>
+										<option value="03:00">03:00</option>
+										<option value="04:00">04:00</option>
+										<option value="05:00">05:00</option>
+										<option value="06:00">06:00</option>
+										<option value="07:00">07:00</option>
+										<option value="08:00">08:00</option>
+										<option value="09:00">09:00</option>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="14:00">14:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option>
+									</select>
+									<span class="date_during">~</span>
+									<select name="" id="" disabled>
+										<option value="00:00">00:00</option>
+										<option value="01:00">01:00</option>
+										<option value="02:00">02:00</option>
+										<option value="03:00">03:00</option>
+										<option value="04:00">04:00</option>
+										<option value="05:00">05:00</option>
+										<option value="06:00">06:00</option>
+										<option value="07:00">07:00</option>
+										<option value="08:00">08:00</option>
+										<option value="09:00">09:00</option>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="14:00">14:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option>
+									</select>
+								</div>
+								<!-- time_sch_wrap end -->
+								<!-- time_sch_wrap -->
+								<div class="time_sch_wrap">
+									<h5>주말</h5>
+									<select name="" id="" disabled>
+										<option value="00:00">00:00</option>
+										<option value="01:00">01:00</option>
+										<option value="02:00">02:00</option>
+										<option value="03:00">03:00</option>
+										<option value="04:00">04:00</option>
+										<option value="05:00">05:00</option>
+										<option value="06:00">06:00</option>
+										<option value="07:00">07:00</option>
+										<option value="08:00">08:00</option>
+										<option value="09:00">09:00</option>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="14:00">14:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option>
+									</select>
+									<span class="date_during">~</span>
+									<select name="" id="" disabled>
+										<option value="00:00">00:00</option>
+										<option value="01:00">01:00</option>
+										<option value="02:00">02:00</option>
+										<option value="03:00">03:00</option>
+										<option value="04:00">04:00</option>
+										<option value="05:00">05:00</option>
+										<option value="06:00">06:00</option>
+										<option value="07:00">07:00</option>
+										<option value="08:00">08:00</option>
+										<option value="09:00">09:00</option>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="14:00">14:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option>
+									</select>
+								</div>
+								<!-- time_sch_wrap end -->
+							</div>
+						</div>
+						<div class="input_row">
+							<h4>소식 링크</h4>
+							<div class="flex_column">
+								<!-- channel_box -->
+								<div class="channel_box">
+									<h5>홈페이지</h5>
+									<div class="link_box">
+										<input type="text" placeholder="링크를 입력해 주세요." value="link.co.kr" disabled>
+										<p class="mini_text">*http:// 형태의 URL</p>
+									</div>
+									<label for="chk_sns_1_1" class="chk">
+										<input type="radio" name="chk_sns_1" id="chk_sns_1_1" checked disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">ON</span>
+									</label>
+									<label for="chk_sns_1_2" class="chk">
+										<input type="radio" name="chk_sns_1" id="chk_sns_1_2" disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">OFF</span>
+									</label>
+								</div>
+								<!-- channel_box end -->
+								<!-- channel_box -->
+								<div class="channel_box">
+									<h5>페이스북</h5>
+									<div class="link_box">
+										<input type="text" placeholder="링크를 입력해 주세요." value="link.co.kr" disabled>
+										<p class="mini_text">*http:// 형태의 URL</p>
+									</div>
+									<label for="chk_sns_2_1" class="chk">
+										<input type="radio" name="chk_sns_2" id="chk_sns_2_1" checked disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">ON</span>
+									</label>
+									<label for="chk_sns_2_2" class="chk">
+										<input type="radio" name="chk_sns_2" id="chk_sns_2_2" disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">OFF</span>
+									</label>
+								</div>
+								<!-- channel_box end -->
+								<!-- channel_box -->
+								<div class="channel_box">
+									<h5>인스타그램</h5>
+									<div class="link_box">
+										<input type="text" placeholder="링크를 입력해 주세요." value="link.co.kr" disabled>
+										<p class="mini_text">*http:// 형태의 URL</p>
+									</div>
+									<label for="chk_sns_3_1" class="chk">
+										<input type="radio" name="chk_sns_3" id="chk_sns_3_1" checked disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">ON</span>
+									</label>
+									<label for="chk_sns_3_2" class="chk">
+										<input type="radio" name="chk_sns_3" id="chk_sns_3_2" disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">OFF</span>
+									</label>
+								</div>
+								<!-- channel_box end -->
+								<!-- channel_box -->
+								<div class="channel_box">
+									<h5>유튜브</h5>
+									<div class="link_box">
+										<input type="text" placeholder="링크를 입력해 주세요." value="link.co.kr" disabled>
+										<p class="mini_text">*http:// 형태의 URL</p>
+									</div>
+									<label for="chk_sns_4_1" class="chk">
+										<input type="radio" name="chk_sns_4" id="chk_sns_4_1" checked disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">ON</span>
+									</label>
+									<label for="chk_sns_4_2" class="chk">
+										<input type="radio" name="chk_sns_4" id="chk_sns_4_2" disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">OFF</span>
+									</label>
+								</div>
+								<!-- channel_box end -->
+								<!-- channel_box -->
+								<div class="channel_box">
+									<h5>틱톡</h5>
+									<div class="link_box">
+										<input type="text" placeholder="링크를 입력해 주세요." value="link.co.kr" disabled>
+										<p class="mini_text">*http:// 형태의 URL</p>
+									</div>
+									<label for="chk_sns_5_1" class="chk">
+										<input type="radio" name="chk_sns_5" id="chk_sns_5_1" checked disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">ON</span>
+									</label>
+									<label for="chk_sns_5_2" class="chk">
+										<input type="radio" name="chk_sns_5" id="chk_sns_5_2" disabled>
+										<span class="chkmark"></span>
+										<span class="chkText">OFF</span>
+									</label>
+								</div>
+								<!-- channel_box end -->
+							</div>
+						</div>
+					</div>
+					<!-- about_top end -->
+					<!-- about_gf -->
+					<div class="about_gf about_floor">
+						<h3 class="bg_w_title">GF</h3>
+						<div class="input_box bg_beige">
+							<div class="input_row">
+								<h4>GF 타이틀</h4>
+								<input type="text" placeholder="타이틀을 입력하세요" disabled>
+							</div>
+						</div>
+						<!-- 수정하기에만 sortable기능이 되므로 삭제했습니다. -->
+						<ul>
+							<!-- sortable li -->
+							<li class="ui-state-default">
+								<div class="input_box bg_gray">
+									<div class="input_row">
+										<h4>공간 이미지</h4>
+										<!-- 기본 file기능만 넣어서 jpg, png 용량 제한은 기능추가가 필요합니다. -->
+										<!-- 예시용으로 value값을 넣었습니다. -->
+										<div class="filebox">
+											<input class="upload" value="첨부파일" placeholder="첨부파일" disabled>
+											<label for="file1">파일찾기</label> 
+											<input type="file" id="file1" disabled>
+											<p class="mini_text">*0000*0000 해상도 JPG 또는 PNG</p>
+										</div>
+									</div>
+									<div class="input_row">
+										<h4>공간 타이틀</h4>
+										<input type="text" placeholder="타이틀을 입력하세요." value="공간타이틀텍스트수정" disabled>
+									</div>
+									<div class="input_row">
+										<h4>텍스트</h4>
+										<input type="text" placeholder="텍스트를 작성해 주세요." value="텍스트내용" disabled>
+									</div>
+									<div class="input_link input_row">
+										<h4>링크</h4>
+										<div class="linkbox">
+											<input type="text" placeholder="http://" value="http://www.co.kr" disabled>
+											<p class="mini_text">*http:// 형태의 URL</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- sortable li end -->
+							<!-- 수정에만 추가 버튼 있습니다. -->
+						</ul>
+					</div>
+					<!-- about_gf end -->
+					<!-- about_1f -->
+					<div class="about_1f about_floor">
+						<h3 class="bg_w_title">1F</h3>
+						<div class="input_box bg_beige">
+							<div class="input_row">
+								<h4>1F 타이틀</h4>
+								<input type="text" placeholder="타이틀을 입력하세요" disabled>
+							</div>
+						</div>
+						<ul>
+							<!-- sortable li -->
+							<li class="ui-state-default">
+								<div class="input_box bg_gray">
+									<div class="input_row">
+										<h4>공간 이미지</h4>
+										<!-- 기본 file기능만 넣어서 jpg, png 용량 제한은 기능추가가 필요합니다. -->
+										<!-- 예시용으로 value값을 넣었습니다. -->
+										<div class="filebox">
+											<input class="upload" value="첨부파일" placeholder="첨부파일" disabled>
+											<label for="file1">파일찾기</label> 
+											<input type="file" id="file1" disabled>
+											<p class="mini_text">*0000*0000 해상도 JPG 또는 PNG</p>
+										</div>
+									</div>
+									<div class="input_row">
+										<h4>공간 타이틀</h4>
+										<input type="text" placeholder="타이틀을 입력하세요." value="공간타이틀텍스트수정" disabled>
+									</div>
+									<div class="input_row">
+										<h4>텍스트</h4>
+										<input type="text" placeholder="텍스트를 작성해 주세요." value="텍스트내용" disabled>
+									</div>
+									<div class="input_link input_row">
+										<h4>링크</h4>
+										<div class="linkbox">
+											<input type="text" placeholder="http://" value="http://www.co.kr" disabled>
+											<p class="mini_text">*http:// 형태의 URL</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- about_1f end -->
+					<!-- about_3f -->
+					<div class="about_3f about_floor">
+						<h3 class="bg_w_title">3F</h3>
+						<div class="input_box bg_beige">
+							<div class="input_row">
+								<h4>3F 타이틀</h4>
+								<input type="text" placeholder="타이틀을 입력하세요" disabled>
+							</div>
+						</div>
+						<ul class="">
+							<!-- sortable li -->
+							<li class="ui-state-default">
+								<div class="input_box bg_gray">
+									<div class="input_row">
+										<h4>공간 이미지</h4>
+										<!-- 기본 file기능만 넣어서 jpg, png 용량 제한은 기능추가가 필요합니다. -->
+										<!-- 예시용으로 value값을 넣었습니다. -->
+										<div class="filebox">
+											<input class="upload" value="첨부파일" placeholder="첨부파일" disabled>
+											<label for="file1">파일찾기</label> 
+											<input type="file" id="file1" disabled>
+											<p class="mini_text">*0000*0000 해상도 JPG 또는 PNG</p>
+										</div>
+									</div>
+									<div class="input_row">
+										<h4>공간 타이틀</h4>
+										<input type="text" placeholder="타이틀을 입력하세요." value="공간타이틀텍스트수정" disabled>
+									</div>
+									<div class="input_row">
+										<h4>텍스트</h4>
+										<input type="text" placeholder="텍스트를 작성해 주세요." value="텍스트내용" disabled>
+									</div>
+									<div class="input_link input_row">
+										<h4>링크</h4>
+										<div class="linkbox">
+											<input type="text" placeholder="http://" value="http://www.co.kr" disabled>
+											<p class="mini_text">*http:// 형태의 URL</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- about_3f end -->
+					<!-- about_5f -->
+					<div class="about_1f about_floor">
+						<h3 class="bg_w_title">5F</h3>
+						<div class="input_box bg_beige">
+							<div class="input_row">
+								<h4>5F 타이틀</h4>
+								<input type="text" placeholder="타이틀을 입력하세요" disabled>
+							</div>
+						</div>
+						<ul class="">
+							<!-- sortable li -->
+							<li class="ui-state-default">
+								<div class="input_box bg_gray">
+									<div class="input_row">
+										<h4>공간 이미지</h4>
+										<!-- 기본 file기능만 넣어서 jpg, png 용량 제한은 기능추가가 필요합니다. -->
+										<!-- 예시용으로 value값을 넣었습니다. -->
+										<div class="filebox">
+											<input class="upload" value="첨부파일" placeholder="첨부파일" disabled>
+											<label for="file1">파일찾기</label> 
+											<input type="file" id="file1" disabled>
+											<p class="mini_text">*0000*0000 해상도 JPG 또는 PNG</p>
+										</div>
+									</div>
+									<div class="input_row">
+										<h4>공간 타이틀</h4>
+										<input type="text" placeholder="타이틀을 입력하세요." value="공간타이틀텍스트수정" disabled>
+									</div>
+									<div class="input_row">
+										<h4>텍스트</h4>
+										<input type="text" placeholder="텍스트를 작성해 주세요." value="텍스트내용" disabled>
+									</div>
+									<div class="input_link input_row">
+										<h4>링크</h4>
+										<div class="linkbox">
+											<input type="text" placeholder="http://" value="http://www.co.kr" disabled>
+											<p class="mini_text">*http:// 형태의 URL</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- about_5f end -->
+
+				</form>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

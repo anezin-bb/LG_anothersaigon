@@ -1,0 +1,174 @@
+<!-- 이 페이지는 결과값을 전부 적은 페이지입니다. 외부 노출용 x 
+1번째 미션에서 나타날 시향 결과 데이터를 적었습니다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover, maximum-scale=1.0 user-scalable=no">
+	<title>Another Saigon by LG</title>
+	<link rel="shortcut icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/utility.css">
+	<link rel="stylesheet" href="../../css/slick.css">
+	<link rel="stylesheet" href="../../css/slick-theme.css">
+	<link rel="stylesheet" href="../../css/swiper.css">
+	<link rel="stylesheet" href="../../css/components.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+	<script src="../../js/slick.js"></script>
+	<script src="../../js/swiper.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+<body class="mission01_scan_page">
+	<div class="container">
+		<header>
+			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
+			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
+			<ul class="language">
+				<li class="current"><a href="javascript:void(0);">English</a></li>
+				<li><a href="javascript:void(0);">Vietnam</a></li>
+			</ul>
+		</header>
+		<section class="mission01_scan">
+			<div class="scan_wrap">
+				<!-- 현 페이지를 위해 임시로 제작한 버튼입니다. -->
+				<button onclick="popupOpen('m01_scan_clear_1')" style="color: white;">* 윌 유 메리미 결과 팝업</button>
+				<br />
+				<button onclick="popupOpen('m01_scan_clear_2')" style="color: white;">* 라임 바질 & 만다린 결과 팝업</button>
+				<br />
+				<button onclick="popupOpen('m01_scan_clear_3')" style="color: white;">* 페어 & 프리지아 결과 팝업</button>
+				<br />
+				<button onclick="popupOpen('m01_scan_clear_4')" style="color: white;">* 자스민 블루 결과 팝업</button>
+				<br />
+				<button onclick="popupOpen('m01_scan_clear_5')" style="color: white;">* 플로랄 프루티 결과 팝업</button>
+				<br />
+				<button onclick="popupOpen('m01_scan_clear_6')" style="color: white;">* 오리엔탈 구어망드 결과 팝업</button>
+				<!-- 버튼 end -->
+			</div>
+		</section>
+	</div>
+	<!-- 촬영 완료시 노출 팝업 1 : 윌 유 메리미 -->
+	<div id="m01_scan_clear_1" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+			
+			<!-- 시향 1 -->
+			<h2>윌 유 메리미를 선택하셨네요!</h2>
+			<p>사랑과 만남을 모티브로 한 경쾌하고 <br />
+				발랄한 분위기의 상큼하고 사랑스러운 향.<br />
+				윌 유 메리미 향으로 스타일러/슈케어를 경험해보세요.
+			</p>
+			<!-- 시향 1 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+	<!-- 촬영 완료시 노출 팝업 2 : 라임 바질 & 만다린 -->
+	<div id="m01_scan_clear_2" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+
+			<!-- 시향 2 -->
+			<h2>라임 바질 & 만다린을 선택하셨네요!</h2>
+			<p>톡 쏘는 라임과 싱그러운 바질향이 조화로운 <br />상쾌하면서도 깔끔한 시트러스향. <br />
+				라임 바질 & 만다린 향으로 스타일러/슈케어를 경험해보세요.
+			</p>
+			<!-- 시향 2 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+	<!-- 촬영 완료시 노출 팝업 3 : 페어 & 프리지아 -->
+	<div id="m01_scan_clear_3" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+
+			<!-- 시향 3 -->
+			<h2>페어 & 프리지아를 선택하셨네요!</h2>
+			<p>신선한 잉글리시 페어와 순수한 프리지아향이 <br />어우러진 깨끗하고 부드러운 플로럴향. <br />페어 & 프리지아 향으로 스타일러/슈케어를 경험해보세요.
+			</p>
+			<!-- 시향 3 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+	<!-- 촬영 완료시 노출 팝업 4 : 자스민 블루 -->
+	<div id="m01_scan_clear_4" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+
+			<!-- 시향 4 -->
+			<h2>자스민 블루를 선택하셨네요!</h2>
+			<p>우아한 로즈와 깊은 자스민 향이 <br />어우러져 포근함이 느껴지는 플로럴 머스크향. <br />자스민 블루 향으로 스타일러/슈케어를 경험해보세요.
+			</p>
+			<!-- 시향 4 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+	<!-- 촬영 완료시 노출 팝업 5 : 플로랄 프루티 -->
+	<div id="m01_scan_clear_5" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+
+			<!-- 시향 5 -->
+			<h2>플로랄 프루티를 선택하셨네요!</h2>
+			<p>과일향과 플로랄의 적절한 배합으로 <br />가볍고 경쾌하며 대중성 있는 향. <br />플로랄 프루티 향으로 스타일러/슈케어를 경험해보세요.
+			</p>
+			<!-- 시향 5 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+	<!-- 촬영 완료시 노출 팝업 6 : 오리엔탈 구어망드 -->
+	<div id="m01_scan_clear_6" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content">
+			<div class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
+
+			<!-- 시향 6 -->
+			<h2>오리엔탈 구어망드를 선택하셨네요!</h2>
+			<p>너무 무겁지 않고 트렌디한 <br />달콤함을 가진 오리엔탈 방향. <br />오리엔탈 구어망드 향으로 스타일러/슈스케어를 경험해보세요.
+			</p>
+			<!-- 시향 6 end -->
+			
+			<div class="pop_bottom_btns w90per">
+				<p>확인 버튼을 누르기 전 <br />
+					운영 스텝에게 화면을 보여주세요.</p>
+				<button onclick="location.href='../board_list_02.html'" id="btn_m01_close" class="ok_circle btn_pop_circle">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 팝업 end -->
+</body>
+</html>
