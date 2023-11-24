@@ -38,14 +38,14 @@
 				</div>
 			</div>
 			<!-- 사진 찍는 버튼이 디자인이 따로 있어 우선 이미지로 넣었습니다. -->
-			<img src="../../image/common/btn_cam.svg" class="scan_cam" alt="사진 촬영">
+			<img src="../../image/common/btn_cam.svg" id="scan_shoot" class="scan_cam" alt="사진 촬영">
 		</section>
 	</div>
 	<!-- QR코드가 안찍혔거나 오류 났을때 노출 팝업 -->
 	<div id="m02_scan_close" class="popup_wrap blur_pop" style="display: flex;">
 		<div class="blur_bg active"></div>
 		<div class="pop_content">
-			<h2>패널 인식이 불가합니다.<br />
+			<h2 id="m02_s_01">패널 인식이 불가합니다.<br />
 				3개의 컬러 패널을 부착하고 <br />그림자 가이드에 맞춰 촬영해주세요.
 				</h2>
 			<div class="pop_bottom_btns">
