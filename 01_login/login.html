@@ -48,35 +48,42 @@
 					containers[i].style.display = 'flex';
 				}
 			}
-		};
+		}
+		*/
     </script>
 </head>
 <body class="login_b_page">
 	<!-- 스플래시 화면 이미지 -->
 	<div id="splash_screen">
-        <img src="../image/01_login/A_splash.png" alt="스플래시 화면">
+		<div id="splash_custom">
+			<img id="splash_img01" src="../image/01_login/splash_01.svg" alt="Another Saigon by LG">
+				<h2 id="login_02">Enjoy the Good Life Solution</h2>
+				<p id="login_03">Connect to a better daily life where you can <br />
+					experience new taste of your dream</p>
+			<img id="splash_img02" src="../image/01_login/splash_02.svg" alt="Life's Good">
+		</div>
     </div>
 	<!-- 스플래시 화면 이미지 end -->
 	<div class="container" style="display: none;">
 		<header class="blank_bg">
 			<ul class="language">
-				<li class="current"><a href="javascript:;">English</a></li>
-				<li><a href="javascript:;">Vietnam</a></li>
+				<li class="current"><a id="lang_e" href="javascript:;">English</a></li>
+				<li><a id="lang_v" href="javascript:;">Vietnam</a></li>
 			</ul>
 		</header>
 		<div class="top_title">
-			<h1>
+			<h1 id="login_01">
 				Say Hello to
 				<img src="../image/common/logo_gate.svg" alt="Another Saigon by LG">
 			</h1>
 		</div>
 		<div class="bottom_content gap">
 			<div class="login_text">
-				<h2 id="TITLE">Enjoy the Good Life Solution</h2>
-				<p>Connect to a better daily life where you can <br />
+				<h2 id="login_02">Enjoy the Good Life Solution</h2>
+				<p id="login_03">Connect to a better daily life where you can <br />
 					experience new taste of your dream</p>
 			</div>
-			<div class="login_chat"><p>간편하게 시작하기</p></div>
+			<div id="login_04" class="login_chat"><p>간편하게 시작하기</p></div>
 			<ul class="sns_login_b">
 				<li><a href="javascript:;" class="sns_facebook"><img src="../image/01_login/logo_facebook_w.svg" alt="facebook logo"></a></li>
 				<li><a href="javascript:;" class="sns_google"><img src="../image/01_login/logo_google_w.svg" alt="google logo"></a></li>
@@ -92,11 +99,11 @@
 	<div id="pop_policy" class="popup_wrap survey_pop">
 		<div class="pop_content gap">
 			<div class="title_area">
-				<h1>개인 정보 정책</h1>
+				<h1 id="login_05">개인 정보 정책</h1>
 			</div>
-			<button onclick="popClose()" class="btn_pop_close">Close</button>
+			<button id="" onclick="popClose()" class="btn_pop_close">Close</button>
 			<div class="policy_wrap">
-				<p>text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text text</p>
+				<p id="login_06">text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text text</p>
 			</div>
 		</div>
 	</div>
