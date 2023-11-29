@@ -1,0 +1,67 @@
+/*
+adm_table_wrap style
+*/
+/* table_top */
+.adm_table_wrap {
+	position: relative;
+}
+.adm_table_top {
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+	padding: 20px;
+	.table_total {
+		color: $txt-main-b1;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px; /* 160% */
+	}
+}
+.adm_table_cont {
+	width: 100%;
+	padding: 0 20px 20px 20px;
+	overflow-x: auto;
+	overflow-x: auto;
+    margin-bottom: 59px;
+    height: 37vh;
+    height: calc(100dvh - 575px);
+	table {
+		width: 100%;
+		overflow-x: visible;
+	}
+}
+.adm_table_bottom {
+	display: block;
+    width: 100%;
+    position: absolute;
+	left:0;
+    bottom: 0;
+    background: white;
+    border-radius: 0 0 8px 8px;
+	text-align: right; 
+	font-size: 0;
+	padding: 10px 40px;
+	border-top: 1px solid $line_b;
+}
+/* 테이블 세로 높이 다른 경우 */
+.no_sch {
+	.left {
+		gap: 20px;
+	}
+	.adm_table_cont {
+		height: 76vh;
+		height: calc(100dvh - 305px);
+	}
+}
+.date_sch {
+	.adm_table_cont {
+		height: 69vh;
+		height: calc(100dvh - 395px);
+	}
+}
+.plus_sch {
+	.adm_table_cont {
+		height: 30vh;
+		height: calc(100dvh - 645px);
+	}
+}

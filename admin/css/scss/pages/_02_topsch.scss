@@ -1,0 +1,47 @@
+/*
+topsch_area
+*/
+.topsch_area {
+	> .flex_column {
+		gap: 20px;
+	}
+	.chk_wrap {
+		display: flex;
+		padding: 10px 30px;
+		flex-wrap: wrap;
+		gap: 12px;
+		.chk {
+			padding: 5px 10px;
+		}
+	}
+}
+.date_sch_wrap {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	flex-wrap: wrap;
+	align-items: center;
+	.btn {
+		margin-left: 15px;
+	}
+}
+.channel_row {
+	.adm_top_title {
+		width: 74px;
+	}
+	.chk_wrap {
+		min-width: 535px;
+	}
+}
+.age_row {
+	.flex_column {
+		width: auto;
+		gap: 10px;
+	}
+	.flex_row {
+		width: auto;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		column-gap: 30px;
+	}
+}

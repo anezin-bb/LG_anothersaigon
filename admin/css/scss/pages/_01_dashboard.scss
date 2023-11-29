@@ -1,0 +1,105 @@
+/* 
+adm 속성 공통
+*/
+.adm_top_title  {
+	display: inline-block;
+	width: 98px;
+	margin-right: 20px;
+	color: #000;
+	font-size: 22px;
+	font-weight: 700;
+}
+.bg_w_title {
+	color: #000;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 32px;
+}
+/* dashboard 대시보드 */
+.dash_numboard {
+	display: flex;
+	flex-direction: row;
+	gap: 18px;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+	.today_total {
+		display: flex;
+		flex-direction: row;
+		min-width: 378px;
+		width: calc(25% - 15px);
+		padding: 8px;
+		align-items: center;
+		.total_info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: #000;
+			text-align: center;
+			width: 50%;
+			.date {
+				font-size: 15px;
+				font-weight: 700;
+				line-height: normal;
+			}
+			.people {
+				font-size: 15px;
+				font-weight: 400;
+				line-height: normal;
+			}
+			.count {
+				color: $LG-red-act;
+				font-size: 39px;
+				font-weight: 700;
+				line-height: normal;
+			}
+		}
+		.total_line {
+			background: $line_b;
+			width: 1px;
+			height: 90%;
+		}
+	}
+}
+.dash_graph_wrap {
+	align-items: flex-start;
+}
+.canvas_wrap {position: relative; padding:20px 30px 60px; box-sizing: border-box; width: 100%; height: 400px;}
+.chart-legend{
+	position: relative;
+	bottom:-5px;
+	left:50%;
+	transform: translateX(-50%);
+	display: flex;
+	width:100%;
+	text-align: center;
+}
+.chart-legend ul {display: flex; justify-content: center; margin:0 auto; gap: 20px;}
+.chart-legend li{
+	cursor:pointer;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	width:auto;
+}
+.chart-legend li + li {margin-left: 10px;}
+.chart-legend li span {
+	width:18px;
+	height: 3px;
+	display: inline-block;
+	margin-right: 3px;
+}
+.dash_table_wrap {
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	.half {
+		display: flex;
+		flex-direction: column;
+		width: 49%;
+		min-width: 500px;
+		gap: 20px;
+	}
+}

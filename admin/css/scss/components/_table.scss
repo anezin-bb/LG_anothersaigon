@@ -1,0 +1,35 @@
+/* 관리자 테이블 */
+table.adm_table {
+	width: 100%;
+	tr {
+		width: 100%;
+		th, td {
+			color: $txt-main-b1;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: normal;
+			text-align: center;
+		}
+		th {
+			padding: 15px 20px;
+			background-color: $bg-beige-1;
+
+			&:first-child {
+				border-radius: 8px 0px 0px 8px;
+			}
+			&:last-child {
+				border-radius: 0px 8px 8px 0px;
+			}
+		}
+		td {
+			height: 64px;
+			padding: 20px;
+			border-bottom: 1px solid $line_b;
+			a {
+				color: $txt-main-b1;
+				text-decoration: underline;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,85 @@
+/*
+체크박스 checkbox
+*/
+/* 체크박스(기본형태) */
+.chk {
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	cursor: default;
+	* {
+		display: inline-block;
+		vertical-align: top;
+	}
+	input {
+		position: absolute;
+		opacity: 0;
+		height: 0;
+		width: 0;
+		display: inline-block;
+		&:checked {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	}
+}
+.chkmark {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: solid 1px #000;
+	border-radius: 20px;
+	position: relative;
+	top: 1px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.chkmark::after {
+	content: '';
+	position: absolute;
+	display: none;
+	left: 5.5px;
+	top: 3px;
+	width: 7px;
+	height: 9px;
+	border: solid #fff;
+	border-width: 0px 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.chk input:checked ~ .chkmark {
+	background-color: $LG-red-act;
+	border-color: $LG-red-act;
+}
+.chk input:checked ~ .chkmark::after {
+	display: block;
+}
+.chkText {
+	padding-left: 8px;
+	line-height: 1em;
+	font-size: 16px;
+	text-align: left;
+	color: #000;
+	letter-spacing: -0.32px;
+	cursor: pointer;
+}
+.chk input:disabled ~ .chkmark {
+	opacity: 0.4;
+	cursor: default;
+}
+.chk input:disabled ~ .chkText {
+	opacity: 0.4;
+	cursor: default;
+}
+.chk input:checked:disabled ~ .chkmark {
+	opacity: 1;
+}
+.chk input:checked:disabled ~ .chkText {
+	opacity: 1;
+}

@@ -18,22 +18,22 @@
 	<main class="main_login">
 		<div class="login_container flex_column">
 			<h2 class="logo"><img src="./image/logo.svg" alt="Another Saigon by LG"></h2>
-			<h1>어나더사이공 관리시스템</h1>
+			<h1 id="ad_login_title">어나더사이공 관리시스템</h1>
 			<form action="" class="input_box">
 				<!--  -->
 				<div class="input_login">
-					<label for="adminID" class="label_login">아이디</label>
+					<label for="adminID" class="label_login" id="ad_login_id">아이디</label>
 					<!-- 오류가 났을때는 class에 input_warning이 붙습니다. -->
 					<input type="text" name="adminLogin" id="adminID" class="input_id" placeholder="아이디를 입력해 주세요">
 				</div>
 				<div class="input_login">
-					<label for="adminPW" class="label_login">비밀번호</label>
+					<label for="adminPW" class="label_login" id="ad_login_pw">비밀번호</label>
 					<!-- 오류가 났을때는 class에 input_warning이 붙습니다. -->
 					<input type="password" name="adminLogin" id="adminPW" placeholder="비밀번호를 입력해 주세요" class="input_pw">
 					<span class="pw_eye"></span>
 				</div>
 				<!-- 오류가 났을때 오류 텍스트를 아래 p태그로 나타냅니다.
-					<p class="warning_text">* 아이디 또는 패스워드가 일치하지 않습니다.</p>
+					<p id="ad_login_warn" class="warning_text">* 아이디 또는 패스워드가 일치하지 않습니다.</p>
 				 -->
 				<div class="w100per btnWrap"><button id="btn_login" type="button" class="btn_login btn" disabled>로그인</button></div>
 			</form>

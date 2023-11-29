@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* APPLICATION 
+------------------------------------------------------------------------*/
+
+@import "./scss/utilities/variables";
+@import "./scss/utilities/mixins";
+
+/* 레이아웃 */
+//00_로그인
+@import "./scss/pages/00_login";
+//01_대시보드
+@import "./scss/pages/01_dashboard";
+//02~03_상단 검색영역
+@import "./scss/pages/02_topsch";
+//03_하단 테이블 영역
+@import "./scss/pages/03_admtablewrap";
+//05_이벤트
+@import "./scss/pages/04_admformwrap";
+//06_공간 소개
+@import "./scss/pages/05_etc";

@@ -1,0 +1,76 @@
+/* 페이징 */
+.pagination {
+	font-size: 0;
+	display: inline-flex;
+	li {
+		display: inline-block; 
+		position: relative; 
+		vertical-align: middle; 
+		background-color: #fff;
+	}
+	button {
+		&:hover {
+			opacity: 0.7;
+		}
+		&.on {
+			color: #fff;
+			background: $txt-main-b2;
+		}
+	}
+	.page {
+		padding: 0px 16px;
+		color: $txt-main-b1;
+		border: 1px solid $line_b;
+		border-right: 0;
+		height: 38px;
+		line-height: 36px;
+	}
+	.next, .prev, .first, .last {
+		margin: 0px;
+		position: relative;
+		display: inline-block;
+		width: 36px;
+		height: 38px;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+		padding: 8px;
+		background-position: center;
+		cursor: pointer;
+		border: 1px solid $line_b;
+	}
+	.prev {
+		background-image: url("../image/pagi_prev.svg");
+		border-radius: 0px;
+		&:disabled {
+			opacity: 1;
+			cursor: default;
+		}
+	}
+	.first {
+		background-image: url("../image/pagi_first.svg");
+		border-radius: 8px 0px 0px 8px;
+		border-right: 0;
+		&:disabled {
+			opacity: 1;
+			cursor: default;
+		}
+	}
+	.next {
+		background-image: url("../image/pagi_next.svg");
+		border-radius: 0px;
+		&:disabled {
+			opacity: 1;
+			cursor: default;
+		}
+	}
+	.last {
+		background-image: url("../image/pagi_last.svg");
+		border-radius: 0px 8px 8px 0px;
+		border-left: 0;
+		&:disabled {
+			opacity: 1;
+			cursor: default;
+		}
+	}
+}

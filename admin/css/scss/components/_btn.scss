@@ -1,0 +1,72 @@
+/* 버튼모음 */
+/* btn 기본 속성 */
+.btn {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	min-width: 90px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	object-fit: contain;
+	border-radius: 8px;
+	background-color: $LG-red-act;
+	padding: 0px 10px;
+	color: #fff;
+	cursor: pointer;
+	border: 0px;
+	font-size: 16px;
+	font-weight: 700;
+	&:hover {
+		text-decoration: none;
+		opacity: 0.8;
+	}
+	&:focus {
+		text-decoration: none;
+		opacity: 0.8;
+	}
+	&:disabled {
+		background-color: rgba(38, 38, 38, 0.40);
+		cursor: default;
+		&:hover,&:focus {
+			opacity: 1;
+		}
+	}
+}
+/* btn 크기별 */
+/* 상단 검색 버튼 : btn_s, 다운로드 버튼 btn_m */
+.btn_full,.btn_100per {
+	width: 100%;
+}
+.btn_harf {
+	width: calc(50% - 14px);
+	margin: 0px 5px;
+}
+.btn.btn_xs {
+	width: 80px;
+	min-width: 80px;
+	padding: 0 10px;
+	height: 44px;
+	line-height: 44px;
+	font-weight: 500;
+	margin: 0 2px;
+}
+.btn.btn_s {
+	width: 96px;
+}
+.btn.btn_m {
+	width: 168px;
+	height: 44px;
+	line-height: 44px;
+}
+
+/* btn 컬러별 */
+.btn_black {
+	background-color: $txt-main-b2;
+}
+.btn_lightgray {
+	background-color: rgba(38, 38, 38, 0.40);
+}
+.btn_darkgray {
+	background-color: #716F6A;
+}
