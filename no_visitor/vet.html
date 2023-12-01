@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover, maximum-scale=1.0 user-scalable=no">
+	<title>Another Saigon by LG</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/slick-theme.css">
+	<link rel="stylesheet" href="./css/novisitor.css">
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/slick.js"></script>
+</head>
+<body class="no_visitor_vet no_visitor">
+	<header>
+		<div class="container">
+			<div class="pc_nav_wrap">
+				<h1 class="logo"><a href="#" onclick="scrollToTop(event);"><img src="./image/logo.svg" alt="Another Saigon by LG"></a></h1>
+				<nav>
+					<button id="gnb_section01" onclick="scrollTopSec('sec02_map')">Vị trí</button>
+					<button id="gnb_section02" onclick="scrollTopSec('sec03_time')">Thời gian hoạt động</button>
+					<button id="gnb_section03" onclick="scrollTopSec('sec04_floor')">Hướng dẫn theo tầng</button>
+					<button id="gnb_section04" onclick="scrollTopSec('sec05_guide')">Mobile Guide</button>
+					<button id="gnb_section05" onclick="scrollTopSec('sec06_event')">Sự kiện</button>
+				</nav>
+			</div>
+			<div class="mo_nav_wrap">
+				<div class="m_dropdown_menu">
+					<button class="current">Trang chủ</button>
+					<nav>
+						<button id="gnb_section00_m" onclick="scrollTopSec('sec01_info')">Trang chủ</button>
+						<button id="gnb_section01_m" onclick="scrollTopSec('sec02_map')">Vị trí</button>
+						<button id="gnb_section02_m" onclick="scrollTopSec('sec03_time')">Thời gian hoạt động</button>
+						<button id="gnb_section03_m" onclick="scrollTopSec('sec04_floor')">Hướng dẫn theo tầng</button>
+						<button id="gnb_section04_m" onclick="scrollTopSec('sec05_guide')">Mobile Guide</button>
+						<button id="gnb_section05_m" onclick="scrollTopSec('sec06_event')">Sự kiện</button>
+					</nav>
+				</div>
+			</div>
+			<div class="language">
+				<a href="#" class="current">Vietnam</a>
+				<div class="dropdown_cont">
+					<a id="lang_e" href="./eng.html">English</a>
+					<a id="lang_v" href="./vet.html">Vietnam</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<!-- sec01_info -->
+		<section id="sec01_info">
+			<img src="./image/img_infotop.png" alt="" class="mo_hidden">
+			<img src="./image/img_infotop_m.png" alt="" class="pc_hidden">
+			<div class="container">
+				<h2>Another Saigon_</h2>
+				<p>
+					Cũng như Việt Nam luôn thay đổi và luôn mới mẻ,<br />
+					Chúng tôi chào đón quý khách đến không gian vô cùng đặc biệt này.
+					<br /><br />
+					Dám mơ về những khoảnh khắc thay đổi cuộc sống.<br />
+					Sự sáng tạo của chúng tôi, dành riêng cho những thay đổi mới.<br />
+					Và tất cả sự Đổi mới kỹ lưỡng mà chúng ta sẽ cùng nhau tạo ra.
+					<br /><br />
+					Tiến một bước so với thông thường<br />
+					để tận hưởng Cuộc sống Tốt đẹp cùng LG
+					<br /><br />
+					Gửi lời chào đến<br />
+					Another Saigon
+
+				</p>
+			</div>
+			
+		</section>
+		<!-- sec01_info end -->
+		<!-- sec02_map -->
+		<section id="sec02_map">
+			<div class="container">
+				<h3 class="vit_title">Vị trí</h3>
+				<div class="map">
+					<img src="./image/img_map_vet.png" alt="Another Saigon Map Infomation" class="mo_hidden">
+					<img src="./image/img_map_vet_m.png" alt="Another Saigon Map Infomation" class="pc_hidden">
+					<div class="map_txt">
+						<p>96 Mạc Thị Bưởi, phường Bến Nghé, Quận 1, Hồ Chí Minh</p>
+						<a href="https://maps.app.goo.gl/f8cBiBWnmLijLoN59" target="_blank">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- sec02_map end -->
+		<!-- sec03_time -->
+		<section id="sec03_time">
+			<div class="container">
+				<h3 class="vit_title">Thời gian hoạt động
+				</h3>
+				<ul class="time">
+					<li>Ngày thường : 14:00~22:00</li>
+					<li>Cuối tuần (Ngày lễ) : 10:00~22:00</li>
+				</ul>
+			</div>
+		</section>
+		<!-- sec03_time end -->
+		<!-- sec04_floor -->
+		<section id="sec04_floor">
+			<div class="container">
+				<h3 class="vit_title">Hướng dẫn theo tầng</h3>
+				<!-- gf floor -->
+				<div class="floor_g floor">
+					<h4>[GF] Hello, LG</h4>
+					<!-- floor_g_slide -->
+					<div class="floor_g_slide floor_slide">
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_01.png');"></figure>
+							<div class="slide_cont">
+								<h5>Quầy lễ tân
+								</h5>
+								<p>
+									Chào mừng quý khách đến với Another Saigon. 
+									Từ GF đến 5F, hãy trải nghiệm  
+									những phong cách mới mẻ 
+									đáng mơ ước  và khám phá nhiều sự hợp tác thương hiệu
+									đa dạng. Quý khách cũng có thể nhận quà tặng 
+									khi tham gian  các nhiệm vụ nhận tem của sự kiện.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_02.png');"></figure>
+							<div class="slide_cont">
+								<h5>Better Life for All</h5>
+								<p>
+									Những thiết bị gia dụng chưa từng có, 
+									cân nhắc đến cả môi trường và sở thích!
+									Hãy chăm sóc quần áo với Styler và Shoes care, 
+									và đồng thời hãy tham gia chiến dịch vì một môi trường tốt hơn
+									của Thành phố Hồ Chí Minh.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_03.png');"><a href="https://thecoffeehouse.com/" target="_blank" id="link_gf_03" class="slide_link">LINK</a></figure>
+							<div class="slide_cont">
+								<h5>The Coffee House </h5>
+								<h6>Good Friend #2</h6>
+								<p>
+									THE COFFEE HOUSE làm phong phú thêm kết nối 
+									giữa con người thông qua một tách cà phê.
+									Cuộc sống có thể trở nên tốt đẹp hơn,
+									bắt đầu từ những thức uống lành mạnh.
+									Chúng tôi biết ơn tất cả những người 
+									đã đến để đưa ra những Lựa chọn Tốt hơn cùng LG
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_04.png');"><a href="https://www.dongdongsaigon.com/" target="_blank" id="link_gf_04" class="slide_link">LINK</a></figure>
+							<div class="slide_cont">
+								<h5>Dong Dong</h5>
+								<h6>Good Friend #1</h6>
+								<p>
+									Chúng tôi đang chuẩn bị kết hợp
+									với Dong Dong người  đã tái chế vật liệu thân thiện môi trường 
+									để làm ra những sản phẩm tạp hóa thời trang vui mắt, 
+									bền vững   và độc đáo.  hãy ghé thăm khu thương hiệu của chúng tôi
+									để tìm hiểu thêm vể các sản phẩm ESG  đa dạng.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- floor_g_slide end -->
+				</div>
+				<!-- gf floor end -->
+				<!-- 1f floor -->
+				<div class="floor_1 floor">
+					<h4>[1F] The Friend of Good Life</h4>
+					<!-- floor_1_slide -->
+					<div class="floor_1_slide floor_slide">
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_1f_01.png');"></figure>
+							<div class="slide_cont">
+								<h5>Objet Collection</h5>
+								<h6>Good Life Curation</h6>
+								<p>
+									Đồ gia dụng, trở thành cuộc sống mơ ước
+									LG Objet Collection
+									Thiết kế gia dụng dành cho nội thất không gian, 
+									giới thiệu Objet Collection.							
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_1f_02.png');"></figure>
+							<div class="slide_cont">
+								<h5>My Objet Color</h5>
+								<p>
+									Tự do lựa chọn và kết hợp màu sắc, 
+									chất liệu vỏ ngoài tủ lạnh
+									sao cho phù hợp với sở thích của quý khách.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_1f_03.png');"></figure>
+							<div class="slide_cont">
+								<h5>My Objet House</h5>
+								<p>
+									Hoàn thiện nội thất gia dụng
+									mang phong cách của 
+									riêng mình với Objet Collection 
+									từ các mô hình nhỏ xinh, dễ thương.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_1f_04.png');"><a href="https://vnggames.com/vn/vi" target="_blank" id="link_1f_04" class="slide_link">LINK</a></figure>
+							<div class="slide_cont">
+								<h5>VNGGames</h5>
+								<h6>Good Friend #3</h6>
+								<p>
+									Cùng đến và trải nghiệm VALORANT, tựa game bắn súng hot nhất, tại gaming lounge đồng tổ chức bởi VNGGames và LGE. Hàng ngàn món quà độc quyền đang chờ đợi bạn!
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- floor_1_slide end -->
+				</div>
+				<!-- 1f floor end -->
+				<!-- 3f floor -->
+				<div class="floor_3 floor">
+					<h4>[3F] The Solution of Good Life</h4>
+					<!-- floor_3_slide -->
+					<div class="floor_3_slide floor_slide">
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_3f_01.png');"></figure>
+							<div class="slide_cont">
+								<h5>Good Life Solution</h5>
+								<p>
+									Nghe tư vấn chuyên nghiệp về sản phẩm 
+									và nhận voucher cùng các mô hình 
+									đồ gia dụng nhỏ xinh, dễ thương.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_3f_02.png');"></figure>
+							<div class="slide_cont">
+								<h5>Good Life Story</h5>
+								<p>
+									Thiết bị gia dụng kết hợp 3 công nghệ cốt lõi 
+									từ LG, LG Electronics và các bộ phận chính vận 
+									hành thiết bị gia dụng.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- floor_3_slide end -->
+				</div>
+				<!-- 3f floor end -->
+				<!-- 5f floor -->
+				<div class="floor_5 floor">
+					<h4>[5F] The Solution of Good Life</h4>
+					<!-- floor_5_slide -->
+					<div class="floor_5_slide floor_slide">
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_5f_01.png');"></figure>
+							<div class="slide_cont">
+								<h5><img src="./image/img_info_moodup.svg" alt="Mood Up"> Stage</h5>
+								<p>
+									Hãy thực hiện thử thách khiêu vũ 
+									và chụp ảnh cùng tủ lạnh MoodUP, 
+									tạo bầu không khí với màu sắc sặc sỡ 
+									và âm nhạc sôi động chỉ bằng một lần chạm.
+								</p>
+							</div>
+						</div>
+						<div class="slide roundbox">
+							<figure class="slide_img" style="background-image: url('./image/img_info_5f_02.png');"></figure>
+							<div class="slide_cont">
+								<h5><img src="./image/img_info_moodup.svg" alt="Mood Up"> Stage</h5>
+								<p>
+									Hãy thay đổi màu sắc tủ lạnh 
+									bằng cách trực tiếp chọn màu MoodUP 
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- floor_5_slide end -->
+				</div>
+				<!-- 5f floor end -->
+			</div>
+		</section>
+		<!-- sec04_floor end -->
+		<!-- sec05_guide -->
+		<section id="sec05_guide">
+			<div class="container">
+				<div class="mobile_guide">
+					<div class="right"><img src="./image/img_guide_vet.png" alt="Another Saigon Mobile"></div>
+					<div class="left">
+						<h5>Mobile Guide</h5>
+						<h4>Cách thú vị hơn <br />
+							để trải nghiệm Another Saigon!
+						</h4>
+						<p>
+							Truy cập hướng dẫn trên Mobile 
+							để tham gia nhiều nhiệm vụ đa dạng.<br />
+							Sau khi hoàn thành tất cả nhiệm vụ, 
+							hãy nhận phần thưởng tại tầng GF!
+						</p>
+						<span>Có thể truy cập hướng dẫn trên Mobile bằng cách đến với Another Saigon</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- sec05_guide end -->
+		<!-- sec06_event -->
+		<section id="sec06_event">
+			<div class="container">
+				<h3 class="vit_title">Sự kiện</h3>
+				
+				<div class="event_list">
+					<!-- roundbox -->
+					<div class="roundbox">
+						<figure class="slide_img" style="background-image: url('./image/event_th_1_vn.png');"></figure>
+						<div class="slide_cont">
+							<h5>Another Saigon Challenge</h5>
+							<p>
+								Tham gia thử thách nhảy TikTok tại Mood Up Studio tầng 5!
+								Tham gia Thử thách Another Saigon,
+								tặng Insta View cho người tham dự 
+								nhận được sự hưởng ứng nhiều nhất.
+							</p>
+						</div>
+					</div>
+					<!-- roundbox end -->
+					<!-- roundbox -->
+					<div class="roundbox">
+						<figure class="slide_img" style="background-image: url('./image/event_th_2_vn.png');"></figure>
+						<div class="slide_cont">
+							<h5>Another Saigon Selfie</h5>
+							<p>
+								Tại điểm chụp ảnh tầng 5
+								chọn màu sắc MoodUP yêu thích
+								và chụp ảnh với phông nền MoodUP của riêng mình.
+							</p>
+						</div>
+					</div>
+					<!-- roundbox end -->
+					<!-- roundbox -->
+					<div class="roundbox">
+						<figure class="slide_img" style="background-image: url('./image/event_th_3_vn.png');"></figure>
+						<div class="slide_cont">
+							<h5>Membership Event on LG</h5>
+							<p>
+								Nhân dịp kỷ niệm khai trương 
+								Another Saigon, 
+								chúng tôi đang tiến hành 
+								sự kiện đăng ký thành viên 
+								tại trang web chính thức của LG.com!! 
+								Hãy đăng ký thành viên 
+								trong thời gian diễn ra sự kiện 
+								và nhận voucher tại tầng 3!
+							</p>
+						</div>
+					</div>
+					<!-- roundbox end -->
+					<!-- roundbox -->
+					<div class="roundbox">
+						<figure class="slide_img" style="background-image: url('./image/event_th_4_vn.png');"></figure>
+						<div class="slide_cont">
+							<h5>Better Life for All : ESG Workshop Event</h5>
+							<p>
+								Hãy cùng chúng tôi tham gia 
+								chiến dịch vì môi trường!
+								Tạo ra sản phẩm của riêng bạn 
+								cùng với Dong Dong, 
+								thương hiệu tái chế thân thiện môi trường 
+								tại Another Saigon, 
+								tham gia Plogging tại quảng trường 
+								và nhận nhiều quà tặng đa dạng. 
+							</p>
+						</div>
+					</div>
+					<!-- roundbox end -->
+					<!-- roundbox -->
+					<div class="roundbox">
+						<figure class="slide_img" style="background-image: url('./image/event_th_5_vn.png');"></figure>
+						<div class="slide_cont">
+							<h5>VNGGames : Valorant Team Match</h5>
+							<p>
+								Hãy tham gia trận đấu đặc biệt 
+								của đội Valorant được diễn ra vào mỗi cuối tuần
+								cùng với VNGGames!
+								Vui lòng đăng ký trước tại VNGGames tầng 1 
+								và tận hưởng trò chơi cùng bạn bè.
+							</p>
+						</div>
+					</div>
+					<!-- roundbox end -->
+				</div>
+
+				<!-- info_sns_list start -->
+				<ul class="info_sns_list">
+					<li><a href="https://www.lg.com/vn?utm_source=ASG&utm_medium=OTH&utm_campaign=HQ-HA_HA_ALL_VN_23_Q4_&utm_content=flagship_another_saigon" target="_blank"><img src="./image/icn_info_lg.svg" alt=""></a></li>
+					<li><a href="https://www.facebook.com/LGEVietnam/" target="_blank"><img src="./image/icn_info_facebook.svg" alt=""></a></li>
+					<li><a href="https://www.instagram.com/lgvietnam/" target="_blank"><img src="./image/icn_info_instagram.svg" alt=""></a></li>
+					<li><a href="https://www.youtube.com/user/LgCinema3DVietnam" target="_blank"><img src="./image/icn_info_youtube.svg" alt=""></a></li>
+					<li><a href="https://www.tiktok.com/@lg_vietnam/" target="_blank"><img src="./image/icn_info_tictok.svg" alt=""></a></li>
+				</ul>
+				<!-- info_sns_list end -->
+			</div>
+		</section>
+		<!-- sec06_event end -->
+	</main>
+	<script>
+		// dropdown 메뉴
+		$(document).ready(function() {
+			var $languageCurrent = $(".language .current");
+			var $dropdownCont = $(".dropdown_cont");
+
+			// 언어 선택 드롭다운 토글 및 마우스 호버 이벤트
+			$languageCurrent.on('click touchstart', function(e) {
+				e.preventDefault();
+				$dropdownCont.toggle();
+				$(this).toggleClass("active");
+			});
+				
+			// .m_dropdown_menu nav 내부의 버튼 클릭 시 nav 숨기기
+			$(".m_dropdown_menu nav button").on('click touchstart', function() {
+				$(".m_dropdown_menu nav").hide();
+				$(".m_dropdown_menu .current").removeClass("active");
+			});
+
+			// 문서의 다른 부분을 클릭하거나 터치할 때 .dropdown_cont와 .language .current 상태 업데이트
+			$(document).on('click touchstart', function(e) {
+				if (!$(e.target).closest('.language .current, .dropdown_cont').length) {
+					$languageCurrent.removeClass("active");
+					$dropdownCont.hide();
+				}
+			});
+		});	
+
+
+		// 섹션 최상단으로 스크롤하는 함수
+		function scrollToTop(event) {
+			event.preventDefault();
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+		function scrollTopSec(sectionId) {
+			const section = document.getElementById(sectionId);
+			if (section) {
+				section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		}
+
+		 // 새로운 스크롤 이벤트 관련 코드
+			var sections = {
+			'sec02_map': 'gnb_section01',
+			'sec03_time': 'gnb_section02',
+			'sec04_floor': 'gnb_section03',
+			'sec05_guide': 'gnb_section04',
+			'sec06_event': 'gnb_section05'
+		};
+
+		$(window).scroll(function() {
+			var scrollPosition = $(document).scrollTop();
+
+			$.each(sections, function(sectionId, buttonId) {
+				var sectionOffset = $('#' + sectionId).offset().top;
+				var sectionHeight = $('#' + sectionId).height();
+
+				if (scrollPosition >= sectionOffset - 20 && scrollPosition < sectionOffset + sectionHeight) {
+					$('#' + buttonId).addClass('active');
+				} else {
+					$('#' + buttonId).removeClass('active');
+				}
+			});
+		});
+
+		//슬라이더 
+		function initializeAndAdjustSlider(sliderSelector) {
+		  	// 슬라이더 초기화
+			var $slider = $(sliderSelector).slick({
+				infinite: false,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				arrows: false,
+				variableWidth: false,
+				centerMode: false,
+				fade: false,
+				dots: false,
+				responsive: [
+					{
+						breakpoint: 1499,
+						settings: {
+							slidesToShow: 2,
+							variableWidth: false,
+							centerMode: false,
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							centerMode: true,
+							variableWidth: true,
+							arrows: false,
+							dots: true
+						}
+					}
+				]
+			});
+
+			// 도트 너비 조정 함수
+			function adjustDotsWidth() {
+				var sliderWidth = $slider.width(); // 슬라이더의 전체 너비
+				var dotCount = $slider.slick('getSlick').slideCount; // 슬라이더의 총 아이템 수
+				var dotWidth = sliderWidth / dotCount; // 각 도트의 너비 계산
+				$slider.find('.slick-dots li').css('width', dotWidth); // 너비 적용
+			}
+
+			function adjustSlidesHeight() {
+				var maxHeight = 0;
+				// 모든 슬라이드를 순회하며 최대 높이를 찾습니다.
+				$slider.find('.slick-slide').each(function() {
+				var slideHeight = $(this).outerHeight();
+					if (slideHeight > maxHeight) {
+						maxHeight = slideHeight;
+					}
+				});
+				// 모든 슬라이드에 최대 높이를 적용합니다.
+				$slider.find('.slick-list .slick-slide .slide').height(maxHeight);
+			}
+
+			// 슬라이더 이벤트 핸들러 설정
+			$slider.on('init reInit afterChange', function(event, slick) {
+				adjustDotsWidth(); // 슬라이더 변화 시 도트 너비 조정
+				adjustSlidesHeight(); // 슬라이더 초기화 시 높이 조정
+			});
+
+		  	// 슬라이더가 변화한 후에 높이 조정
+			$slider.on('setPosition', function() {
+				adjustSlidesHeight();
+			});
+			// 윈도우 리사이즈 이벤트 핸들러 설정
+			$(window).resize(function() {
+				adjustSlidesHeight();
+				adjustDotsWidth();
+			});
+		
+		  // 초기 도트 너비 조정
+			adjustDotsWidth();
+		}
+
+		// 사용 예:
+		$(document).ready(function() {
+			initializeAndAdjustSlider('.floor_g_slide'); // 함수 호출로 슬라이더 초기화 및 도트 너비 		조정
+			initializeAndAdjustSlider('.floor_1_slide');
+			initializeAndAdjustSlider('.floor_3_slide');
+			initializeAndAdjustSlider('.floor_5_slide');
+		});
+
+		/* 모바일 드롭다운 (...)*/
+		$(document).ready(function() {
+			// 모바일 드롭다운 메뉴 토글
+			$(".m_dropdown_menu .current").click(function() {
+				$(".m_dropdown_menu nav").toggle();
+				$(this).toggleClass("active");
+			});
+
+			// .m_dropdown_menu nav 내부의 버튼 클릭 시 nav 숨기기
+			$(".m_dropdown_menu nav button").click(function() {
+				$(".m_dropdown_menu nav").hide();
+				$(".m_dropdown_menu .current").removeClass("active");
+			});
+
+			// 스크롤에 따른 네비게이션 버튼 텍스트 변경
+			var mobileSections = {
+				'sec02_map': 'gnb_section01_m',
+				'sec03_time': 'gnb_section02_m',
+				'sec04_floor': 'gnb_section03_m',
+				'sec05_guide': 'gnb_section04_m',
+				'sec06_event': 'gnb_section05_m'
+			};
+
+			var scrollTimeout = null; // 스크롤 타이머
+
+			$(window).scroll(function() {
+				clearTimeout(scrollTimeout); // 이전 타이머를 취소합니다.
+
+				scrollTimeout = setTimeout(function() { // 새 타이머를 설정합니다.
+					var scrollPosition = $(document).scrollTop();
+					var closestSectionId = null;
+					var closestDistance = Number.MAX_VALUE;
+
+					$.each(mobileSections, function(sectionId, buttonId) {
+						var sectionOffset = $('#' + sectionId).offset().top;
+						var distance = Math.abs(scrollPosition - sectionOffset);
+
+						if (distance < closestDistance) {
+							closestDistance = distance;
+							closestSectionId = buttonId;
+						}
+					});
+
+					if (closestSectionId) {
+						var newButtonText = $('#' + closestSectionId).text();
+						$('.m_dropdown_menu .current').text(newButtonText);
+					}
+				}, 150); // 타이머 지연 시간 (예: 150 밀리초)
+			});
+		});
+
+	</script>
+	
+</body>
+</html>

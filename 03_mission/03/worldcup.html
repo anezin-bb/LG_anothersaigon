@@ -22,10 +22,13 @@
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
-			<ul class="language">
-				<li class="current"><a id="lang_e" href="javascript:;">English</a></li>
-				<li><a id="lang_v" href="javascript:;">Vietnam</a></li>
-			</ul>
+			<div class="language">
+				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<div class="dropdown_cont">
+					<a id="lang_e" href="javascript:;">English</a>
+					<a id="lang_v" href="javascript:;">Vietnam</a>
+				</div>
+			</div>
 		</header>
 		<section class="worldcup_sec gap">
 			<div class="worldcup_title">
@@ -38,17 +41,23 @@
 				18강 -> 2번 후 16강으로 이동 -> 8강 -> 4강 -> 결승 -> 완료 팝업 노출.
 				각 월드컵 제품은 랜덤 노출 됩니다. -->
 				<button id="m03_item_18" type="button" onclick="popupOpen('m03_scan_clear_img_18')" ontouchstart="popupOpen('m03_scan_clear_img_18')" class="worldcup_item active_toggle">
-					<span class="img_wrap"><img src="../../image/03_mission/img_18_LG_Styler.png" alt="LG Styler"></span>
+					<span class="img_wrap"><img src="../../image/03_mission/img_18_LG_Styler.png" alt="Styler"></span>
 					<span class="txt_wrap">
-						<h3 id="m03_s_048">LG Styler</h3>
+						<h3 id="m03_s_048">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_18_b.svg" alt="Styler" class="w_off_logo">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_18.svg" alt="Styler" class="w_active_logo">
+						</h3>
 						<p id="m03_s_049">매번 세탁소에 가지 않아도<br />
 							깔끔하고 우아한 스타일</p>
 					</span>
 				</button>
 				<button id="m03_item_14" type="button" onclick="popupOpen('m03_scan_clear_img_14')" ontouchstart="popupOpen('m03_scan_clear_img_14')" class="worldcup_item active_toggle">
-					<span class="img_wrap"><img src="../../image/03_mission/img_14_LG_Tiiun.png" alt=""></span>
+					<span class="img_wrap"><img src="../../image/03_mission/img_14_LG_Tiiun.png" alt="Tiiun"></span>
 					<span class="txt_wrap">
-						<h3 id="m03_s_037">LG Tiiun</h3>
+						<h3 id="m03_s_037">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_14_b.svg" alt="Tiiun" class="w_off_logo">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_14.svg" alt="Tiiun" class="w_active_logo">
+						</h3>
 						<p id="m03_s_038">쉽게 키우는<br />
 							나만의 작은 정원</p>
 						<span id="m03_s_039" class="minitxt">*출시예정</span>

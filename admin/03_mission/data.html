@@ -17,7 +17,12 @@
 <body>
 	<!-- header adm_gnb 메뉴 시작 -->
 	<header class="adm_gnb">
-		<h1 class="adm_logo"><a href="../01_dashboard/dashboard.html"><img src="../image/logo_side.svg" alt="Another Saigon by LG"></a></h1>
+		<h1 class="adm_logo">
+			<a href="../01_dashboard/dashboard.html">
+				<img src="../image/logo_side2.svg" alt="Another Saigon by LG">
+				<div class="logo_text">어나더사이공 관리시스템</div>
+			</a>
+		</h1>
 		<!-- adm_menulist -->
 		<ul class="adm_menulist">
 			<li><a href="../01_dashboard/dashboard.html" class="menu_link01" id="ad_dash">대시보드</a></li>
@@ -30,7 +35,7 @@
 					<li><a href="../03_mission/mission02.html" class="menu_link033" id="ad_mission02">My Objet Color</a></li>
 					<li><a href="../03_mission/mission03.html" class="menu_link034" id="ad_mission03">오브제갤러리 제품 월드컵</a></li>
 					<li><a href="../03_mission/mission04.html" class="menu_link035" id="ad_mission04">숨은 QR 찾기</a></li>
-					<li><a href="../03_mission/mission05.html" class="menu_link035" id="ad_mission05">Chia sẻ trên phương tiện truyền thông xã hội</a></li>
+					<li><a href="../03_mission/mission05.html" class="menu_link035" id="ad_mission05">SNS 공유하기</a></li>
 				</ul>
 			</li>
 			<li>
@@ -56,14 +61,14 @@
 				</ul>
 			</li>
 			<li>
-				<a href="../07_banner/vietnam_banner.html" class="menu_link07" id="ad_banner">미션 배너</a>
+				<a href="../07_banner/vietnam_banner.html" class="menu_link07" id="ad_ban">미션 배너</a>
 				<ul class="adm_menulist_sub">
 					<li><a href="../07_banner/vietnam_banner.html" class="menu_link071" id="ad_banner_vet">베트남어</a></li>
 					<li><a href="../07_banner/english_banner.html" class="menu_link072" id="ad_banner_en">영어</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="../08_obs/obs_scan.html" class="menu_link08" id="ad_qr">OBS 스캔</a>
+				<a href="../08_obs/obs_scan.html" class="menu_link08" id="ad_qr">QR 스캔</a>
 				<ul class="adm_menulist_sub">
 					<li><a href="../08_obs/obs_scan.html" class="menu_link081" id="ad_qr_obs">제품 QR(OBS)</a></li>
 					<li><a href="../08_obs/place_scan.html" class="menu_link082" id="ad_qr_place">공간 QR</a></li>
@@ -246,6 +251,8 @@
 							<col style="width: 160px; min-width: 160px;" />
 							<col style="width: 160px; min-width: 160px;" />
 							<col style="width: 160px; min-width: 160px;" />
+							<col style="width: 160px; min-width: 160px;" />
+							<col style="width: 160px; min-width: 160px;" />
 						</colgroup>
 						<tr>
 							<th id="mdata_table_no">No.</th>
@@ -254,51 +261,63 @@
 							<th id="mdata_table_age">연령</th>
 							<th id="mdata_table_gender">성별</th>
 							<th id="mdata_table_type">관심사</th>
-							<th id="mdata_table_m01">Trải nghiệm cảm nhận mùi hương của Styler</th>
+							<th id="mdata_table_m01">스타일러 시향 체험</th>
 							<th id="mdata_table_m02">My Objet Color</th>
 							<th id="mdata_table_m03">제품 월드컵</th>
 							<th id="mdata_table_m04">숨은 QR 찾기</th>
 							<th id="mdata_table_m05">SNS 공유하기</th>
+							<th id="mdata_table_survey">서베이</th>
+							<th id="mdata_table_reward">리워드</th>
 						</tr>
 						<tr>
 							<td>100</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>O</td><td>-</td><td>-</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>99</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>-</td><td>O</td><td>O</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>98</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>O</td><td>-</td><td>O</td><td>-</td><td>-</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>97</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>-</td><td>-</td><td>-</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>96</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>O</td><td>-</td><td>O</td><td>O</td><td>-</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>95</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>-</td><td>-</td><td>-</td><td>O</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>94</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>O</td><td>O</td><td>O</td><td>O</td><td>-</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>93</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>O</td><td>-</td><td>O</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>92</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>O</td><td>-</td><td>O</td>
+							<td>-</td><td>O</td>
 						</tr>
 						<tr>
 							<td>91</td><td>2023-10-24 16:59:24</td><td>asd@naver.com</td><td>50세 이상</td>
 							<td>언급하기 싫음</td><td>GF</td><td>-</td><td>O</td><td>O</td><td>-</td><td>O</td>
+							<td>-</td><td>O</td>
 						</tr>
 					</table>
 				</div>

@@ -10,16 +10,15 @@ header{  width:100%;  max-width: 480px;  height:40px;   background-color:#fff;  
 header h1{  padding:4px;   text-align:center}
 header.blank_bg{  background-color:transparent;   border-bottom:0}
 .btn_header_back{  position:absolute;   top:12px;   left:16px;   width:16px;   height:16px;   background-image:url("../image/common/icn_arr_back_m.svg");   text-indent:-9999px}
-.language{  position:absolute;   width:80px;   top:4px;   right:16px;   background:white;   border-radius:16px;   z-index:13}
-.language:active, .language{  height:auto}
-.language li{  list-style-type:none;   padding:6px 8px;   display:none}
-.language li a{  display:block;   width:100%;   color:#000;   text-align:left;   font-family:"LG_head";   font-size:14px;   font-style:normal;   font-weight:400;   padding-right:12px}
-.language li.current:after{  content:"";   background-image:url("../image/common/icn_dropdown.svg");   display:block;   position:absolute;   width:16px;   height:16px;   top:8px;   right:8px}
-.language:active li, .language li.current, .language li.active, .language li.active a{  display:block}
-.language li.active.current:after{  background-image:url("../image/common/icn_dropdown_on.svg")}
-header.blank_bg .language{  top:16px}
 
-.pd_bottom{  padding-bottom:100px}
+.language { position:absolute; width:86px; top:0; right:16px; background:white; border-radius:16px; z-index:13; color:#000; }
+.language a { display:block;  width:100%;  color:#000; text-align:left; font-family:"LG_head"; font-size:14px; font-style:normal; font-weight:400;  padding:4px 0;}
+.language .current { color:#000; font-size:14px; font-weight:400; line-height:16px; padding:11px 8px; width:100%; text-align:left; }
+.language .current::after{ content:""; background:url("../image/common/icn_dropdown.svg");   display:block; position:absolute; width:16px;  height:16px; top:12px; right:8px; }
+.language .active.current::after{background-image:url("../image/common/icn_dropdown_on.svg");}
+.language .dropdown_cont{ width:100%; display:none;  background:#fff;  position:absolute;  border-radius:16px;  padding:8px; top: 28px;}
+
+.pd_bottom{  padding-bottom:140px;}
 
 .bottom_gnb{  position:fixed;   bottom:-1px;   max-width:480px;   display:flex;   width:100%;   left:50%;   transform:translateX(-50%);   background-color:#fff}
 .bottom_gnb li{  width:33.3%}
@@ -88,7 +87,7 @@ input[type=password]::-webkit-inner-spin-button{ -webkit-appearance:none;  margi
 pc 화면 디자인
 */
 .pc_section{ width:100vw;  height:100vh;  min-width:480px}
-header.pc_header{ height:64px;  border-bottom:1px solid rgba(0,0,0,0.10);  background:#E6E1D6}
+header.pc_header{ height:64px; width: 100%; max-width: none; border-bottom:1px solid rgba(0,0,0,0.10);  background:#E6E1D6; }
 .pc_container{ padding:0 65px;  background:#F0ECE4}
 header.pc_header >.pc_container{ background:transparent}
 header.pc_header h1{ text-align:left;  padding:16px 0}

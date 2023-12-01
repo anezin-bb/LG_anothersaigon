@@ -22,10 +22,13 @@
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
-			<ul class="language">
-				<li class="current"><a id="lang_e" href="javascript:;">English</a></li>
-				<li><a id="lang_v" href="javascript:;">Vietnam</a></li>
-			</ul>
+			<div class="language">
+				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<div class="dropdown_cont">
+					<a id="lang_e" href="javascript:;">English</a>
+					<a id="lang_v" href="javascript:;">Vietnam</a>
+				</div>
+			</div>
 		</header>
 		<section class="worldcup_sec gap">
 			<div class="worldcup_title">
@@ -34,18 +37,24 @@
 				<p id="m03_s_003">어떤 가전이 나의 취향인지 선택해주세요.</p>
 			</div>
 			<div class="worldcup_list">
-				<button id="m03_item_18" type="button" onclick="popupOpen('m03_scan_clear_img_18')" ontouchstart="popupOpen('m03_scan_clear_img_18')" class="worldcup_item active_toggle">
-					<span class="img_wrap"><img src="../../image/03_mission/img_18_LG_Styler.png" alt="LG Styler"></span>
+				<button id="m03_item_18" type="button" onclick="popupOpen('m03_scan_clear_img_14')" ontouchstart="popupOpen('m03_scan_clear_img_14')" class="worldcup_item active_toggle">
+					<span class="img_wrap"><img src="../../image/03_mission/img_18_LG_Styler.png" alt="Styler"></span>
 					<span class="txt_wrap">
-						<h3 id="m03_s_048">LG Styler</h3>
+						<h3 id="m03_s_048">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_18_b.svg" alt="Styler" class="w_off_logo">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_18.svg" alt="Styler" class="w_active_logo">
+						</h3>
 						<p id="m03_s_049">매번 세탁소에 가지 않아도<br />
 							깔끔하고 우아한 스타일</p>
 					</span>
 				</button>
 				<button id="m03_item_14" type="button" onclick="popupOpen('m03_scan_clear_img_14')" ontouchstart="popupOpen('m03_scan_clear_img_14')" class="worldcup_item active_toggle">
-					<span class="img_wrap"><img src="../../image/03_mission/img_14_LG_Tiiun.png" alt=""></span>
+					<span class="img_wrap"><img src="../../image/03_mission/img_14_LG_Tiiun.png" alt="Tiiun"></span>
 					<span class="txt_wrap">
-						<h3 id="m03_s_037">LG Tiiun</h3>
+						<h3 id="m03_s_037">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_14_b.svg" alt="Tiiun" class="w_off_logo">
+							<img src="../../image/03_mission/worldcup_logo/img_logo_14.svg" alt="Tiiun" class="w_active_logo">
+						</h3>
 						<p id="m03_s_038">쉽게 키우는<br />
 							나만의 작은 정원</p>
 						<span id="m03_s_039" class="minitxt">*출시예정</span>
@@ -53,14 +62,17 @@
 				</button>
 			</div>
 			<!-- 월드컵 완료시 노출 팝업 14 -->
-			<div id="m03_scan_clear_img_14" class="popup_wrap blur_pop">
-				<div class="blur_bg"></div>
+			<div id="m03_scan_clear_img_14" class="worldcup_pop popup_wrap blur_pop" style="display: flex;">
+				<div class="blur_bg active"></div>
 				<div class="pop_content">
 					<div id="m03_s_102" class="mission_clear"><img src="../../image/common/icn_mission_s.svg" alt="">Clear!</div>
-					<h2 id="m03_s_103">나의 픽 가전은 LG Tiiun 입니다!</h2>
+					<h2 id="m03_s_103">나의 픽 가전은</h2>
+					<img id="m03_s_103_img" class="pop_logo_img" src="../../image/03_mission/worldcup_logo/img_logo_14_c.svg" alt="">
+					<!-- <h2 id="m03_s_103">나의 픽 가전은 LG Tiiun 입니다!</h2> -->
+					<p id="m03_s_105">자동 재배 시스템으로 초간편 홈가드닝이 가능한 플랜테리어 아이템 입니다.</p>
 					<p id="m03_s_104">여러분의 의견을 바탕으로 <br />
 						새로운 제품이 론칭될 예정이에요.</p>
-					<p id="m03_s_105">LG Tiiun은 자동 재배 시스템으로 초간편 홈가드닝이 가능한 플랜테리어 아이템 입니다.</p>
+					
 					<div class="pop_bottom_btns">
 						<button onclick="popClose()" id="btn_m03_img_14_close" class="ok_circle btn_pop_circle">닫기</button>
 					</div>

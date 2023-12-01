@@ -22,10 +22,19 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).toggleClass('active');
     });
-    
-    $('.language li').on('click touchstart', function(e) {
-        e.preventDefault();
-        $('.language li').toggleClass('active');
+    // 언어 선택 드롭다운 토글
+    $(".language .current").on('click touchstart', function(e){
+        e.preventDefault(); // 기본 이벤트 방지
+        $(".dropdown_cont").toggle(); // 클릭 혹은 터치 시 토글
+        $(this).toggleClass("active");
+    });
+    $(document).on('click touchstart', function(e) {
+        if (!$(e.target).closest('.language .current, .dropdown_cont').length) {
+            if ($(".language .current").hasClass("active") || $(".dropdown_cont").is(":visible")) {
+                $(".language .current").removeClass("active");
+                $(".dropdown_cont").hide();
+            }
+        }
     });
 });
 /* 모바일 브라우저 세로 높이값 측정 */

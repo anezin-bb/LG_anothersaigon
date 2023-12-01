@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------*/
 /* 레이아웃 */
 body * {
-  font-family: "Spoqa", sans-serif;
+  font-family: "Spoqa", "Noto Sans", sans-serif;
 }
 
 /* flex로 왼,오른,위,아래 중력배치 */
@@ -170,11 +170,19 @@ main {
 }
 
 .adm_logo {
-  padding: 53px 39px;
+  padding: 53px 15px;
 }
 .adm_logo img {
   display: block;
   margin: 0 auto;
+}
+.adm_logo .logo_text {
+  color: #000000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
 }
 
 .adm_menulist {
@@ -194,7 +202,7 @@ main {
   padding-left: 30px;
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: contain;
+  background-size: 20px;
   color: #000000;
   font-size: 16px;
   font-style: normal;

@@ -574,4 +574,20 @@ etc
 .adm_table_cont.adm_table_cont_obs {
   margin-bottom: 0;
   height: auto;
+}
+
+/*
+베트남어 css 이슈
+*/
+html[lang=vi] body * {
+  font-family: "Noto Sans", "Spoqa", sans-serif;
+}
+html[lang=vi] .adm_menulist {
+  padding-left: 0;
+}
+html[lang=vi] .adm_top_title {
+  width: 110px;
+}
+html[lang=vi] table.adm_table col:first-child, html[lang=vi] th:first-child {
+  width: 80px !important;
 }/*# sourceMappingURL=admin.css.map */

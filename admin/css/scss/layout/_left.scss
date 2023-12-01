@@ -9,10 +9,18 @@
 	z-index: 2;
 }
 .adm_logo {
-	padding: 53px 39px;
+	padding: 53px 15px;
 	img {
 		display: block; 
 		margin: 0 auto;
+	}
+	.logo_text {
+		color: $txt-main-b1;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: normal;
+		margin-top: 20px;
 	}
 }
 .adm_menulist {
@@ -30,7 +38,7 @@
 			padding-left: 30px;
 			background-repeat: no-repeat;
 			background-position: left center;
-			background-size: contain;
+			background-size: 20px;
 			color: $txt-main-b1;
 			font-size: 16px;
 			font-style: normal;

@@ -24,10 +24,13 @@
 		<header>
 			<h1><img src="../../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
-			<ul class="language">
-				<li class="current"><a id="lang_e" href="javascript:;">English</a></li>
-				<li><a id="lang_v" href="javascript:;">Vietnam</a></li>
-			</ul>
+			<div class="language">
+				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<div class="dropdown_cont">
+					<a id="lang_e" href="javascript:;">English</a>
+					<a id="lang_v" href="javascript:;">Vietnam</a>
+				</div>
+			</div>
 		</header>
 		<section class="mission01_scan">
 			<div class="scan_wrap">

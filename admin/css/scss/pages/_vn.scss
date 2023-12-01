@@ -1,0 +1,11 @@
+/*
+베트남어 css 이슈
+*/
+html[lang="vi"] {
+	body * {
+		font-family : "Noto Sans", "Spoqa", sans-serif;
+	}
+	.adm_menulist {padding-left: 0;}
+	.adm_top_title {width: 110px;}
+	table.adm_table col:first-child, th:first-child {width: 80px !important;}
+}
