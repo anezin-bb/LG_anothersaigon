@@ -29,12 +29,12 @@
 				<div class="m_dropdown_menu">
 					<button class="current">Home</button>
 					<nav>
-						<button id="gnb_section00_m" onclick="scrollTopSec('sec01_info')">Home</button>
-						<button id="gnb_section01_m" onclick="scrollTopSec('sec02_map')">Location</button>
-						<button id="gnb_section02_m" onclick="scrollTopSec('sec03_time')">Operating hours</button>
-						<button id="gnb_section03_m" onclick="scrollTopSec('sec04_floor')">Floor information</button>
-						<button id="gnb_section04_m" onclick="scrollTopSec('sec05_guide')">Mobile guide</button>
-						<button id="gnb_section05_m" onclick="scrollTopSec('sec06_event')">Event</button>
+						<button id="gnb_section00_m" onclick="scrollTopSec('sec01_info')" ontouchstart="scrollTopSec('sec01_info')">Home</button>
+						<button id="gnb_section01_m" onclick="scrollTopSec('sec02_map')" ontouchstart="scrollTopSec('sec02_map')">Location</button>
+						<button id="gnb_section02_m" onclick="scrollTopSec('sec03_time')" ontouchstart="scrollTopSec('sec03_time')">Operating hours</button>
+						<button id="gnb_section03_m" onclick="scrollTopSec('sec04_floor')" ontouchstart="scrollTopSec('sec04_floor')">Floor information</button>
+						<button id="gnb_section04_m" onclick="scrollTopSec('sec05_guide')" ontouchstart="scrollTopSec('sec05_guide')">Mobile guide</button>
+						<button id="gnb_section05_m" onclick="scrollTopSec('sec06_event')" ontouchstart="scrollTopSec('sec06_event')">Event</button>
 					</nav>
 				</div>
 			</div>
@@ -586,6 +586,10 @@
 						$('.m_dropdown_menu .current').text(newButtonText);
 					}
 				}, 150); // 타이머 지연 시간 (예: 150 밀리초)
+			});
+			
+			$(".m_dropdown_menu button").on('click touchstart', function() {
+				scrollTopSec($(this).attr('id').replace('_m', ''));
 			});
 		});
 
