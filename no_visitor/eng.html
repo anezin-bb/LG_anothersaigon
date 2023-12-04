@@ -9,8 +9,24 @@
 	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="./css/slick-theme.css">
 	<link rel="stylesheet" href="./css/novisitor.css">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Another Saigon by LG">
+	<meta property="og:description" content="Enjoy the Good Life Solution">
+	<meta name="description" content="Enjoy the Good Life Solution">
+	<meta name="keywords" content="Another Saigon, LG, Another Saigon by LG">
+	<meta property="og:image" content="./image/mata_img_800x400.png">
+	<meta name="robots" content="index, follow">
 	<script src="./js/jquery-3.5.1.min.js"></script>
 	<script src="./js/slick.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RR9VEYJQY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-6RR9VEYJQY');
+	</script>
 </head>
 <body class="no_visitor_eng no_visitor">
 	<header>
@@ -41,8 +57,8 @@
 			<div class="language">
 				<a href="#" class="current">English</a>
 				<div class="dropdown_cont">
-					<a id="lang_e" href="./eng.html">English</a>
-					<a id="lang_v" href="./vet.html">Vietnam</a>
+					<a id="lang_e" href="./eng.html" class="goto_e_eng">English</a>
+					<a id="lang_v" href="./vet.html" class="goto_v_eng">Vietnam</a>
 				</div>
 			</div>
 		</div>
@@ -136,7 +152,7 @@
 							</div>
 						</div>
 						<div class="slide roundbox">
-							<figure class="slide_img" style="background-image: url('./image/img_info_gf_03.png');"><a href="https://thecoffeehouse.com/" target="_blank" id="link_gf_03" class="slide_link">LINK</a></figure>
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_03.png');"><a href="https://thecoffeehouse.com/" target="_blank" id="link_gf_03" class="link_coffee_eng slide_link">LINK</a></figure>
 							<div class="slide_cont">
 								<h5>The Coffee House</h5>
 								<h6>Good Friend #2</h6>
@@ -148,7 +164,7 @@
 							</div>
 						</div>
 						<div class="slide roundbox">
-							<figure class="slide_img" style="background-image: url('./image/img_info_gf_04.png');"><a href="https://www.dongdongsaigon.com/en/" target="_blank" id="link_gf_04" class="slide_link">LINK</a></figure>
+							<figure class="slide_img" style="background-image: url('./image/img_info_gf_04.png');"><a href="https://www.dongdongsaigon.com/en/" target="_blank" id="link_gf_04" class="link_dong_eng slide_link">LINK</a></figure>
 							<div class="slide_cont">
 								<h5>Dong Dong</h5>
 								<h6>Good Friend #1</h6>
@@ -199,7 +215,7 @@
 							</div>
 						</div>
 						<div class="slide roundbox">
-							<figure class="slide_img" style="background-image: url('./image/img_info_1f_04.png');"><a href="https://vnggames.com/vn/en" target="_blank" id="link_1f_04" class="slide_link">LINK</a></figure>
+							<figure class="slide_img" style="background-image: url('./image/img_info_1f_04.png');"><a href="https://vnggames.com/vn/en" target="_blank" id="link_1f_04" class="link_vng_eng slide_link">LINK</a></figure>
 							<div class="slide_cont">
 								<h5>VNGGames</h5>
 								<h6>Good Friend #3</h6>
@@ -378,11 +394,11 @@
 
 				<!-- info_sns_list start -->
 				<ul class="info_sns_list">
-					<li><a href="https://www.lg.com/vn?utm_source=ASG&utm_medium=OTH&utm_campaign=HQ-HA_HA_ALL_VN_23_Q4_&utm_content=flagship_another_saigon" target="_blank"><img src="./image/icn_info_lg.svg" alt=""></a></li>
-					<li><a href="https://www.facebook.com/LGEVietnam/" target="_blank"><img src="./image/icn_info_facebook.svg" alt=""></a></li>
-					<li><a href="https://www.instagram.com/lgvietnam/" target="_blank"><img src="./image/icn_info_instagram.svg" alt=""></a></li>
-					<li><a href="https://www.youtube.com/user/LgCinema3DVietnam" target="_blank"><img src="./image/icn_info_youtube.svg" alt=""></a></li>
-					<li><a href="https://www.tiktok.com/@lg_vietnam/" target="_blank"><img src="./image/icn_info_tictok.svg" alt=""></a></li>
+					<li><a href="https://www.lg.com/vn?utm_source=ASG&utm_medium=OTH&utm_campaign=HQ-HA_HA_ALL_VN_23_Q4_&utm_content=flagship_another_saigon" target="_blank" class="sns_lg_eng"><img src="./image/icn_info_lg.svg" alt="go to lg official lg site"></a></li>
+					<li><a href="https://www.facebook.com/LGEVietnam/" target="_blank" class="sns_facebook_eng"><img src="./image/icn_info_facebook.svg" alt="go to lg official facebook"></a></li>
+					<li><a href="https://www.instagram.com/lgvietnam/" target="_blank" class="sns_instagram_eng"><img src="./image/icn_info_instagram.svg" alt="go to lg official instagram"></a></li>
+					<li><a href="https://www.youtube.com/user/LgCinema3DVietnam" target="_blank" class="sns_youtube_eng"><img src="./image/icn_info_youtube.svg" alt="go to lg official youtube"></a></li>
+					<li><a href="https://www.tiktok.com/@lg_vietnam/" target="_blank" class="sns_tictok_eng"><img src="./image/icn_info_tictok.svg" alt="go to lg official tic tok"></a></li>
 				</ul>
 				<!-- info_sns_list end -->
 			</div>
@@ -554,6 +570,7 @@
 
 			// 스크롤에 따른 네비게이션 버튼 텍스트 변경
 			var mobileSections = {
+				'sec01_info': 'gnb_section00_m',
 				'sec02_map': 'gnb_section01_m',
 				'sec03_time': 'gnb_section02_m',
 				'sec04_floor': 'gnb_section03_m',
@@ -587,7 +604,7 @@
 					}
 				}, 150); // 타이머 지연 시간 (예: 150 밀리초)
 			});
-			
+
 			$(".m_dropdown_menu button").on('click touchstart', function() {
 				scrollTopSec($(this).attr('id').replace('_m', ''));
 			});

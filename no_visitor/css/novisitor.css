@@ -38,10 +38,14 @@ nav button.active{  color:#000;   font-weight:700}
 
 .pc_nav_wrap, .mo_nav_wrap{  display:inline-flex;   flex-direction:row;   margin-right:auto;   right:auto;   left:0}
 
-@media (min-width:1025px){  .pc_nav_wrap{    display:flex}
-  .mo_nav_wrap{    display:none}
+@media (min-width:1025px){  
+  .pc_nav_wrap{    display:flex;}
+  .mo_nav_wrap{    display:none;}
+  .language:hover .dropdown_cont {display: block;}
+  .language:hover .current::after {background-image: url('../image/icn_dropdown_on.svg');}
 }
-@media (max-width:1024px){  .pc_nav_wrap{    display:none}
+@media (max-width:1024px){  
+  .pc_nav_wrap{    display:none}
   .mo_nav_wrap{    display:flex}
   .language:hover .dropdown_cont{ display:none;}
 }

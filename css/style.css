@@ -379,6 +379,11 @@ Survey
         margin-top: 50vh !important;
     }
 }
+@media (max-height: 656px) {
+    .bottom_content {
+        margin-top: auto !important;
+    }
+}
 /* 
 베트남어 대응
 */
