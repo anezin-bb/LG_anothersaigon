@@ -1,7 +1,7 @@
 /* 팝업 */
 function popupOpen(targetId) {
-    $('html').css({'overflow':'hidden'});
-    $('html').css({'position':'fixed'});
+    $('body').css({'overflow':'hidden'});
+    //$('body').css({'position':'fixed'});
     $('#'+targetId).css("display", "flex");
     requestAnimationFrame(() => {
         $('#'+targetId).find('.blur_bg').addClass('active');
@@ -11,9 +11,9 @@ function popupOpen(targetId) {
 /* 팝업 닫기 */
 function popClose() {
 	$('.popup_wrap').css("display", "none");
-    $('html').css({'overflow':'unset'});
-	$('html').css({'overflow-y':'scroll'});
-    $('html').css({'position':'relative'}); 
+    $('body').css({'overflow':'unset'});
+	$('body').css({'overflow-y':'scroll'});
+    //$('body').css({'position':'relative'}); 
 	return false;
 };
 /* 터치시 active 클래스가 나타나는 js */
