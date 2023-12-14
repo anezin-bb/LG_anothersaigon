@@ -56,6 +56,14 @@
 			}
 		};
     </script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PH8PTSGPH4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PH8PTSGPH4');
+	</script>
 </head>
 <body class="login_b_page bg03">
 	<!-- 스플래시 화면 이미지 -->
@@ -65,7 +73,7 @@
 				<h2 id="login_01">Enjoy the Good Life Solution</h2>
 				<p id="login_02">Take one step forward from the ordinary to <br />
 					enjoy the Good Life with LG </p>
-			   <p id="login_03">Say hello to Another Saigon</p>
+				<p id="login_03">Say hello to Another Saigon</p>
 			<img id="splash_img02" src="../image/01_login/splash_02.svg" alt="Life's Good">
 		</div>
     </div>
@@ -75,10 +83,10 @@
 		<header>
 			<h1><img src="../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<div class="language">
-				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<button class="current" id="lang_current">English</button>
 				<div class="dropdown_cont">
-					<a id="lang_e" href="javascript:;">English</a>
-					<a id="lang_v" href="javascript:;">Vietnam</a>
+					<button id="lang_e">English</button>
+					<button id="lang_v">Vietnam</button>
 				</div>
 			</div>
 		</header>
@@ -100,7 +108,9 @@
 				<li><a href="javascript:;" class="sns_amazon"><img src="../image/01_login/logo_amazon_w.svg" alt="amazon logo"></a></li>
 			</ul>
 			<div class="link_wrap">
-				<button id="link_policy" class="line_link" onclick="popupOpen('pop_policy')">개인 정보 정책</button>
+				<button id="link_policy" class="line_link2" onclick="popupOpen('pop_policy')">개인 정보 정책</button>
+				<span class="line"></span>
+				<button id="login_11" class="line_link2" onclick="popupOpen('pop_policy2')">이용 약관</button>
 			</div>
 		</div>
 	</div>
@@ -113,6 +123,17 @@
 			<button onclick="popClose()" class="btn_pop_close">Close</button>
 			<div class="policy_wrap">
 				<p id="login_10">text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text text</p>
+			</div>
+		</div>
+	</div>
+	<div id="pop_policy2" class="popup_wrap survey_pop">
+		<div class="pop_content gap">
+			<div class="title_area">
+				<h1 id="link_Terms">이용약관</h1>
+			</div>
+			<button id="" onclick="popClose()" class="btn_pop_close">Close</button>
+			<div class="policy_wrap">
+				<p id="login_12">text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text text</p>
 			</div>
 		</div>
 	</div>

@@ -5,7 +5,13 @@ html[lang="vi"] {
 	body * {
 		font-family : "Noto Sans", "Spoqa", sans-serif;
 	}
+	.btn {min-width: 105px;}
+	.adm_menulist li, .adm_menulist_sub li a {letter-spacing: -0.02rem;}
 	.adm_menulist {padding-left: 0;}
-	.adm_top_title {width: 110px;}
-	table.adm_table col:first-child, th:first-child {width: 80px !important;}
+	.adm_top_title {width: 125px;}
+	table.adm_table th, table.adm_table td {padding: 20px 5px;}
+	table.adm_table col:first-child, table.adm_table th:first-child, table.adm_table td:first-child {width: 100px !important; min-width: 80px !important;}
+	table.adm_table col:nth-child(3) {width: auto !important;}
+	.dashboard_section table col:nth-child(2) {width: auto !important;}
+	.topsch_area .chk_wrap #m01_scent_7_label {width: 100%;}
 }

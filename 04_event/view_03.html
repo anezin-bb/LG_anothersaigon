@@ -26,10 +26,10 @@
 			<h1><img src="../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<button ontouchstart="history.go(-1)" class="btn_header_back">back</button>
 			<div class="language">
-				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<button class="current" id="lang_current">English</button>
 				<div class="dropdown_cont">
-					<a id="lang_e" href="javascript:;">English</a>
-					<a id="lang_v" href="javascript:;">Vietnam</a>
+					<button id="lang_e">English</button>
+					<button id="lang_v">Vietnam</button>
 				</div>
 			</div>
 		</header>
@@ -43,7 +43,9 @@
 				<img src="../image/04_event/img_event_ex.png" alt="예시">
 			</div>
 		</section>
-		<div class="bottom_wrap">
+		<!-- 2023-12-07 이벤트 활용동의 체크 및 팝업 추가
+			완료시 아래 <div class="bottom_wrap esg_bottom">에서 esg_bottom이 사라집니다. -->
+		<div class="bottom_wrap esg_bottom">
 			<form action="">
 				<div class="gap">
 					<div class="input_block">
@@ -58,12 +60,31 @@
 							<input type="text" name="event_mail" id="event_mail2" placeholder="직접입력">
 						</div>
 					</div>
+					<div class="input_block chk_block">
+						<label for="event_chk_1_1" class="chk">
+							<input type="checkbox" name="event_chk_1" id="event_chk_1_1">
+							<span class="chkmark"></span>
+							<span class="chkText" id="ev_v_chktext">이벤트 활용 동의</span>
+						</label>
+						<button id="ev_v_chkbtn" class="chk_poptext" onclick="popupOpen('pop_event1')" type="button">상세 보기</button>
+					</div>
 				</div>
 				<!-- 참여완료 했을때는 버튼이 disabled="disabled" 되며, 텍스트가 바뀝니다.
 				<button onclick="#" id="event_go_link07" class="btn_event_bottom" disabled="disabled">참여 완료</button>
 				-->
-				<button onclick="#" id="event_go_link03" class="btn_event_bottom" disabled="disabled">신청하기</button>
+				<button onclick="window.location.href='view_04.html';" id="event_go_link03" class="btn_event_bottom" disabled="disabled" type="button">신청하기</button>
 			</form>
+		</div>
+	</div>
+	<div id="pop_event1" class="popup_wrap survey_pop">
+		<div class="pop_content gap">
+			<div class="title_area">
+				<h1 id="link_Terms_e">이벤트 활용 동의</h1>
+			</div>
+			<button id="" onclick="popClose()" class="btn_pop_close">Close</button>
+			<div class="policy_wrap">
+				<p id="ev_v_07">text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text text</p>
+			</div>
 		</div>
 	</div>
 	<script>
@@ -71,22 +92,25 @@
 		var event_nameInput = document.getElementById("event_name");
 		var event_mail1Input = document.getElementById("event_mail1");
 		var event_mail2Input = document.getElementById("event_mail2");
-		var event_go_link03Button = document.getElementById("event_go_link03");
+		var event_chk1Input = document.getElementById("event_chk_1_1"); // 체크박스 요소 ID 수정
+		var event_go_link03Button = document.getElementById("event_go_link03"); // 버튼 ID 추가
 	
-		// 입력 필드에 입력이 발생할 때마다 활성화 여부를 확인하는 함수를 정의합니다.
+		// 입력 필드와 체크박스 상태를 확인하는 함수를 정의합니다.
 		function checkInputs() {
-			// 모든 입력 필드의 값이 비어 있지 않은 경우에만 버튼을 활성화합니다.
-			if (event_nameInput.value.trim() !== "" && event_mail1Input.value.trim() !== "" && event_mail2Input.value.trim() !== "") {
+			// 모든 입력 필드의 값이 비어 있지 않고, 체크박스가 체크되었을 때만 버튼을 활성화합니다.
+			if (event_nameInput.value.trim() !== "" && event_mail1Input.value.trim() !== "" && 
+				event_mail2Input.value.trim() !== "" && event_chk1Input.checked) {
 				event_go_link03Button.removeAttribute("disabled");
 			} else {
 				event_go_link03Button.setAttribute("disabled", "disabled");
 			}
 		}
-	
-		// 각 입력 필드에 이벤트 리스너를 추가하여 입력이 발생할 때마다 checkInputs 함수를 호출합니다.
+		// 각 입력 필드와 체크박스에 이벤트 리스너를 추가합니다.
 		event_nameInput.addEventListener("input", checkInputs);
 		event_mail1Input.addEventListener("input", checkInputs);
 		event_mail2Input.addEventListener("input", checkInputs);
+		event_chk1Input.addEventListener("change", checkInputs); // 체크박스 상태 변경 감지
 	</script>
+	
 </body>
 </html>

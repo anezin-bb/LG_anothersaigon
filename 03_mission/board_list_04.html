@@ -26,10 +26,10 @@
 		<header>
 			<h1><img src="../image/common/logo.svg" alt="Another Saigon by LG"></h1>
 			<div class="language">
-				<a href="javascript:;" class="current" id="lang_current">English</a>
+				<button class="current" id="lang_current">English</button>
 				<div class="dropdown_cont">
-					<a id="lang_e" href="javascript:;">English</a>
-					<a id="lang_v" href="javascript:;">Vietnam</a>
+					<button id="lang_e">English</button>
+					<button id="lang_v">Vietnam</button>
 				</div>
 			</div>
 		</header>
@@ -58,6 +58,8 @@
 			<!-- 미션 전부 완료, 서베이까지 완료시 다시 비활성화 되며 텍스트가 변경됩니다. -->
 			<div class="m_btn_wrap">
 				<button class="btn_not_survey btn_middle_full" id="m_05_04_5">GF에서 리워드 받기!</button>
+				<!-- 2023-12-07 추가 : 모든 미션 완료, 서베이 완료 시 아래 버튼이 나타납니다.
+				<button class="btn_not_survey btn_middle_full" id="m_05_04_5_fin" disabled>리워드 증정 완료</button> -->
 			</div>
 			
 			<div class="mission_box">
@@ -103,7 +105,8 @@
 					<div class="clear"><h3 id="m_05_04_20">Clear!</h3></div>
 				</div>
 			</div>
-			<!-- 미션 및 서베이까지 다 하면 생기는 버튼입니다. -->
+			<!-- 미션 및 서베이까지 다 하면 생기는 버튼입니다. 
+			서베이까지 다 마치면 아래 link_wrap이 다시 사라집니다. -->
 			<div class="link_wrap">
 				<button id="link_m_password" class="line_link" onclick="location.href='../05_survey/password.html'">운영 스텝 체크</button>
 			</div>

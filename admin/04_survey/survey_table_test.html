@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Another Saigon by LG - Admin</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/components.css">
+	<link rel="stylesheet" href="../css/admin.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/admin.js"></script>
+</head>
+<body>
+	<!-- header adm_gnb 메뉴 시작 -->
+	<header class="adm_gnb">
+		<h1 class="adm_logo">
+			<a href="../01_dashboard/dashboard.html">
+				<img src="../image/logo_side2.svg" alt="Another Saigon by LG">
+				<div class="logo_text" id="adm_logo_text">어나더사이공 관리시스템</div>
+			</a>
+		</h1>
+		<!-- adm_menulist -->
+		<ul class="adm_menulist">
+			<li><a href="../01_dashboard/dashboard.html" class="menu_link01" id="ad_dash">대시보드</a></li>
+			<li><a href="../02_member/member_list.html" class="menu_link02" id="ad_people">회원리스트</a></li>
+			<li>
+				<a href="../03_mission/data.html" class="menu_link03" id="ad_experience">체험리스트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../03_mission/data.html" class="menu_link031" id="ad_data">데이터</a></li>
+					<li><a href="../03_mission/mission01.html" class="menu_link032" id="ad_mission01">스타일러 시향 체험</a></li>
+					<li><a href="../03_mission/mission02.html" class="menu_link033" id="ad_mission02">My Objet Color</a></li>
+					<li><a href="../03_mission/mission03.html" class="menu_link034" id="ad_mission03">오브제갤러리 제품 월드컵</a></li>
+					<li><a href="../03_mission/mission04.html" class="menu_link035" id="ad_mission04">숨은 QR 찾기</a></li>
+					<li><a href="../03_mission/mission05.html" class="menu_link035" id="ad_mission05">SNS 공유하기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../04_survey/survey_data.html" class="active menu_link04" id="ad_survey">서베이</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../04_survey/survey_data.html" class="menu_link041" id="ad_survey_data">데이터</a></li>
+					<li><a href="../04_survey/survey_table.html" class="active menu_link042" id="ad_survey_table">테이블</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../05_event/event_list.html" class="menu_link05" id="ad_event">이벤트</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../05_event/event_list.html" class="menu_link051" id="ad_event_list">리스트</a></li>
+					<li><a href="../05_event/esg.html" class="menu_link052" id="ad_event_esg">ESG 서명하기</a></li>
+					<li><a href="../05_event/join.html" class="menu_link053" id="ad_event_join">닷컴 회원가입</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../06_about/vietnam_about.html" class="menu_link06" id="ad_about">공간 소개</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../06_about/vietnam_about.html" class="menu_link061" id="ad_about_vet">베트남어</a></li>
+					<li><a href="../06_about/english_about.html" class="menu_link062" id="ad_about_en">영어</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../07_banner/vietnam_banner.html" class="menu_link07" id="ad_ban">미션 배너</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../07_banner/vietnam_banner.html" class="menu_link071" id="ad_banner_vet">베트남어</a></li>
+					<li><a href="../07_banner/english_banner.html" class="menu_link072" id="ad_banner_en">영어</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../08_obs/obs_scan.html" class="menu_link08" id="ad_qr">QR 스캔</a>
+				<ul class="adm_menulist_sub">
+					<li><a href="../08_obs/obs_scan.html" class="menu_link081" id="ad_qr_obs">제품 QR(OBS)</a></li>
+					<li><a href="../08_obs/place_scan.html" class="menu_link082" id="ad_qr_place">공간 QR</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!-- adm_menulist end -->
+		<div class="gnb_bottom">
+			<button id="menu_link_adm" onclick="location.href='../09_admpeople/admpeople_list.html'">관리자 관리</button>
+			<div class="dropdown_bottom dropdown">
+				<button class="dropbtn" id="ad_lang">한국어</button>
+				<div class="drop_cont">
+					<a href="#" id="ad_ko_ko">한국어</a>
+					<a href="#" id="ad_ko_en">ENGLISH</a>
+					<a href="#" id="ad_ko_ti">Tiếng Việt</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header adm_gnb end -->
+	<main>
+		<!-- top : adm_top_section -->
+		<section class="adm_top_section">
+			<div class="left">
+				<ul class="top_nav_list">
+					<li class="prev_nav" id="ad_survey02_nav">서베이</li>
+					<li class="current_nav"><h2 id="ad_survey_table_nav">테이블</h2></li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="dropdown_top dropdown">
+					<button class="dropbtn" id="ad_top_current">어나더사이공</button>
+					<div class="drop_cont">
+						<a href="#" id="ad_another">어나더사이공</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- top : adm_top_section end -->
+		<section class="adm_section">
+			<!-- topsch_area -->
+			<div class="topsch_area">
+				<form action="">
+					<div class="date_row flex_row">
+						<h3 class="adm_top_title inblock" id="survey_t_date">기간</h3>
+						<div class="date_sch_wrap">
+							<input type="text" name="survey_t_date" id="survey_t_date1" class="input_date" placeholder="날짜 선택">
+							<span class="date_during">~</span>
+							<input type="text" name="survey_t_date" id="survey_t_date2" class="input_date" placeholder="날짜 선택">
+							<button id="btn_survey_t_sch" class="btn_date btn_s btn_black btn" disabled>검색</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- topsch_area end -->
+			<!-- adm_table_cont -->
+			<div class="adm_table_cont_survey_t adm_table_cont flex_column bg_w">
+				<div class="adm_table_top">
+					<div class="left">
+						<p class="table_total inblock" id="survey_t_table_all">전체 : 100건</p>
+					</div>
+					<div class="right">
+						<button id="down_survey_t_data" class="btn_m btn_primary btn">다운로드</button>
+					</div>
+				</div>
+				<!-- survey_q1 -->
+				<div class="survey_q1 survey_q">
+					<h4 class="survey_q_title">Q1. Another Saigon by LG의 공간에 대해서 얼마나 만족하시나요?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q1 end-->
+				<!-- survey_q2 -->
+				<div class="survey_q2 survey_q">
+					<h4 class="survey_q_title">Q2. Another Saigon by LG에서 가장 만족스러운 경험 콘텐츠는 무엇 입니까?(복수 응답 가능)</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">GF Hello LG – Better Life for All</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">GF Hello LG – The Coffee House x LG</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">1F The Friend for Good life – Objet Collection</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">1F The Friend for Good life – LG x VNG Games</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Story</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5F The Joy of Good life – Mood up Stage</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1240</td><td>565</td><td>595</td><td class="line_r">80</td>
+								<td>60</td><td>40</td><td class="line_r">8</td>
+								<td>130</td><td>120</td><td class="line_r">8</td>
+								<td>80</td><td>80</td><td class="line_r">8</td>
+								<td>20</td><td>80</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>30</td><td>20</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td>8</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q2 end-->
+			</div>
+			<!-- adm_table_cont end -->
+		</section>
+	</main>
+</body>
+</html>

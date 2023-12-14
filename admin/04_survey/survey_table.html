@@ -20,7 +20,7 @@
 		<h1 class="adm_logo">
 			<a href="../01_dashboard/dashboard.html">
 				<img src="../image/logo_side2.svg" alt="Another Saigon by LG">
-				<div class="logo_text">어나더사이공 관리시스템</div>
+				<div class="logo_text" id="adm_logo_text">어나더사이공 관리시스템</div>
 			</a>
 		</h1>
 		<!-- adm_menulist -->
@@ -109,7 +109,1910 @@
 		</section>
 		<!-- top : adm_top_section end -->
 		<section class="adm_section">
-			<p>데이터 확정나면 진행 예정입니다.</p>
+			<!-- topsch_area -->
+			<div class="topsch_area">
+				<form action="">
+					<div class="date_row flex_row">
+						<h3 class="adm_top_title inblock" id="survey_t_date">기간</h3>
+						<div class="date_sch_wrap">
+							<input type="text" name="survey_t_date" id="survey_t_date1" class="input_date" placeholder="날짜 선택">
+							<span class="date_during">~</span>
+							<input type="text" name="survey_t_date" id="survey_t_date2" class="input_date" placeholder="날짜 선택">
+							<button id="btn_survey_t_sch" class="btn_date btn_s btn_black btn" disabled>검색</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- topsch_area end -->
+			<!-- adm_table_cont -->
+			<div class="adm_table_cont_survey_t adm_table_cont flex_column bg_w">
+				<div class="adm_table_top">
+					<div class="left">
+						<p class="table_total inblock" id="survey_t_table_all">전체 : 100건</p>
+					</div>
+					<div class="right">
+						<button id="down_survey_t_data" class="btn_m btn_primary btn">다운로드</button>
+					</div>
+				</div>
+				<!-- survey_q1 -->
+				<div class="survey_q1 survey_q">
+					<h4 class="survey_q_title">Q1. Another Saigon by LG의 공간에 대해서 얼마나 만족하시나요?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q1 end-->
+				<!-- survey_q2 -->
+				<div class="survey_q2 survey_q">
+					<h4 class="survey_q_title">Q2. Another Saigon by LG에서 가장 만족스러운 경험 콘텐츠는 무엇 입니까?(복수 응답 가능)</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">GF Hello LG – Better Life for All</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">GF Hello LG – The Coffee House x LG</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">1F The Friend for Good life – Objet Collection</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">1F The Friend for Good life – LG x VNG Games</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3F The Solution of Good Life – Good Life Story</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5F The Joy of Good life – Mood up Stage</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1240</td><td>565</td><td>595</td><td class="line_r">80</td>
+								<td>60</td><td>40</td><td class="line_r">8</td>
+								<td>130</td><td>120</td><td class="line_r">8</td>
+								<td>80</td><td>80</td><td class="line_r">8</td>
+								<td>20</td><td>80</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>30</td><td>20</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td>8</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q2 end-->
+				<!-- survey_q3 -->
+				<div class="survey_q3 survey_q">
+					<h4 class="survey_q_title">Q3. Another Saigon을 재방문 할 의사가 있으신가요?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q3 end-->
+				<!-- survey_q4 -->
+				<div class="survey_q4 survey_q">
+					<h4 class="survey_q_title">Q4. 재방문 하고싶은 목적은 무엇인가요? </h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">제품 구입 및 상담</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">신제품 확인</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">제품 콘텐츠 경험</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">지인 만남 / 여가 활동</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">협업 브랜드 체험 (VNG / TCH / Dong Dong 등)</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">재방문 의사 없음</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1080</td><td>495</td><td>525</td><td class="line_r">60</td>
+								<td>60</td><td>40</td><td class="line_r">6</td>
+								<td>80</td><td>70</td><td class="line_r">6</td>
+								<td>60</td><td>60</td><td class="line_r">6</td>
+								<td>20</td><td>80</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>30</td><td>20</td><td class="line_r">6</td>
+								<td>55</td><td>45</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>55</td><td>45</td><td>6</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q4 end-->
+				<!-- survey_q5 -->
+				<div class="survey_q5 survey_q">
+					<h4 class="survey_q_title">Q5. 귀하께서는 LG에서 진행한 Another Saigon을 체험하신 후, 기존대비 LG에 대한 호감(긍정적인 인식/선호도)이 생기셨나요?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q5 end-->
+				<!-- survey_q6 -->
+				<div class="survey_q6 survey_q">
+					<h4 class="survey_q_title">Q6. LG는 앞서간다 시장을 선도한다</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q6 end-->
+				<!-- survey_q7 -->
+				<div class="survey_q7 survey_q">
+					<h4 class="survey_q_title">Q7. LG는 환경친화적이다</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q7 end-->
+				<!-- survey_q8 -->
+				<div class="survey_q8 survey_q">
+					<h4 class="survey_q_title">Q8. LG는 창의적이다</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q8 end-->
+				<!-- survey_q9 -->
+				<div class="survey_q9 survey_q">
+					<h4 class="survey_q_title">Q9. LG는 나의 기대를 충족시킨다</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q9 end-->
+				<!-- survey_q10 -->
+				<div class="survey_q10 survey_q">
+					<h4 class="survey_q_title">Q10. LG는 나를 자랑스럽게 만든다</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q10 end-->
+				<!-- survey_q11 -->
+				<div class="survey_q11 survey_q">
+					<h4 class="survey_q_title">Q11. LG는 프리미엄하다(LG 제품을 구매한다면, 동일 스펙의 경쟁 브랜드 제품 대비 더 높은 금액을 지불할 의향이 있다)</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">1</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">4</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
+								<td>60</td><td>40</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>50</td><td>50</td><td class="line_r">5</td>
+								<td>20</td><td>80</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>30</td><td>20</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>55</td><td>45</td><td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q11 end-->
+				<!-- survey_q12 -->
+				<div class="survey_q12 survey_q">
+					<h4 class="survey_q_title">Q12. 귀하는 향후 얼마안에 신규 가전제품을 구매하실 예정입니까?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">6개월 이내</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">1년 이내</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">2년 이내</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">3년 이내</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5년 이내</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">5년 이내</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1080</td><td>495</td><td>525</td><td class="line_r">60</td>
+								<td>60</td><td>40</td><td class="line_r">6</td>
+								<td>80</td><td>70</td><td class="line_r">6</td>
+								<td>60</td><td>60</td><td class="line_r">6</td>
+								<td>20</td><td>80</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>30</td><td>20</td><td class="line_r">6</td>
+								<td>55</td><td>45</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>55</td><td>45</td><td>6</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q12 end-->
+				<!-- survey_q13 -->
+				<div class="survey_q13 survey_q">
+					<h4 class="survey_q_title">Q13. 어떤 제품을 구매하실 예정이십니까?(복수 응답 가능)</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">TV</td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">냉장고</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">세탁기</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">스타일러</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">모니터</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">노트북(IT)</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">기타</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계획없음</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1240</td><td>565</td><td>595</td><td class="line_r">80</td>
+								<td>60</td><td>40</td><td class="line_r">8</td>
+								<td>130</td><td>120</td><td class="line_r">8</td>
+								<td>80</td><td>80</td><td class="line_r">8</td>
+								<td>20</td><td>80</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>30</td><td>20</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
+								<td>55</td><td>45</td><td>8</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q13 end-->
+				<!-- survey q14~16은 참여자 신상정보 입력값입니다. -->
+				<!-- survey_q17 -->
+				<div class="survey_q17 survey_q">
+					<h4 class="survey_q_title">Q17. 어떤 경로로 알게 되어 방문하셨나요?</h4>
+					<div class="scrollbar">
+						<table class="survey_table adm_table">
+							<tr>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
+								<th colspan="4" class="line_b line_r">전체</th>
+								<th colspan="30" class="round_brr0 line_b">연령</th>
+							</tr>
+							<tr>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
+								<th colspan="3" class="line_r line_b">10세 미만</th>
+								<th colspan="3" class="line_r line_b">10~14세</th>
+								<th colspan="3" class="line_r line_b">15~19세</th>
+								<th colspan="3" class="line_r line_b">20~24세</th>
+								<th colspan="3" class="line_r line_b">25~29세</th>
+								<th colspan="3" class="line_r line_b">30~34세</th>
+								<th colspan="3" class="line_r line_b">35~39세</th>
+								<th colspan="3" class="line_r line_b">40~44세</th>
+								<th colspan="3" class="line_r line_b">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+							</tr>
+							<tr>
+								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
+								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+							</tr>
+							<tr>
+								<td class="line_r">SNS(유튜브, 페이스북, 인스타 등) </td>
+								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>5</td><td>5</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>55</td><td>45</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">지인 추천</td>
+								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
+								<td>30</td><td>20</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">지나가다가</td>
+								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">뉴스/광고</td>
+								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>15</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>20</td><td>80</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">검색</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">협업 브랜드 - VNG, TCH, Dong Dong</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+							</tr>
+							<tr>
+								<td class="line_r">기타</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r">계</td>
+								<td>1160</td><td>530</td><td>560</td><td class="line_r">70</td>
+								<td>60</td><td>40</td><td class="line_r">7</td>
+								<td>105</td><td>95</td><td class="line_r">7</td>
+								<td>70</td><td>70</td><td class="line_r">7</td>
+								<td>20</td><td>80</td><td class="line_r">7</td>
+								<td>45</td><td>55</td><td class="line_r">7</td>
+								<td>30</td><td>20</td><td class="line_r">7</td>
+								<td>55</td><td>45</td><td class="line_r">7</td>
+								<td>45</td><td>55</td><td class="line_r">7</td>
+								<td>45</td><td>55</td><td class="line_r">7</td>
+								<td>55</td><td>45</td><td>7</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- survey_q17 end-->
+			</div>
+			<!-- adm_table_cont end -->
 		</section>
 	</main>
 </body>

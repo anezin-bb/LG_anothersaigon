@@ -12,6 +12,13 @@ font-family: 'Noto Sans KR', sans-serif;
 *{margin: 0; padding: 0; -webkit-text-size-adjust:none; word-break:keep-all; box-sizing:border-box; position: relative;}
 *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
 html{-webkit-text-size-adjust:none;-webkit-overflow-scrolling:touch; overflow-y:auto; -ms-overflow-x: hidden;scroll-behavior: auto;}
+html {
+	/* Prevent font scaling in landscape */
+	-webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+	-moz-text-size-adjust: none; /*Firefox*/
+	-ms-text-size-adjust: none; /*Ie*/
+	-o-text-size-adjust: none; /*old versions of Opera*/
+}
 html,body{position: relative; -webkit-text-size-adjust:none; box-sizing: border-box; word-break: keep-all;scroll-behavior: auto;}
 /* html, body 기본 흰배경의 사이트일때 */ 
 html,body{width:100%; min-height:100%; background-color: #fff; -webkit-text-size-adjust:none; box-sizing: border-box; word-break: keep-all; scroll-behavior: auto; }

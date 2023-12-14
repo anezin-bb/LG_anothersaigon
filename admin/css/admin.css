@@ -355,6 +355,121 @@ adm_table_wrap style
   height: calc(100dvh - 645px);
 }
 
+.survey_q {
+  padding-top: 20px;
+}
+
+.survey_q_title {
+  color: #262626;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 20px;
+}
+
+.adm_table_cont_survey_t {
+  margin-bottom: 0;
+  height: auto;
+}
+
+.adm_table_cont_survey_t .adm_table_top {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.adm_table_cont_survey_t .scrollbar {
+  overflow-x: auto;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+table.adm_table tr th.round_tlr0,
+table.adm_table tr td.round_tlr0 {
+  border-top-left-radius: 0;
+}
+
+table.adm_table tr th.round_trr0,
+table.adm_table tr td.round_trr0 {
+  border-top-right-radius: 0;
+}
+
+table.adm_table tr th.round_blr0,
+table.adm_table tr td.round_blr0 {
+  border-bottom-left-radius: 0;
+}
+
+table.adm_table tr th.round_brr0,
+table.adm_table tr td.round_brr0 {
+  border-bottom-right-radius: 0;
+}
+
+table.adm_table tr td.line_l {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table.adm_table tr td.line_r {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table.adm_table tr td.line_b {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table.adm_table tr th.line_l {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+table.adm_table tr th.line_r {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+table.adm_table tr th.line_b {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+table.adm_table tr th.line_t {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 
+table.adm_table tr th.gray_bg.line_r {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+*/
+table.adm_table tr th.line_b0,
+table.adm_table tr td.line_b0 {
+  border-bottom: 0;
+}
+
+table.adm_table tr th.gray_bg,
+table.adm_table tr td.gray_bg {
+  background: #F4F4F4;
+}
+
+table.adm_table.survey_table tr th, table.adm_table.survey_table tr td {
+  min-width: 100px;
+}
+
+table.adm_table.survey_table tr:first-child th:first-child {
+  min-width: 255px;
+}
+
+table.adm_table.survey_table tr:last-child td {
+  border-bottom: 0;
+  background-color: #F4F4F4;
+  border-top: 2px solid #f4f4f4;
+}
+
+.survey_q2 table.adm_table.survey_table tr:last-child td:first-child {
+  border-radius: 0px;
+}
+
+.survey_q2 table.adm_table.survey_table tr:last-child td:last-child {
+  border-radius: 0px;
+  border-right: 0px solid rgba(0, 0, 0, 0.1);
+}
+
 /*
 adm_form_wrap style
 */
@@ -576,18 +691,47 @@ etc
   height: auto;
 }
 
+/* scroll_dim 
+.scroll_dim {
+	display: block;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    right: 0;
+    width: 10%;
+    height: 100%;
+}*/
 /*
 베트남어 css 이슈
 */
 html[lang=vi] body * {
   font-family: "Noto Sans", "Spoqa", sans-serif;
 }
+html[lang=vi] .btn {
+  min-width: 105px;
+}
+html[lang=vi] .adm_menulist li, html[lang=vi] .adm_menulist_sub li a {
+  letter-spacing: -0.02rem;
+}
 html[lang=vi] .adm_menulist {
   padding-left: 0;
 }
 html[lang=vi] .adm_top_title {
-  width: 110px;
+  width: 125px;
 }
-html[lang=vi] table.adm_table col:first-child, html[lang=vi] th:first-child {
-  width: 80px !important;
+html[lang=vi] table.adm_table th, html[lang=vi] table.adm_table td {
+  padding: 20px 5px;
+}
+html[lang=vi] table.adm_table col:first-child, html[lang=vi] table.adm_table th:first-child, html[lang=vi] table.adm_table td:first-child {
+  width: 100px !important;
+  min-width: 80px !important;
+}
+html[lang=vi] table.adm_table col:nth-child(3) {
+  width: auto !important;
+}
+html[lang=vi] .dashboard_section table col:nth-child(2) {
+  width: auto !important;
+}
+html[lang=vi] .topsch_area .chk_wrap #m01_scent_7_label {
+  width: 100%;
 }/*# sourceMappingURL=admin.css.map */
