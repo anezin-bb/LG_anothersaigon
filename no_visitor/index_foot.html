@@ -32,12 +32,14 @@
 		footer a:hover, footer a:focus {opacity: 1;}
 		.footer_component {max-width: 1284px; margin: 0 auto; padding: 22px 16px; font-size: 0; position: relative;}
 		.links_left {width: calc(100% - 500px);}
-		.links_left ul {display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px; padding-bottom: 5px;}
+		.links_left ul {display: flex; flex-direction: row; flex-wrap: wrap; padding-bottom: 5px;}
+		.links_left ul li {padding-right: 30px;}
 		.links_left ul li a {font-family:"LG_text"; font-size: 14px; line-height: 24px; color: #fff; font-style: normal; font-weight: 400; display: inline-block; position: relative;}
 		.footer_component .copyright {font-family:"LG_text"; margin-top: 5px; font-size: 14px; line-height: 20px; color: #b2b2b2; font-style: normal; font-weight: 400;}
 		.footer_component .copyright p {font-family:"LG_text"; font-size: 13px; line-height: 20px;}
 		.footer_info {margin-top: 8px;}
 		.copyright a {font-family:"LG_text"; display: inline-block; text-decoration: underline; margin-top: 5px; line-height: 20px; color: #b2b2b2;}
+		#footer_copy03 a {text-decoration: none;}
 		#footer_link03 {display: block;}
 		.link_left .footer_info a {color: #b2b2b2; text-decoration: underline;}
 		.links_right {position: absolute; top: 22px; right:22px; }
@@ -59,7 +61,7 @@
 			.copyright a {font-size: 13px; line-height: 20px;}
 			.links_right {background-color: #fff;width: 100%; left: 0; padding: 0; margin-top: 0;}
 			.links_right a {display: block; width: 100%; padding-top: 9px; height: 78px; padding: 9px 24px 0px;}
-			#footer_jd {padding: 18px 24px 0 80px; height: 58px; width: 100%; border-top: 1px solid #E4E4E4; margin-left: 0; background-position: 14px center;}
+			#footer_jd {padding: 18px 24px 18px 80px; height: auto; min-height: 58px; width: 100%; border-top: 1px solid #E4E4E4; margin-left: 0; background-position: 14px center;}
 		}
 	</style>
 </head>
@@ -347,12 +349,7 @@
 						<div class="slide_cont">
 							<h5>Another Saigon Challenge</h5>
 							<p>
-								Participate in the TikTok dance
-								challenge at the Mood Up Studio on the
-								5th floor! Participate in the Another Saigon
-								Challenge to win an LG InstaView
-								for the person with
-								the greatest response.
+								Participate in the Another Saigon Challenge to win an top-notch products of LG for the person with the greatest response.
 							</p>
 						</div>
 					</div>
@@ -361,11 +358,10 @@
 					<div class="roundbox">
 						<figure class="slide_img" style="background-image: url('./image/event_th_2_en.png');"></figure>
 						<div class="slide_cont">
-							<h5>Another Saigon Selfie</h5>
+							<h5>Another Saigon Selfie with Playmobil</h5>
 							<p>
-								Please choose your preferred
-								Mood-Up color at the photo shooting
-								spot on the 5th floor and take a photo with your own Mood-Up background.
+								Visit Another Saigon, you definitely have pretty pic, but it’s would be a waste if they’re not be posted.
+								So this minigame is for you to take advantage of those amazing photos right away!
 							</p>
 						</div>
 					</div>
@@ -377,10 +373,10 @@
 							<h5>Membership Event on LG</h5>
 							<p>
 								On the official LG.com website, there
-								is a membership sign-up event going
-								on in celebration of Another Saigon's
-								opening!
-								During the event period,
+								is a membership sign-up event going 
+								on in celebration of Another Saigon's 
+								opening! 
+								During the event period, 
 								become a member and get a voucher!
 							</p>
 						</div>
@@ -390,13 +386,10 @@
 					<div class="roundbox">
 						<figure class="slide_img" style="background-image: url('./image/event_th_4_en.png');"></figure>
 						<div class="slide_cont">
-							<h5>Better Life for All : Workshop Event</h5>
+							<h5>Better Life for All : ESG Workshop Event</h5>
 							<p>
-								Please join our environmental campaign!
-								Create your own goods with the
-								eco-friendly upcycling brand Dong Dong,
-								participate in plogging at the square,
-								and get various gifts at Another Saigon.
+								Join the campaign for the environment!
+								Make your own merchandise with dongdong, eco-friendly upcycling brand, at Another Saigon, participate in plogging, and receive a variety of goodies. 
 							</p>
 						</div>
 					</div>
@@ -405,10 +398,10 @@
 					<div class="roundbox">
 						<figure class="slide_img" style="background-image: url('./image/event_th_5_en.png');"></figure>
 						<div class="slide_cont">
-							<h5>VNGGames : Valorant Team Match</h5>
+							<h5>VNGGames : Valorant Match</h5>
 							<p>
-								Join VNGGames' exclusive Valorant Team Matches every weekend!
-								Visit VNGGames on the 1st floor for pre-registration and play games with friends.
+								Join a match of VALORANT, the trendiest FPS game, with LG and stand a chance to win fantastic prizes based on your ranking. 
+								Each Event period MVP will receive an LG Gaming Monitor!
 							</p>
 						</div>
 					</div>
@@ -432,15 +425,14 @@
 		<div class="footer_component">
 			<div class="links_left">
 				<ul>
-					<li><a href="javascript:;" id="footer_link01">Terms of Use</a></li>
-					<li><a href="javascript:;" id="footer_link02">Privacy Policy</a></li>
+					<li><a href="javascript:popupOpen('pop_policy');" id="footer_link01">Terms of Use</a></li>
+					<li><a href="javascript:popupOpen('pop_policy2');" id="footer_link02">Privacy Policy</a></li>
 				</ul>
 				<div class="copyright">
 					<p id="footer_copy01">Bản quyền © 2009-2023 Công ty LG Electronics Việt Nam Hải Phòng bảo lưu mọi quyền</p>
-					<a href="https://www.lgcorp.com/about/companies" id="footer_link03">Đây là trang chủ chính thức của LG Electronics.<br> Nếu bạn muốn kết nối với tập đoàn LG hoặc các chi nhánh khác của LG, vui lòng nhấn chuột tại đây</a>
+					<a href="https://www.lgcorp.com/about/companies" id="footer_link03">Đây là trang chủ chính thức của LG Electronics.</a>
 					<div class="footer_info">
-						<p id="footer_copy02">Công ty TNHH LG Electronics Việt Nam Hải Phòng Địa chỉ trụ sở chính: Lô CN2, KCN Tràng Duệ, xã Lê Lợi, huyện An Dương, thành phố Hải
-							Phòng, Việt Nam.</p>
+						<p id="footer_copy02">Công ty TNHH LG Electronics Việt Nam Hải Phòng Địa chỉ trụ sở chính: Lô CN2, KCN Tràng Duệ, xã Lê Lợi, huyện An Dương, thành phố Hải Phòng, Việt Nam.</p>
 						<p id="footer_copy03">ĐT: 024 3934 5151</p>
 						<p id="footer_copy04">Email: <a href="mailto:lgcarecenter@lge.com;">lgcarecenter@lge.com</a></p>
 						<p id="footer_copy05">Số giấy ĐKKD: 0201311397 được cấp bởi Sở Kế hoạch và Đầu tư thành phố Hải Phòng.</p>
@@ -453,6 +445,38 @@
 			</div>
 		</div>
 	</footer>
+	<!-- pop_policy popup -->
+	<div id="pop_policy" class="popup_wrap survey_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content gap">
+			<div class="title_area">
+				<h1 id="login_09">Terms of Use</h1>
+			</div>
+			<button id="" onclick="popClose()" class="btn_pop_close">Close</button>
+			<div class="policy_wrap">
+				<p id="login_10">
+					text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text texttext text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text texttext text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text 
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- popup end -->
+	<!-- pop_policy2 popup -->
+	<div id="pop_policy2" class="popup_wrap survey_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content gap">
+			<div class="title_area">
+				<h1 id="link_Terms">Privacy Policy</h1>
+			</div>
+			<button id="" onclick="popClose()" class="btn_pop_close">Close</button>
+			<div class="policy_wrap">
+				<p id="login_12">
+					text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text texttext text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text text text text text text text text text texttext text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text text text text text text text text text text text text text text text xt xt text text text text text text text text text t text text text text text text text text text ext text text text text text text text text text text text text 
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- popup end -->
 	<script>
 		// dropdown 메뉴
 		$(document).ready(function() {
@@ -657,7 +681,34 @@
 				scrollTopSec($(this).attr('id').replace('_m', ''));
 			});
 		});
-
+		/* 팝업 */
+		var scrollTop;
+		function popupOpen(targetId) {
+			// 현재 스크롤 위치 저장
+			scrollTop = $(window).scrollTop();
+			// body에 fixed 적용 및 현재 스크롤 위치로 top 설정
+			$('body').css({
+				'overflow': 'hidden',
+				'position': 'fixed',
+				'top': -scrollTop // 현재 스크롤 위치의 음수 값 설정
+			});
+			// 팝업 열기
+			$('#' + targetId).css("display", "flex");
+			$('#' + targetId).find('.blur_bg').addClass('active');
+			return false;
+		};
+		/* 팝업 닫기 */
+		function popClose() {
+			$('.popup_wrap').css("display", "none");
+			// body 스타일 복원
+			$('body').css({
+				'overflow': 'unset',
+				'position': 'relative',
+				'top' : '0'
+			});
+			$(window).scrollTop(scrollTop);
+			return false;
+		};
 	</script>
 
 </body>

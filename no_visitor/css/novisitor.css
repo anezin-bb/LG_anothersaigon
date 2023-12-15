@@ -146,13 +146,14 @@ section .container{  align-items:center}
   .mobile_guide .left span {font-size: 14px;}
 }
 .event_list{ max-width:1070px;  display:flex;  flex-direction:row;  align-items:stretch;  justify-content:center;  gap:20px;  flex-wrap:wrap;  padding-bottom:80px}
-.event_list .roundbox{ width:343px;  height:100%;  min-height:435px;  display:table}
+.event_list .roundbox{ width:343px;  height:100%;  min-height:400px;  display:table}
 .no_visitor_eng .event_list .roundbox{ min-height:406px}
 /* .no_visitor_vet .event_list .roundbox{ min-height:442px} */
 .info_sns_list{ display:flex;  flex-direction:row;  gap:10px;  margin:0 auto}
 
 /* 일괄 반응형 */
-@media screen and (min-width:769px){ /* 반응형 대응 class (pc_는 보임,mo_는 숨김) */ .mo_view,.mo_img,.mo_br,.pc_hidden{ display:none !important}
+@media screen and (min-width:769px){ /* 반응형 대응 class (pc_는 보임,mo_는 숨김) */ 
+  .mo_view,.mo_img,.mo_br,.pc_hidden{ display:none !important}
   .pc_view{ display:block}
   .pc_img{ display:block;  margin:0 auto}
   .pc_br{ display:block;  font-size:0px;  width:100%;  height:1px}
@@ -170,9 +171,34 @@ section .container{  align-items:center}
   .no_visitor_vet .roundbox .slide_cont p {font-size: 14px;}
 }
 
-@media (max-width:320px) {
+@media (max-width:343px) {
   .event_list .roundbox {width: 100%;}
   .roundbox .slide_img {height: auto; padding-bottom: 70%;}
   .roundbox .slide_cont {height: auto;}
   
+}
+
+/* 팝업 추가 */
+/*
+팝업
+*/
+/* 전체, 설문 팝업 */
+.popup_wrap { display: none; flex-direction: column; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; z-index: 100;}
+.pop_content {position: relative; padding-left: 16px; padding-right: 16px;}
+.survey_pop {transform: none; top: 0; left: 0; position: fixed;}
+.survey_pop .pop_content {background-color: #f0ece4; width: 100%; height: 100%; z-index: 2;}
+.title_area { text-align: center; padding-top: 40px;}
+.title_area h1 {color: #000; font-family: "LG_head"; font-size: 20px; font-style: normal; font-weight: 700; line-height: 28px;}
+.btn_pop_close {position: absolute; top: 16px; right: 16px; background-image: url("../image/btn_cancel.svg"); width: 24px; height: 24px; text-indent: -9999px;}
+.blur_bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background-color: rgba(0, 0, 0, 0.6); -webkit-backdrop-filter: blur(0px); backdrop-filter: blur(0px); transition: backdrop-filter 0.3s ease;}
+.blur_bg.active {
+	-webkit-backdrop-filter: blur(12.5px);
+	backdrop-filter: blur(12.5px);
+}
+/* 개인정보정책 */
+.policy_wrap { display: block; position: relative; height: calc(100% - 144px); overflow-y: scroll; background-color: #e6e1d6; margin-top: 20px; padding: 16px; border-radius: 10px;}
+.policy_wrap p { color: #000; font-family: "LG_text"; font-size: 16px; font-weight: 400;  font-style: normal; line-height: 24px;}
+
+@media screen and (min-width:769px){ /* 반응형 대응 class (pc_는 보임,mo_는 숨김) */ 
+  .survey_pop .pop_content {max-width: 800px; max-height: 740px; border-radius: 10px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
 }

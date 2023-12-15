@@ -107,14 +107,40 @@
 				<li><a href="javascript:;" class="sns_apple"><img src="../image/01_login/logo_apple_w.svg" alt="apple logo"></a></li>
 				<li><a href="javascript:;" class="sns_amazon"><img src="../image/01_login/logo_amazon_w.svg" alt="amazon logo"></a></li>
 			</ul>
-			<div class="link_wrap">
+			<!-- <div class="link_wrap">
 				<button id="link_policy" class="line_link2" onclick="popupOpen('pop_policy')">개인 정보 정책</button>
 				<span class="line"></span>
 				<button id="login_11" class="line_link2" onclick="popupOpen('pop_policy2')">이용 약관</button>
-			</div>
+			</div> -->
 		</div>
+		<!-- 2023-12-15 footer 추가 -->
+		<footer>
+			<div class="footer_component">
+				<div class="links_left">
+					<ul>
+						<li><a href="javascript:popupOpen('pop_policy');" id="footer_link01">Terms of Use</a></li>
+						<li><a href="javascript:popupOpen('pop_policy2');" id="footer_link02">Privacy Policy</a></li>
+					</ul>
+					<div class="copyright">
+						<p id="footer_copy01">Bản quyền © 2009-2023 Công ty LG Electronics Việt Nam Hải Phòng bảo lưu mọi quyền</p>
+						<a href="https://www.lgcorp.com/about/companies" id="footer_link03">Đây là trang chủ chính thức của LG Electronics.</a>
+						<div class="footer_info">
+							<p id="footer_copy02">Công ty TNHH LG Electronics Việt Nam Hải Phòng Địa chỉ trụ sở chính: Lô CN2, KCN Tràng Duệ, xã Lê Lợi, huyện An Dương, thành phố Hải Phòng, Việt Nam.</p>
+							<p id="footer_copy03">ĐT: 024 3934 5151</p>
+							<p id="footer_copy04">Email: <a href="mailto:lgcarecenter@lge.com;">lgcarecenter@lge.com</a></p>
+							<p id="footer_copy05">Số giấy ĐKKD: 0201311397 được cấp bởi Sở Kế hoạch và Đầu tư thành phố Hải Phòng.</p>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="links_right">
+					<a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=48241"><img src="../image/common/icon-vn01.png" alt=""></a>
+					<a href="https://ethics.lg.co.kr/main/en.do" id="footer_jd">LG Jeong-Do Management Ethics Hotline</a>
+				</div> -->
+			</div>
+		</footer>
+		<!-- 2023-12-15 footer 추가 end -->
 	</div>
-
+	<!-- 이용약관, 개인정보 팝업 (공통) -->
 	<div id="pop_policy" class="popup_wrap survey_pop">
 		<div class="pop_content gap">
 			<div class="title_area">
@@ -137,6 +163,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 이용약관, 개인정보 팝업 (공통) end -->
 	<!-- 관심사 선택 팝업이 컨펌 미확정 상태라 추후 제작 예정입니다. -->
 </body>
 </html>
