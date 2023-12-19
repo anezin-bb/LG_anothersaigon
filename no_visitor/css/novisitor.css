@@ -198,7 +198,13 @@ section .container{  align-items:center}
 /* 개인정보정책 */
 .policy_wrap { display: block; position: relative; height: calc(100% - 144px); overflow-y: scroll; background-color: #e6e1d6; margin-top: 20px; padding: 16px; border-radius: 10px;}
 .policy_wrap p { color: #000; font-family: "LG_text"; font-size: 16px; font-weight: 400;  font-style: normal; line-height: 24px;}
-
+.policy_wrap p {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.policy_wrap p a {
+	word-break: break-all;
+}
 @media screen and (min-width:769px){ /* 반응형 대응 class (pc_는 보임,mo_는 숨김) */ 
   .survey_pop .pop_content {max-width: 800px; max-height: 740px; border-radius: 10px; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
 }

@@ -1960,6 +1960,36 @@ html[lang="vi"] .pop_bottom_btns {
 	height: 40px;
 }
 
+/* 23-12-15 추가 */
+.bottom_content {
+	padding-bottom: 60px;
+}
+.survey_02.pop_h100 {
+	padding-bottom: 140px;
+}
+.info_floor_sec.pd_bottom {
+	padding-bottom: 30px;
+}
+.m_banner_slide {
+    overflow: hidden;
+    margin-bottom: -6px !important;
+}
+.event_list {
+	padding-bottom: 80px;
+}
+@media (max-height: 656px) {
+	.bottom_content {
+		margin-top: auto !important;
+		padding-top: 45%;
+	}
+}
+.policy_wrap p {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.policy_wrap p a {
+	word-break: break-all;
+}
 /* 푸터 */
 footer {
 	background-color: #fff; 
@@ -1972,7 +2002,7 @@ footer a:hover, footer a:focus {
 }
 .login_b_page footer {
 	padding-bottom: 0;
-	margin-top: -10px;
+	margin-top: -20px;
 }
 .footer_component {
 	max-width: 1284px; 
@@ -1993,7 +2023,7 @@ footer a:hover, footer a:focus {
 	padding-bottom: 5px;
 }
 .links_left ul li {
-	padding-right: 30px;
+	padding-right: 25px;
 }
 .links_left ul li:last-child {
 	padding-right: 0;
