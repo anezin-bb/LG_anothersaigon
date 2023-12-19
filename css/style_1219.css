@@ -1,0 +1,47 @@
+/* 2023-12-19 추가 css도 같이 넣었습니다. */
+.survey_radios {
+    padding-bottom: 140px;
+}
+.bottom_content {
+	padding-bottom: 60px;
+}
+.survey_02.pop_h100 {
+	padding-bottom: 140px;
+}
+.info_floor_sec.pd_bottom {
+	padding-bottom: 30px;
+}
+.m_banner_slide {
+    overflow: hidden;
+    margin-bottom: -6px !important;
+}
+.event_list {
+	padding-bottom: 80px;
+}
+.worldcup_sec {
+	min-height: 100%;
+	height: 100%;
+}
+.worldcup_item .txt_wrap {
+	border-radius: 0 9px 9px 0;
+}
+@media (max-height: 656px) {
+	.bottom_content {
+		margin-top: auto !important;
+		padding-top: 45%;
+	}
+}
+.mission03_worldcup {
+	background-color: #f0ece4;
+}
+.worldcup_list {
+	padding-bottom: 60px;
+}
+@media (max-width: 345px) {
+	.worldcup_item .txt_wrap {
+		width: calc(100% - 80px);
+	}
+	.worldcup_sec  {
+		overflow-y: scroll;
+	}
+}

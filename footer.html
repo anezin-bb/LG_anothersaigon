@@ -1,0 +1,73 @@
+<!-- 디자인별로 다른 로그인 페이지입니다. 3개의 키비가 랜덤으로 노출됩니다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover, maximum-scale=1.0 user-scalable=no">
+	<title>Another Saigon by LG</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/utility.css">
+	<link rel="stylesheet" href="./css/components.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- meta 정보 (login.html에만 있습니다.) -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Another Saigon by LG">
+	<meta property="og:description" content="Enjoy the Good Life Solution">
+	<meta name="description" content="Enjoy the Good Life Solution">
+	<meta name="keywords" content="Another Saigon, LG, Another Saigon by LG">
+	<meta property="og:image" content="../image/common/mata_img_800x400.png">
+	<meta name="robots" content="index, follow">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/language-pack.js"></script>
+	
+	<link rel="stylesheet" href="./css/footer.css">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PH8PTSGPH4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PH8PTSGPH4');
+	</script>
+</head>
+<body class="">
+	<div class="container">
+
+		<!-- 2023-12-15 footer 추가 
+		footer는 container div안에 맨 아래에 추가되어야 합니다. -->
+		<footer>
+			<div class="footer_component">
+				<div class="links_left">
+					<ul>
+						<li><a href="javascript:popupOpen('pop_policy');" id="footer_link01">Điều khoản Sử dụng Dịch vụ LGE</a></li>
+						<li><a href="javascript:popupOpen('pop_policy2');" id="footer_link02">Chính sách Quyền riêng tư</a></li>
+					</ul>
+					<div class="copyright">
+						<p id="footer_copy01">Bản quyền © 2009-2023 Công ty LG Electronics Việt Nam Hải Phòng bảo lưu mọi quyền</p>
+						<a href="https://www.lgcorp.com/about/companies" id="footer_link03">Đây là trang chủ chính thức của LG Electronics.</a>
+						<div class="footer_info">
+							<p id="footer_copy02">Công ty TNHH LG Electronics Việt Nam Hải Phòng Địa chỉ trụ sở chính: Lô CN2, KCN Tràng Duệ, xã Lê Lợi, huyện An Dương, thành phố Hải Phòng, Việt Nam.</p>
+							<p id="footer_copy03">ĐT: 024 3934 5151</p>
+							<p id="footer_copy04">Email: <a href="mailto:lgcarecenter@lge.com;">lgcarecenter@lge.com</a></p>
+							<p id="footer_copy05">Số giấy ĐKKD: 0201311397 được cấp bởi Sở Kế hoạch và Đầu tư thành phố Hải Phòng.</p>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="links_right">
+					<a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=48241"><img src="../image/common/icon-vn01.png" alt=""></a>
+					<a href="https://ethics.lg.co.kr/main/en.do" id="footer_jd">LG Jeong-Do Management Ethics Hotline</a>
+				</div> -->
+			</div>
+		</footer>
+		<!-- 2023-12-15 footer 추가 end -->
+
+	</div>
+</body>
+<script>
+	loadLanguage('E','LOGIN');
+</script>
+</html>

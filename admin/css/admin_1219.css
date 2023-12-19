@@ -1,0 +1,96 @@
+/* 2023-12-19 추가 텍스트 */
+/* 어드민 로고 영역 추가 */
+.adm_logo {
+	padding: 53px 15px;
+}
+.adm_logo img {
+	display: block;
+	margin: 0 auto;
+}
+.adm_logo .logo_text {
+	color: #000000;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 20px;
+}
+
+.dash_numboard .today_total {
+    min-width: 258px;
+}
+/* 반응형 추가 조절 */
+@media (max-width: 1620px) {
+	input {
+		font-size: 13px;
+		width: 150px;
+	}
+	.adm_top_title {
+		font-size: 19px;
+		width: 70px;
+	}
+	.dash_graph_wrap .bg_w {
+		width: calc(100% - 95px) !important;
+	}
+	.channel_row .adm_top_title {
+		width: 50px;
+	}
+	.channel_row .chk_wrap {
+		min-width: 515px;
+	}
+	.chkText {
+		font-size: 14px;
+	}
+	.topsch_area > .flex_column {
+		gap: 16px;
+	}
+	.age_row .flex_column {
+		gap: 5px;
+	}
+	.age_row .flex_row {
+		row-gap: 5px;
+	}
+	.adm_table_top .table_total {
+		font-size: 18px;
+	}
+	}
+	@media (max-width: 1550px) {
+	.dash_numboard .today_total .total_info .date {
+		font-size: 13px;
+	}
+	.dash_numboard .today_total .total_info .people {
+		font-size: 13px;
+	}
+	.dash_numboard .today_total .total_info .count {
+		font-size: 34px;
+	}
+}
+@media (max-width: 1430px) {
+	.dash_numboard .today_total {
+		min-width: 0;
+		width: calc(33% - 10px);
+	}
+	.dash_numboard .today_total .total_info .date {
+		font-size: 12px;
+	}
+	.dash_numboard .today_total .total_info .people {
+		font-size: 12px;
+	}
+	.dash_numboard .today_total .total_info .count {
+		font-size: 30px;
+	}
+}	
+@media (max-width: 1100px) {
+	.dash_numboard .today_total {
+		min-width: 230px;
+	}
+	.dash_numboard .today_total .total_info .date {
+		font-size: 12px;
+	}
+	.dash_numboard .today_total .total_info .people {
+		font-size: 12px;
+	}
+	.dash_numboard .today_total .total_info .count {
+		font-size: 30px;
+	}
+}

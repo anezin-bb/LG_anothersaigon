@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../css/jquery-ui.css">
 	<link rel="stylesheet" href="../css/components.css">
 	<link rel="stylesheet" href="../css/admin.css">
+	<link rel="stylesheet" href="../css/survey_table.css">
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
 	<script src="../js/admin.js"></script>
@@ -136,42 +137,44 @@
 				</div>
 				<!-- survey_q1 -->
 				<div class="survey_q1 survey_q">
-					<h4 class="survey_q_title">Q1. Another Saigon by LG의 공간에 대해서 얼마나 만족하시나요?</h4>
+					<h4 id="survey_q1_title" class="survey_q_title">Q1. Another Saigon by LG의 공간에 대해서 얼마나 만족하시나요?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q1_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q1_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q1_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q1_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q1_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q1_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q1_th15">total</th><th class="gray_bg" id="survey_q1_th16">남</th><th class="gray_bg" id="survey_q1_th17">녀</th><th class="gray_bg line_r" id="survey_q1_th18">X</th>
+								<th class="gray_bg" id="survey_q1_th19">남</th><th class="gray_bg" id="survey_q1_th20">녀</th><th class="gray_bg line_r" id="survey_q1_th21">X</th>
+								<th class="gray_bg" id="survey_q1_th22">남</th><th class="gray_bg" id="survey_q1_th23">녀</th><th class="gray_bg line_r" id="survey_q1_th24">X</th>
+								<th class="gray_bg" id="survey_q1_th25">남</th><th class="gray_bg" id="survey_q1_th26">녀</th><th class="gray_bg line_r" id="survey_q1_th27">X</th>
+								<th class="gray_bg" id="survey_q1_th28">남</th><th class="gray_bg" id="survey_q1_th29">녀</th><th class="gray_bg line_r" id="survey_q1_th30">X</th>
+								<th class="gray_bg" id="survey_q1_th31">남</th><th class="gray_bg" id="survey_q1_th32">녀</th><th class="gray_bg line_r" id="survey_q1_th33">X</th>
+								<th class="gray_bg" id="survey_q1_th34">남</th><th class="gray_bg" id="survey_q1_th35">녀</th><th class="gray_bg line_r" id="survey_q1_th36">X</th>
+								<th class="gray_bg" id="survey_q1_th37">남</th><th class="gray_bg" id="survey_q1_th38">녀</th><th class="gray_bg line_r" id="survey_q1_th39">X</th>
+								<th class="gray_bg" id="survey_q1_th40">남</th><th class="gray_bg" id="survey_q1_th41">녀</th><th class="gray_bg line_r" id="survey_q1_th42">X</th>
+								<th class="gray_bg" id="survey_q1_th43">남</th><th class="gray_bg" id="survey_q1_th44">녀</th><th class="gray_bg line_r" id="survey_q1_th45">X</th>
+								<th class="gray_bg" id="survey_q1_th46">남</th><th class="gray_bg" id="survey_q1_th47">녀</th><th class="gray_bg line_r" id="survey_q1_th48">X</th>
+								<th class="gray_bg" id="survey_q1_th50">남</th><th class="gray_bg" id="survey_q1_th51">녀</th><th class="gray_bg round_trr0" id="survey_q1_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q1_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -182,10 +185,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q1_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -196,10 +200,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q1_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -210,10 +215,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q1_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -224,10 +230,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q1_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -238,10 +245,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q1_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -250,6 +258,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -260,42 +269,45 @@
 				<!-- survey_q1 end-->
 				<!-- survey_q2 -->
 				<div class="survey_q2 survey_q">
-					<h4 class="survey_q_title">Q2. Another Saigon by LG에서 가장 만족스러운 경험 콘텐츠는 무엇 입니까?(복수 응답 가능)</h4>
+					<h4 id="survey_q2_title" class="survey_q_title">Q2. Another Saigon by LG에서 가장 만족스러운 경험 콘텐츠는 무엇 입니까?(복수 응답 가능)</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q2_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q2_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q2_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q2_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q2_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q2_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q2_th15">total</th><th class="gray_bg" id="survey_q2_th16">남</th><th class="gray_bg" id="survey_q2_th17">녀</th><th class="gray_bg line_r" id="survey_q2_th18">X</th>
+								<th class="gray_bg" id="survey_q2_th19">남</th><th class="gray_bg" id="survey_q2_th20">녀</th><th class="gray_bg line_r" id="survey_q2_th21">X</th>
+								<th class="gray_bg" id="survey_q2_th22">남</th><th class="gray_bg" id="survey_q2_th23">녀</th><th class="gray_bg line_r" id="survey_q2_th24">X</th>
+								<th class="gray_bg" id="survey_q2_th25">남</th><th class="gray_bg" id="survey_q2_th26">녀</th><th class="gray_bg line_r" id="survey_q2_th27">X</th>
+								<th class="gray_bg" id="survey_q2_th28">남</th><th class="gray_bg" id="survey_q2_th29">녀</th><th class="gray_bg line_r" id="survey_q2_th30">X</th>
+								<th class="gray_bg" id="survey_q2_th31">남</th><th class="gray_bg" id="survey_q2_th32">녀</th><th class="gray_bg line_r" id="survey_q2_th33">X</th>
+								<th class="gray_bg" id="survey_q2_th34">남</th><th class="gray_bg" id="survey_q2_th35">녀</th><th class="gray_bg line_r" id="survey_q2_th36">X</th>
+								<th class="gray_bg" id="survey_q2_th37">남</th><th class="gray_bg" id="survey_q2_th38">녀</th><th class="gray_bg line_r" id="survey_q2_th39">X</th>
+								<th class="gray_bg" id="survey_q2_th40">남</th><th class="gray_bg" id="survey_q2_th41">녀</th><th class="gray_bg line_r" id="survey_q2_th42">X</th>
+								<th class="gray_bg" id="survey_q2_th43">남</th><th class="gray_bg" id="survey_q2_th44">녀</th><th class="gray_bg line_r" id="survey_q2_th45">X</th>
+								<th class="gray_bg" id="survey_q2_th46">남</th><th class="gray_bg" id="survey_q2_th47">녀</th><th class="gray_bg line_r" id="survey_q2_th48">X</th>
+								<th class="gray_bg" id="survey_q2_th50">남</th><th class="gray_bg" id="survey_q2_th51">녀</th><th class="gray_bg round_trr0" id="survey_q2_th52">X</th>
+
 							</tr>
 							<tr>
-								<td class="line_r">GF Hello LG – Better Life for All</td>
+								<td class="line_r" id="survey_q2_td01">G Hello LG – Better Life for All</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -306,10 +318,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">GF Hello LG – The Coffee House x LG</td>
+								<td class="line_r" id="survey_q2_td02">G Hello LG – LG x Dong Dong</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -320,10 +333,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">1F The Friend for Good life – Objet Collection</td>
+								<td class="line_r" id="survey_q2_td03">1 The Friend for Good life – Objet Collection</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -334,10 +348,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">1F The Friend for Good life – LG x VNG Games</td>
+								<td class="line_r" id="survey_q2_td04">1 The Friend for Good life – LG x VNGGames</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -348,24 +363,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td>1</td>
-							</tr>
-							<tr>
-								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
-								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>25</td><td>25</td><td class="line_r">1</td>
-								<td>10</td><td>10</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3F The Solution of Good Life – Good Life Curation</td>
+								<td class="line_r" id="survey_q2_td05">3 The Solution of Good Life – Good Life Curation</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -377,9 +379,10 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3F The Solution of Good Life – Good Life Story</td>
+								<td class="line_r" id="survey_q2_td06">3 The Solution of Good Life – Good Life Story</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -390,10 +393,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5F The Joy of Good life – Mood up Stage</td>
+								<td class="line_r" id="survey_q2_td07">5 The Joy of Good life – Mood up Stage</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -404,10 +408,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q2_tdall">계</td>
 								<td>1240</td><td>565</td><td>595</td><td class="line_r">80</td>
 								<td>60</td><td>40</td><td class="line_r">8</td>
 								<td>130</td><td>120</td><td class="line_r">8</td>
@@ -416,6 +421,7 @@
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>30</td><td>20</td><td class="line_r">8</td>
 								<td>55</td><td>45</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>55</td><td>45</td><td>8</td>
@@ -426,42 +432,44 @@
 				<!-- survey_q2 end-->
 				<!-- survey_q3 -->
 				<div class="survey_q3 survey_q">
-					<h4 class="survey_q_title">Q3. Another Saigon을 재방문 할 의사가 있으신가요?</h4>
+					<h4 id="survey_q3_title" class="survey_q_title">Q3. Another Saigon을 재방문 할 의사가 있으신가요?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q3_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q3_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q3_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q3_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q3_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q3_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q3_th15">total</th><th class="gray_bg" id="survey_q3_th16">남</th><th class="gray_bg" id="survey_q3_th17">녀</th><th class="gray_bg line_r" id="survey_q3_th18">X</th>
+								<th class="gray_bg" id="survey_q3_th19">남</th><th class="gray_bg" id="survey_q3_th20">녀</th><th class="gray_bg line_r" id="survey_q3_th21">X</th>
+								<th class="gray_bg" id="survey_q3_th22">남</th><th class="gray_bg" id="survey_q3_th23">녀</th><th class="gray_bg line_r" id="survey_q3_th24">X</th>
+								<th class="gray_bg" id="survey_q3_th25">남</th><th class="gray_bg" id="survey_q3_th26">녀</th><th class="gray_bg line_r" id="survey_q3_th27">X</th>
+								<th class="gray_bg" id="survey_q3_th28">남</th><th class="gray_bg" id="survey_q3_th29">녀</th><th class="gray_bg line_r" id="survey_q3_th30">X</th>
+								<th class="gray_bg" id="survey_q3_th31">남</th><th class="gray_bg" id="survey_q3_th32">녀</th><th class="gray_bg line_r" id="survey_q3_th33">X</th>
+								<th class="gray_bg" id="survey_q3_th34">남</th><th class="gray_bg" id="survey_q3_th35">녀</th><th class="gray_bg line_r" id="survey_q3_th36">X</th>
+								<th class="gray_bg" id="survey_q3_th37">남</th><th class="gray_bg" id="survey_q3_th38">녀</th><th class="gray_bg line_r" id="survey_q3_th39">X</th>
+								<th class="gray_bg" id="survey_q3_th40">남</th><th class="gray_bg" id="survey_q3_th41">녀</th><th class="gray_bg line_r" id="survey_q3_th42">X</th>
+								<th class="gray_bg" id="survey_q3_th43">남</th><th class="gray_bg" id="survey_q3_th44">녀</th><th class="gray_bg line_r" id="survey_q3_th45">X</th>
+								<th class="gray_bg" id="survey_q3_th46">남</th><th class="gray_bg" id="survey_q3_th47">녀</th><th class="gray_bg line_r" id="survey_q3_th48">X</th>
+								<th class="gray_bg" id="survey_q3_th50">남</th><th class="gray_bg" id="survey_q3_th51">녀</th><th class="gray_bg round_trr0" id="survey_q3_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q3_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -472,10 +480,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q3_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -486,10 +495,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q3_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -500,10 +510,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q3_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -514,10 +525,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q3_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -528,10 +540,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q3_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -540,6 +553,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -550,42 +564,44 @@
 				<!-- survey_q3 end-->
 				<!-- survey_q4 -->
 				<div class="survey_q4 survey_q">
-					<h4 class="survey_q_title">Q4. 재방문 하고싶은 목적은 무엇인가요? </h4>
+					<h4 id="survey_q4_title" class="survey_q_title">Q4. 재방문 하고싶은 목적은 무엇인가요?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q4_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q4_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q4_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q4_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q4_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q4_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q4_th15">total</th><th class="gray_bg" id="survey_q4_th16">남</th><th class="gray_bg" id="survey_q4_th17">녀</th><th class="gray_bg line_r" id="survey_q4_th18">X</th>
+								<th class="gray_bg" id="survey_q4_th19">남</th><th class="gray_bg" id="survey_q4_th20">녀</th><th class="gray_bg line_r" id="survey_q4_th21">X</th>
+								<th class="gray_bg" id="survey_q4_th22">남</th><th class="gray_bg" id="survey_q4_th23">녀</th><th class="gray_bg line_r" id="survey_q4_th24">X</th>
+								<th class="gray_bg" id="survey_q4_th25">남</th><th class="gray_bg" id="survey_q4_th26">녀</th><th class="gray_bg line_r" id="survey_q4_th27">X</th>
+								<th class="gray_bg" id="survey_q4_th28">남</th><th class="gray_bg" id="survey_q4_th29">녀</th><th class="gray_bg line_r" id="survey_q4_th30">X</th>
+								<th class="gray_bg" id="survey_q4_th31">남</th><th class="gray_bg" id="survey_q4_th32">녀</th><th class="gray_bg line_r" id="survey_q4_th33">X</th>
+								<th class="gray_bg" id="survey_q4_th34">남</th><th class="gray_bg" id="survey_q4_th35">녀</th><th class="gray_bg line_r" id="survey_q4_th36">X</th>
+								<th class="gray_bg" id="survey_q4_th37">남</th><th class="gray_bg" id="survey_q4_th38">녀</th><th class="gray_bg line_r" id="survey_q4_th39">X</th>
+								<th class="gray_bg" id="survey_q4_th40">남</th><th class="gray_bg" id="survey_q4_th41">녀</th><th class="gray_bg line_r" id="survey_q4_th42">X</th>
+								<th class="gray_bg" id="survey_q4_th43">남</th><th class="gray_bg" id="survey_q4_th44">녀</th><th class="gray_bg line_r" id="survey_q4_th45">X</th>
+								<th class="gray_bg" id="survey_q4_th46">남</th><th class="gray_bg" id="survey_q4_th47">녀</th><th class="gray_bg line_r" id="survey_q4_th48">X</th>
+								<th class="gray_bg" id="survey_q4_th50">남</th><th class="gray_bg" id="survey_q4_th51">녀</th><th class="gray_bg round_trr0" id="survey_q4_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">제품 구입 및 상담</td>
+								<td class="line_r" id="survey_q4_td01">제품 구입 및 상담</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -596,10 +612,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">신제품 확인</td>
+								<td class="line_r" id="survey_q4_td02">신제품 확인</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -610,10 +627,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">제품 콘텐츠 경험</td>
+								<td class="line_r" id="survey_q4_td03">제품 콘텐츠 경험</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -624,10 +642,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">지인 만남 / 여가 활동</td>
+								<td class="line_r" id="survey_q4_td04">지인 만남 / 여가 활동</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -638,24 +657,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td>1</td>
-							</tr>
-							<tr>
-								<td class="line_r">협업 브랜드 체험 (VNG / TCH / Dong Dong 등)</td>
-								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>25</td><td>25</td><td class="line_r">1</td>
-								<td>10</td><td>10</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">재방문 의사 없음</td>
+								<td class="line_r" id="survey_q4_td05">협업 브랜드 체험 (VNG / TCH / Dong Dong 등)</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -667,9 +673,25 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q4_td06">재방문 의사 없음</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r" id="survey_q4_tdall">계</td>
 								<td>1080</td><td>495</td><td>525</td><td class="line_r">60</td>
 								<td>60</td><td>40</td><td class="line_r">6</td>
 								<td>80</td><td>70</td><td class="line_r">6</td>
@@ -678,6 +700,7 @@
 								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>30</td><td>20</td><td class="line_r">6</td>
 								<td>55</td><td>45</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>55</td><td>45</td><td>6</td>
@@ -688,42 +711,44 @@
 				<!-- survey_q4 end-->
 				<!-- survey_q5 -->
 				<div class="survey_q5 survey_q">
-					<h4 class="survey_q_title">Q5. 귀하께서는 LG에서 진행한 Another Saigon을 체험하신 후, 기존대비 LG에 대한 호감(긍정적인 인식/선호도)이 생기셨나요?</h4>
+					<h4 id="survey_q5_title" class="survey_q_title">Q5. 귀하께서는 LG에서 진행한 Another Saigon을 체험하신 후, 기존대비 LG에 대한 호감(긍정적인 인식/선호도)이 생기셨나요?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q5_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q5_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q5_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q5_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q5_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q5_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q5_th15">total</th><th class="gray_bg" id="survey_q5_th16">남</th><th class="gray_bg" id="survey_q5_th17">녀</th><th class="gray_bg line_r" id="survey_q5_th18">X</th>
+								<th class="gray_bg" id="survey_q5_th19">남</th><th class="gray_bg" id="survey_q5_th20">녀</th><th class="gray_bg line_r" id="survey_q5_th21">X</th>
+								<th class="gray_bg" id="survey_q5_th22">남</th><th class="gray_bg" id="survey_q5_th23">녀</th><th class="gray_bg line_r" id="survey_q5_th24">X</th>
+								<th class="gray_bg" id="survey_q5_th25">남</th><th class="gray_bg" id="survey_q5_th26">녀</th><th class="gray_bg line_r" id="survey_q5_th27">X</th>
+								<th class="gray_bg" id="survey_q5_th28">남</th><th class="gray_bg" id="survey_q5_th29">녀</th><th class="gray_bg line_r" id="survey_q5_th30">X</th>
+								<th class="gray_bg" id="survey_q5_th31">남</th><th class="gray_bg" id="survey_q5_th32">녀</th><th class="gray_bg line_r" id="survey_q5_th33">X</th>
+								<th class="gray_bg" id="survey_q5_th34">남</th><th class="gray_bg" id="survey_q5_th35">녀</th><th class="gray_bg line_r" id="survey_q5_th36">X</th>
+								<th class="gray_bg" id="survey_q5_th37">남</th><th class="gray_bg" id="survey_q5_th38">녀</th><th class="gray_bg line_r" id="survey_q5_th39">X</th>
+								<th class="gray_bg" id="survey_q5_th40">남</th><th class="gray_bg" id="survey_q5_th41">녀</th><th class="gray_bg line_r" id="survey_q5_th42">X</th>
+								<th class="gray_bg" id="survey_q5_th43">남</th><th class="gray_bg" id="survey_q5_th44">녀</th><th class="gray_bg line_r" id="survey_q5_th45">X</th>
+								<th class="gray_bg" id="survey_q5_th46">남</th><th class="gray_bg" id="survey_q5_th47">녀</th><th class="gray_bg line_r" id="survey_q5_th48">X</th>
+								<th class="gray_bg" id="survey_q5_th50">남</th><th class="gray_bg" id="survey_q5_th51">녀</th><th class="gray_bg round_trr0" id="survey_q5_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q5_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -734,10 +759,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q5_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -748,10 +774,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q5_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -762,10 +789,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q5_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -776,10 +804,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q5_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -790,10 +819,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q5_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -802,6 +832,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -812,42 +843,44 @@
 				<!-- survey_q5 end-->
 				<!-- survey_q6 -->
 				<div class="survey_q6 survey_q">
-					<h4 class="survey_q_title">Q6. LG는 앞서간다 시장을 선도한다</h4>
+					<h4 id="survey_q6_title" class="survey_q_title">Q6. LG는 앞서간다 시장을 선도한다</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q6_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q6_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q6_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q6_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q6_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q6_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q6_th15">total</th><th class="gray_bg" id="survey_q6_th16">남</th><th class="gray_bg" id="survey_q6_th17">녀</th><th class="gray_bg line_r" id="survey_q6_th18">X</th>
+								<th class="gray_bg" id="survey_q6_th19">남</th><th class="gray_bg" id="survey_q6_th20">녀</th><th class="gray_bg line_r" id="survey_q6_th21">X</th>
+								<th class="gray_bg" id="survey_q6_th22">남</th><th class="gray_bg" id="survey_q6_th23">녀</th><th class="gray_bg line_r" id="survey_q6_th24">X</th>
+								<th class="gray_bg" id="survey_q6_th25">남</th><th class="gray_bg" id="survey_q6_th26">녀</th><th class="gray_bg line_r" id="survey_q6_th27">X</th>
+								<th class="gray_bg" id="survey_q6_th28">남</th><th class="gray_bg" id="survey_q6_th29">녀</th><th class="gray_bg line_r" id="survey_q6_th30">X</th>
+								<th class="gray_bg" id="survey_q6_th31">남</th><th class="gray_bg" id="survey_q6_th32">녀</th><th class="gray_bg line_r" id="survey_q6_th33">X</th>
+								<th class="gray_bg" id="survey_q6_th34">남</th><th class="gray_bg" id="survey_q6_th35">녀</th><th class="gray_bg line_r" id="survey_q6_th36">X</th>
+								<th class="gray_bg" id="survey_q6_th37">남</th><th class="gray_bg" id="survey_q6_th38">녀</th><th class="gray_bg line_r" id="survey_q6_th39">X</th>
+								<th class="gray_bg" id="survey_q6_th40">남</th><th class="gray_bg" id="survey_q6_th41">녀</th><th class="gray_bg line_r" id="survey_q6_th42">X</th>
+								<th class="gray_bg" id="survey_q6_th43">남</th><th class="gray_bg" id="survey_q6_th44">녀</th><th class="gray_bg line_r" id="survey_q6_th45">X</th>
+								<th class="gray_bg" id="survey_q6_th46">남</th><th class="gray_bg" id="survey_q6_th47">녀</th><th class="gray_bg line_r" id="survey_q6_th48">X</th>
+								<th class="gray_bg" id="survey_q6_th50">남</th><th class="gray_bg" id="survey_q6_th51">녀</th><th class="gray_bg round_trr0" id="survey_q6_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q6_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -858,10 +891,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q6_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -872,10 +906,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q6_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -886,10 +921,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q6_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -900,10 +936,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q6_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -914,10 +951,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q6_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -926,6 +964,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -936,42 +975,44 @@
 				<!-- survey_q6 end-->
 				<!-- survey_q7 -->
 				<div class="survey_q7 survey_q">
-					<h4 class="survey_q_title">Q7. LG는 환경친화적이다</h4>
+					<h4 id="survey_q7_title" class="survey_q_title">Q7. LG는 환경친화적이다</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q7_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q7_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q7_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q7_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q7_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q7_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q7_th15">total</th><th class="gray_bg" id="survey_q7_th16">남</th><th class="gray_bg" id="survey_q7_th17">녀</th><th class="gray_bg line_r" id="survey_q7_th18">X</th>
+								<th class="gray_bg" id="survey_q7_th19">남</th><th class="gray_bg" id="survey_q7_th20">녀</th><th class="gray_bg line_r" id="survey_q7_th21">X</th>
+								<th class="gray_bg" id="survey_q7_th22">남</th><th class="gray_bg" id="survey_q7_th23">녀</th><th class="gray_bg line_r" id="survey_q7_th24">X</th>
+								<th class="gray_bg" id="survey_q7_th25">남</th><th class="gray_bg" id="survey_q7_th26">녀</th><th class="gray_bg line_r" id="survey_q7_th27">X</th>
+								<th class="gray_bg" id="survey_q7_th28">남</th><th class="gray_bg" id="survey_q7_th29">녀</th><th class="gray_bg line_r" id="survey_q7_th30">X</th>
+								<th class="gray_bg" id="survey_q7_th31">남</th><th class="gray_bg" id="survey_q7_th32">녀</th><th class="gray_bg line_r" id="survey_q7_th33">X</th>
+								<th class="gray_bg" id="survey_q7_th34">남</th><th class="gray_bg" id="survey_q7_th35">녀</th><th class="gray_bg line_r" id="survey_q7_th36">X</th>
+								<th class="gray_bg" id="survey_q7_th37">남</th><th class="gray_bg" id="survey_q7_th38">녀</th><th class="gray_bg line_r" id="survey_q7_th39">X</th>
+								<th class="gray_bg" id="survey_q7_th40">남</th><th class="gray_bg" id="survey_q7_th41">녀</th><th class="gray_bg line_r" id="survey_q7_th42">X</th>
+								<th class="gray_bg" id="survey_q7_th43">남</th><th class="gray_bg" id="survey_q7_th44">녀</th><th class="gray_bg line_r" id="survey_q7_th45">X</th>
+								<th class="gray_bg" id="survey_q7_th46">남</th><th class="gray_bg" id="survey_q7_th47">녀</th><th class="gray_bg line_r" id="survey_q7_th48">X</th>
+								<th class="gray_bg" id="survey_q7_th50">남</th><th class="gray_bg" id="survey_q7_th51">녀</th><th class="gray_bg round_trr0" id="survey_q7_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q7_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -982,10 +1023,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q7_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -996,10 +1038,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q7_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1010,10 +1053,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q7_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1024,10 +1068,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q7_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1038,10 +1083,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q7_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -1050,6 +1096,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -1060,42 +1107,44 @@
 				<!-- survey_q7 end-->
 				<!-- survey_q8 -->
 				<div class="survey_q8 survey_q">
-					<h4 class="survey_q_title">Q8. LG는 창의적이다</h4>
+					<h4 id="survey_q8_title" class="survey_q_title">Q8. LG는 창의적이다</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q8_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q8_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q8_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q8_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q8_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q8_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q8_th15">total</th><th class="gray_bg" id="survey_q8_th16">남</th><th class="gray_bg" id="survey_q8_th17">녀</th><th class="gray_bg line_r" id="survey_q8_th18">X</th>
+								<th class="gray_bg" id="survey_q8_th19">남</th><th class="gray_bg" id="survey_q8_th20">녀</th><th class="gray_bg line_r" id="survey_q8_th21">X</th>
+								<th class="gray_bg" id="survey_q8_th22">남</th><th class="gray_bg" id="survey_q8_th23">녀</th><th class="gray_bg line_r" id="survey_q8_th24">X</th>
+								<th class="gray_bg" id="survey_q8_th25">남</th><th class="gray_bg" id="survey_q8_th26">녀</th><th class="gray_bg line_r" id="survey_q8_th27">X</th>
+								<th class="gray_bg" id="survey_q8_th28">남</th><th class="gray_bg" id="survey_q8_th29">녀</th><th class="gray_bg line_r" id="survey_q8_th30">X</th>
+								<th class="gray_bg" id="survey_q8_th31">남</th><th class="gray_bg" id="survey_q8_th32">녀</th><th class="gray_bg line_r" id="survey_q8_th33">X</th>
+								<th class="gray_bg" id="survey_q8_th34">남</th><th class="gray_bg" id="survey_q8_th35">녀</th><th class="gray_bg line_r" id="survey_q8_th36">X</th>
+								<th class="gray_bg" id="survey_q8_th37">남</th><th class="gray_bg" id="survey_q8_th38">녀</th><th class="gray_bg line_r" id="survey_q8_th39">X</th>
+								<th class="gray_bg" id="survey_q8_th40">남</th><th class="gray_bg" id="survey_q8_th41">녀</th><th class="gray_bg line_r" id="survey_q8_th42">X</th>
+								<th class="gray_bg" id="survey_q8_th43">남</th><th class="gray_bg" id="survey_q8_th44">녀</th><th class="gray_bg line_r" id="survey_q8_th45">X</th>
+								<th class="gray_bg" id="survey_q8_th46">남</th><th class="gray_bg" id="survey_q8_th47">녀</th><th class="gray_bg line_r" id="survey_q8_th48">X</th>
+								<th class="gray_bg" id="survey_q8_th50">남</th><th class="gray_bg" id="survey_q8_th51">녀</th><th class="gray_bg round_trr0" id="survey_q8_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q8_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1106,10 +1155,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q8_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1120,10 +1170,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q8_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1134,10 +1185,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q8_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1148,10 +1200,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q8_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1162,10 +1215,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q8_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -1174,6 +1228,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -1184,42 +1239,44 @@
 				<!-- survey_q8 end-->
 				<!-- survey_q9 -->
 				<div class="survey_q9 survey_q">
-					<h4 class="survey_q_title">Q9. LG는 나의 기대를 충족시킨다</h4>
+					<h4 id="survey_q9_title" class="survey_q_title">Q9. LG는 나의 기대를 충족시킨다</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q9_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q9_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q9_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q9_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q9_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q9_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q9_th15">total</th><th class="gray_bg" id="survey_q9_th16">남</th><th class="gray_bg" id="survey_q9_th17">녀</th><th class="gray_bg line_r" id="survey_q9_th18">X</th>
+								<th class="gray_bg" id="survey_q9_th19">남</th><th class="gray_bg" id="survey_q9_th20">녀</th><th class="gray_bg line_r" id="survey_q9_th21">X</th>
+								<th class="gray_bg" id="survey_q9_th22">남</th><th class="gray_bg" id="survey_q9_th23">녀</th><th class="gray_bg line_r" id="survey_q9_th24">X</th>
+								<th class="gray_bg" id="survey_q9_th25">남</th><th class="gray_bg" id="survey_q9_th26">녀</th><th class="gray_bg line_r" id="survey_q9_th27">X</th>
+								<th class="gray_bg" id="survey_q9_th28">남</th><th class="gray_bg" id="survey_q9_th29">녀</th><th class="gray_bg line_r" id="survey_q9_th30">X</th>
+								<th class="gray_bg" id="survey_q9_th31">남</th><th class="gray_bg" id="survey_q9_th32">녀</th><th class="gray_bg line_r" id="survey_q9_th33">X</th>
+								<th class="gray_bg" id="survey_q9_th34">남</th><th class="gray_bg" id="survey_q9_th35">녀</th><th class="gray_bg line_r" id="survey_q9_th36">X</th>
+								<th class="gray_bg" id="survey_q9_th37">남</th><th class="gray_bg" id="survey_q9_th38">녀</th><th class="gray_bg line_r" id="survey_q9_th39">X</th>
+								<th class="gray_bg" id="survey_q9_th40">남</th><th class="gray_bg" id="survey_q9_th41">녀</th><th class="gray_bg line_r" id="survey_q9_th42">X</th>
+								<th class="gray_bg" id="survey_q9_th43">남</th><th class="gray_bg" id="survey_q9_th44">녀</th><th class="gray_bg line_r" id="survey_q9_th45">X</th>
+								<th class="gray_bg" id="survey_q9_th46">남</th><th class="gray_bg" id="survey_q9_th47">녀</th><th class="gray_bg line_r" id="survey_q9_th48">X</th>
+								<th class="gray_bg" id="survey_q9_th50">남</th><th class="gray_bg" id="survey_q9_th51">녀</th><th class="gray_bg round_trr0" id="survey_q9_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q9_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1230,10 +1287,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q9_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1244,10 +1302,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q9_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1258,10 +1317,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q9_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1272,10 +1332,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q9_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1286,10 +1347,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q9_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -1298,6 +1360,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -1308,42 +1371,44 @@
 				<!-- survey_q9 end-->
 				<!-- survey_q10 -->
 				<div class="survey_q10 survey_q">
-					<h4 class="survey_q_title">Q10. LG는 나를 자랑스럽게 만든다</h4>
+					<h4 id="survey_q10_title" class="survey_q_title">Q10. LG는 나를 자랑스럽게 만든다</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q10_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q10_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q10_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q10_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q10_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q10_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q10_th15">total</th><th class="gray_bg" id="survey_q10_th16">남</th><th class="gray_bg" id="survey_q10_th17">녀</th><th class="gray_bg line_r" id="survey_q10_th18">X</th>
+								<th class="gray_bg" id="survey_q10_th19">남</th><th class="gray_bg" id="survey_q10_th20">녀</th><th class="gray_bg line_r" id="survey_q10_th21">X</th>
+								<th class="gray_bg" id="survey_q10_th22">남</th><th class="gray_bg" id="survey_q10_th23">녀</th><th class="gray_bg line_r" id="survey_q10_th24">X</th>
+								<th class="gray_bg" id="survey_q10_th25">남</th><th class="gray_bg" id="survey_q10_th26">녀</th><th class="gray_bg line_r" id="survey_q10_th27">X</th>
+								<th class="gray_bg" id="survey_q10_th28">남</th><th class="gray_bg" id="survey_q10_th29">녀</th><th class="gray_bg line_r" id="survey_q10_th30">X</th>
+								<th class="gray_bg" id="survey_q10_th31">남</th><th class="gray_bg" id="survey_q10_th32">녀</th><th class="gray_bg line_r" id="survey_q10_th33">X</th>
+								<th class="gray_bg" id="survey_q10_th34">남</th><th class="gray_bg" id="survey_q10_th35">녀</th><th class="gray_bg line_r" id="survey_q10_th36">X</th>
+								<th class="gray_bg" id="survey_q10_th37">남</th><th class="gray_bg" id="survey_q10_th38">녀</th><th class="gray_bg line_r" id="survey_q10_th39">X</th>
+								<th class="gray_bg" id="survey_q10_th40">남</th><th class="gray_bg" id="survey_q10_th41">녀</th><th class="gray_bg line_r" id="survey_q10_th42">X</th>
+								<th class="gray_bg" id="survey_q10_th43">남</th><th class="gray_bg" id="survey_q10_th44">녀</th><th class="gray_bg line_r" id="survey_q10_th45">X</th>
+								<th class="gray_bg" id="survey_q10_th46">남</th><th class="gray_bg" id="survey_q10_th47">녀</th><th class="gray_bg line_r" id="survey_q10_th48">X</th>
+								<th class="gray_bg" id="survey_q10_th50">남</th><th class="gray_bg" id="survey_q10_th51">녀</th><th class="gray_bg round_trr0" id="survey_q10_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q10_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1354,10 +1419,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q10_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1368,10 +1434,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q10_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1382,10 +1449,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q10_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1396,10 +1464,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q10_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1410,10 +1479,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q10_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -1422,6 +1492,7 @@
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>30</td><td>20</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
@@ -1432,42 +1503,44 @@
 				<!-- survey_q10 end-->
 				<!-- survey_q11 -->
 				<div class="survey_q11 survey_q">
-					<h4 class="survey_q_title">Q11. LG는 프리미엄하다(LG 제품을 구매한다면, 동일 스펙의 경쟁 브랜드 제품 대비 더 높은 금액을 지불할 의향이 있다)</h4>
+					<h4 id="survey_q11_title" class="survey_q_title">Q11. LG는 프리미엄하다(LG 제품을 구매한다면, 동일 스펙의 경쟁 브랜드 제품 대비 더 높은 금액을 지불할 의향이 있다)</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q11_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q11_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q11_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q11_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q11_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q11_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q11_th15">total</th><th class="gray_bg" id="survey_q11_th16">남</th><th class="gray_bg" id="survey_q11_th17">녀</th><th class="gray_bg line_r" id="survey_q11_th18">X</th>
+								<th class="gray_bg" id="survey_q11_th19">남</th><th class="gray_bg" id="survey_q11_th20">녀</th><th class="gray_bg line_r" id="survey_q11_th21">X</th>
+								<th class="gray_bg" id="survey_q11_th22">남</th><th class="gray_bg" id="survey_q11_th23">녀</th><th class="gray_bg line_r" id="survey_q11_th24">X</th>
+								<th class="gray_bg" id="survey_q11_th25">남</th><th class="gray_bg" id="survey_q11_th26">녀</th><th class="gray_bg line_r" id="survey_q11_th27">X</th>
+								<th class="gray_bg" id="survey_q11_th28">남</th><th class="gray_bg" id="survey_q11_th29">녀</th><th class="gray_bg line_r" id="survey_q11_th30">X</th>
+								<th class="gray_bg" id="survey_q11_th31">남</th><th class="gray_bg" id="survey_q11_th32">녀</th><th class="gray_bg line_r" id="survey_q11_th33">X</th>
+								<th class="gray_bg" id="survey_q11_th34">남</th><th class="gray_bg" id="survey_q11_th35">녀</th><th class="gray_bg line_r" id="survey_q11_th36">X</th>
+								<th class="gray_bg" id="survey_q11_th37">남</th><th class="gray_bg" id="survey_q11_th38">녀</th><th class="gray_bg line_r" id="survey_q11_th39">X</th>
+								<th class="gray_bg" id="survey_q11_th40">남</th><th class="gray_bg" id="survey_q11_th41">녀</th><th class="gray_bg line_r" id="survey_q11_th42">X</th>
+								<th class="gray_bg" id="survey_q11_th43">남</th><th class="gray_bg" id="survey_q11_th44">녀</th><th class="gray_bg line_r" id="survey_q11_th45">X</th>
+								<th class="gray_bg" id="survey_q11_th46">남</th><th class="gray_bg" id="survey_q11_th47">녀</th><th class="gray_bg line_r" id="survey_q11_th48">X</th>
+								<th class="gray_bg" id="survey_q11_th50">남</th><th class="gray_bg" id="survey_q11_th51">녀</th><th class="gray_bg round_trr0" id="survey_q11_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">1</td>
+								<td class="line_r" id="survey_q11_td01">1</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1478,10 +1551,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2</td>
+								<td class="line_r" id="survey_q11_td02">2</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1492,10 +1566,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3</td>
+								<td class="line_r" id="survey_q11_td03">3</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1506,10 +1581,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">4</td>
+								<td class="line_r" id="survey_q11_td04">4</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1520,10 +1596,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5</td>
+								<td class="line_r" id="survey_q11_td05">5</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1534,10 +1611,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q11_tdall">계</td>
 								<td>1000</td><td>460</td><td>490</td><td class="line_r">50</td>
 								<td>60</td><td>40</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td class="line_r">5</td>
@@ -1548,6 +1626,7 @@
 								<td>55</td><td>45</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>45</td><td>55</td><td class="line_r">5</td>
+								<td>45</td><td>55</td><td class="line_r">5</td>
 								<td>55</td><td>45</td><td>5</td>
 							</tr>
 						</table>
@@ -1556,42 +1635,44 @@
 				<!-- survey_q11 end-->
 				<!-- survey_q12 -->
 				<div class="survey_q12 survey_q">
-					<h4 class="survey_q_title">Q12. 귀하는 향후 얼마안에 신규 가전제품을 구매하실 예정입니까?</h4>
+					<h4 id="survey_q12_title" class="survey_q_title">Q12. 귀하는 향후 얼마안에 신규 가전제품을 구매하실 예정입니까?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q12_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q12_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q12_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q12_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q12_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q12_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q12_th15">total</th><th class="gray_bg" id="survey_q12_th16">남</th><th class="gray_bg" id="survey_q12_th17">녀</th><th class="gray_bg line_r" id="survey_q12_th18">X</th>
+								<th class="gray_bg" id="survey_q12_th19">남</th><th class="gray_bg" id="survey_q12_th20">녀</th><th class="gray_bg line_r" id="survey_q12_th21">X</th>
+								<th class="gray_bg" id="survey_q12_th22">남</th><th class="gray_bg" id="survey_q12_th23">녀</th><th class="gray_bg line_r" id="survey_q12_th24">X</th>
+								<th class="gray_bg" id="survey_q12_th25">남</th><th class="gray_bg" id="survey_q12_th26">녀</th><th class="gray_bg line_r" id="survey_q12_th27">X</th>
+								<th class="gray_bg" id="survey_q12_th28">남</th><th class="gray_bg" id="survey_q12_th29">녀</th><th class="gray_bg line_r" id="survey_q12_th30">X</th>
+								<th class="gray_bg" id="survey_q12_th31">남</th><th class="gray_bg" id="survey_q12_th32">녀</th><th class="gray_bg line_r" id="survey_q12_th33">X</th>
+								<th class="gray_bg" id="survey_q12_th34">남</th><th class="gray_bg" id="survey_q12_th35">녀</th><th class="gray_bg line_r" id="survey_q12_th36">X</th>
+								<th class="gray_bg" id="survey_q12_th37">남</th><th class="gray_bg" id="survey_q12_th38">녀</th><th class="gray_bg line_r" id="survey_q12_th39">X</th>
+								<th class="gray_bg" id="survey_q12_th40">남</th><th class="gray_bg" id="survey_q12_th41">녀</th><th class="gray_bg line_r" id="survey_q12_th42">X</th>
+								<th class="gray_bg" id="survey_q12_th43">남</th><th class="gray_bg" id="survey_q12_th44">녀</th><th class="gray_bg line_r" id="survey_q12_th45">X</th>
+								<th class="gray_bg" id="survey_q12_th46">남</th><th class="gray_bg" id="survey_q12_th47">녀</th><th class="gray_bg line_r" id="survey_q12_th48">X</th>
+								<th class="gray_bg" id="survey_q12_th50">남</th><th class="gray_bg" id="survey_q12_th51">녀</th><th class="gray_bg round_trr0" id="survey_q12_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">6개월 이내</td>
+								<td class="line_r" id="survey_q12_td01">6개월 이내</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1602,10 +1683,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">1년 이내</td>
+								<td class="line_r" id="survey_q12_td02">1년 이내</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1616,10 +1698,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">2년 이내</td>
+								<td class="line_r" id="survey_q12_td03">2년 이내</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1630,10 +1713,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">3년 이내</td>
+								<td class="line_r" id="survey_q12_td04">3년 이내</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1644,24 +1728,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td>1</td>
-							</tr>
-							<tr>
-								<td class="line_r">5년 이내</td>
-								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>25</td><td>25</td><td class="line_r">1</td>
-								<td>10</td><td>10</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">5년 이내</td>
+								<td class="line_r" id="survey_q12_td05">5년 이내</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1673,9 +1744,25 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q12_td06">계획 없음</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r" id="survey_q12_tdall">계</td>
 								<td>1080</td><td>495</td><td>525</td><td class="line_r">60</td>
 								<td>60</td><td>40</td><td class="line_r">6</td>
 								<td>80</td><td>70</td><td class="line_r">6</td>
@@ -1686,6 +1773,7 @@
 								<td>55</td><td>45</td><td class="line_r">6</td>
 								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>45</td><td>55</td><td class="line_r">6</td>
+								<td>45</td><td>55</td><td class="line_r">6</td>
 								<td>55</td><td>45</td><td>6</td>
 							</tr>
 						</table>
@@ -1694,42 +1782,44 @@
 				<!-- survey_q12 end-->
 				<!-- survey_q13 -->
 				<div class="survey_q13 survey_q">
-					<h4 class="survey_q_title">Q13. 어떤 제품을 구매하실 예정이십니까?(복수 응답 가능)</h4>
+					<h4 id="survey_q13_title" class="survey_q_title">Q13. 어떤 제품을 구매하실 예정이십니까?(복수 응답 가능)</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q13_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q13_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q13_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q13_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q13_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q13_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q13_th15">total</th><th class="gray_bg" id="survey_q13_th16">남</th><th class="gray_bg" id="survey_q13_th17">녀</th><th class="gray_bg line_r" id="survey_q13_th18">X</th>
+								<th class="gray_bg" id="survey_q13_th19">남</th><th class="gray_bg" id="survey_q13_th20">녀</th><th class="gray_bg line_r" id="survey_q13_th21">X</th>
+								<th class="gray_bg" id="survey_q13_th22">남</th><th class="gray_bg" id="survey_q13_th23">녀</th><th class="gray_bg line_r" id="survey_q13_th24">X</th>
+								<th class="gray_bg" id="survey_q13_th25">남</th><th class="gray_bg" id="survey_q13_th26">녀</th><th class="gray_bg line_r" id="survey_q13_th27">X</th>
+								<th class="gray_bg" id="survey_q13_th28">남</th><th class="gray_bg" id="survey_q13_th29">녀</th><th class="gray_bg line_r" id="survey_q13_th30">X</th>
+								<th class="gray_bg" id="survey_q13_th31">남</th><th class="gray_bg" id="survey_q13_th32">녀</th><th class="gray_bg line_r" id="survey_q13_th33">X</th>
+								<th class="gray_bg" id="survey_q13_th34">남</th><th class="gray_bg" id="survey_q13_th35">녀</th><th class="gray_bg line_r" id="survey_q13_th36">X</th>
+								<th class="gray_bg" id="survey_q13_th37">남</th><th class="gray_bg" id="survey_q13_th38">녀</th><th class="gray_bg line_r" id="survey_q13_th39">X</th>
+								<th class="gray_bg" id="survey_q13_th40">남</th><th class="gray_bg" id="survey_q13_th41">녀</th><th class="gray_bg line_r" id="survey_q13_th42">X</th>
+								<th class="gray_bg" id="survey_q13_th43">남</th><th class="gray_bg" id="survey_q13_th44">녀</th><th class="gray_bg line_r" id="survey_q13_th45">X</th>
+								<th class="gray_bg" id="survey_q13_th46">남</th><th class="gray_bg" id="survey_q13_th47">녀</th><th class="gray_bg line_r" id="survey_q13_th48">X</th>
+								<th class="gray_bg" id="survey_q13_th50">남</th><th class="gray_bg" id="survey_q13_th51">녀</th><th class="gray_bg round_trr0" id="survey_q13_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">TV</td>
+								<td class="line_r" id="survey_q13_td01">TV</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1740,10 +1830,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">냉장고</td>
+								<td class="line_r" id="survey_q13_td02">냉장고</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1754,10 +1845,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">세탁기</td>
+								<td class="line_r" id="survey_q13_td03">세탁기</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1768,10 +1860,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">스타일러</td>
+								<td class="line_r" id="survey_q13_td04">스타일러</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1782,24 +1875,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td>1</td>
-							</tr>
-							<tr>
-								<td class="line_r">모니터</td>
-								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>25</td><td>25</td><td class="line_r">1</td>
-								<td>10</td><td>10</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">노트북(IT)</td>
+								<td class="line_r" id="survey_q13_td05">공기청정기</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1811,9 +1891,10 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">기타</td>
+								<td class="line_r" id="survey_q13_td06">모니터 / 노트북(IT)</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1824,10 +1905,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계획없음</td>
+								<td class="line_r" id="survey_q13_td07">기타</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1838,10 +1920,26 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q13_td08">계획 없음</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r" id="survey_q13_tdall">계</td>
 								<td>1240</td><td>565</td><td>595</td><td class="line_r">80</td>
 								<td>60</td><td>40</td><td class="line_r">8</td>
 								<td>130</td><td>120</td><td class="line_r">8</td>
@@ -1850,6 +1948,7 @@
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>30</td><td>20</td><td class="line_r">8</td>
 								<td>55</td><td>45</td><td class="line_r">8</td>
+								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>45</td><td>55</td><td class="line_r">8</td>
 								<td>55</td><td>45</td><td>8</td>
@@ -1861,42 +1960,44 @@
 				<!-- survey q14~16은 참여자 신상정보 입력값입니다. -->
 				<!-- survey_q17 -->
 				<div class="survey_q17 survey_q">
-					<h4 class="survey_q_title">Q17. 어떤 경로로 알게 되어 방문하셨나요?</h4>
+					<h4 id="survey_q17_title" class="survey_q_title">Q17. 어떤 경로로 알게 되어 방문하셨나요?</h4>
 					<div class="scrollbar">
 						<table class="survey_table adm_table">
 							<tr>
-								<th rowspan="3" class="round_trr0 round_brr0 line_r">NO</th>
-								<th colspan="4" class="line_b line_r">전체</th>
-								<th colspan="30" class="round_brr0 line_b">연령</th>
+								<th rowspan="3" class="round_trr0 round_brr0 line_r" id="survey_q17_th01">NO</th>
+								<th colspan="4" class="line_b line_r" id="survey_q17_th02">전체</th>
+								<th colspan="33" class="round_brr0 line_b" id="survey_q17_th03">연령</th>
 							</tr>
 							<tr>
-								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b">응답수</th>
-								<th colspan="3" class="line_r line_b">10세 미만</th>
-								<th colspan="3" class="line_r line_b">10~14세</th>
-								<th colspan="3" class="line_r line_b">15~19세</th>
-								<th colspan="3" class="line_r line_b">20~24세</th>
-								<th colspan="3" class="line_r line_b">25~29세</th>
-								<th colspan="3" class="line_r line_b">30~34세</th>
-								<th colspan="3" class="line_r line_b">35~39세</th>
-								<th colspan="3" class="line_r line_b">40~44세</th>
-								<th colspan="3" class="line_r line_b">50세 이상</th>
-								<th colspan="3" class="round_trr0 round_brr0 line_b">언급하기 싫음</th>
+								<th colspan="4" class="round_tlr0 round_blr0 line_r line_b" id="survey_q17_th04">응답수</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th05">10세 미만</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th06">10~14세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th07">15~19세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th08">20~24세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th09">25~29세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th10">30~34세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th11">35~39세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th12">40~44세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th49">45~49세</th>
+								<th colspan="3" class="line_r line_b" id="survey_q17_th13">50세 이상</th>
+								<th colspan="3" class="round_trr0 round_brr0 line_b" id="survey_q17_th14">언급하기 싫음</th>
 							</tr>
 							<tr>
-								<th class="gray_bg round_tlr0 round_blr0">total</th><th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg line_r">X</th>
-								<th class="gray_bg">남</th><th class="gray_bg">녀</th><th class="gray_bg round_trr0">X</th>
+								<th class="gray_bg round_tlr0 round_blr0" id="survey_q17_th15">total</th><th class="gray_bg" id="survey_q17_th16">남</th><th class="gray_bg" id="survey_q17_th17">녀</th><th class="gray_bg line_r" id="survey_q17_th18">X</th>
+								<th class="gray_bg" id="survey_q17_th19">남</th><th class="gray_bg" id="survey_q17_th20">녀</th><th class="gray_bg line_r" id="survey_q17_th21">X</th>
+								<th class="gray_bg" id="survey_q17_th22">남</th><th class="gray_bg" id="survey_q17_th23">녀</th><th class="gray_bg line_r" id="survey_q17_th24">X</th>
+								<th class="gray_bg" id="survey_q17_th25">남</th><th class="gray_bg" id="survey_q17_th26">녀</th><th class="gray_bg line_r" id="survey_q17_th27">X</th>
+								<th class="gray_bg" id="survey_q17_th28">남</th><th class="gray_bg" id="survey_q17_th29">녀</th><th class="gray_bg line_r" id="survey_q17_th30">X</th>
+								<th class="gray_bg" id="survey_q17_th31">남</th><th class="gray_bg" id="survey_q17_th32">녀</th><th class="gray_bg line_r" id="survey_q17_th33">X</th>
+								<th class="gray_bg" id="survey_q17_th34">남</th><th class="gray_bg" id="survey_q17_th35">녀</th><th class="gray_bg line_r" id="survey_q17_th36">X</th>
+								<th class="gray_bg" id="survey_q17_th37">남</th><th class="gray_bg" id="survey_q17_th38">녀</th><th class="gray_bg line_r" id="survey_q17_th39">X</th>
+								<th class="gray_bg" id="survey_q17_th40">남</th><th class="gray_bg" id="survey_q17_th41">녀</th><th class="gray_bg line_r" id="survey_q17_th42">X</th>
+								<th class="gray_bg" id="survey_q17_th43">남</th><th class="gray_bg" id="survey_q17_th44">녀</th><th class="gray_bg line_r" id="survey_q17_th45">X</th>
+								<th class="gray_bg" id="survey_q17_th46">남</th><th class="gray_bg" id="survey_q17_th47">녀</th><th class="gray_bg line_r" id="survey_q17_th48">X</th>
+								<th class="gray_bg" id="survey_q17_th50">남</th><th class="gray_bg" id="survey_q17_th51">녀</th><th class="gray_bg round_trr0" id="survey_q17_th52">X</th>
 							</tr>
 							<tr>
-								<td class="line_r">SNS(유튜브, 페이스북, 인스타 등) </td>
+								<td class="line_r" id="survey_q17_td01">SNS(유튜브, 페이스북, 인스타 등)</td>
 								<td>340</td><td>185</td><td>145</td><td class="line_r">10</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>5</td><td>5</td><td class="line_r">1</td>
@@ -1907,10 +2008,11 @@
 								<td>55</td><td>45</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>55</td><td>45</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">지인 추천</td>
+								<td class="line_r" id="survey_q17_td02">지인 추천</td>
 								<td>280</td><td>130</td><td>140</td><td class="line_r">0</td>
 								<td>30</td><td>20</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1921,10 +2023,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">지나가다가</td>
+								<td class="line_r" id="survey_q17_td03">지나가다가</td>
 								<td>130</td><td>55</td><td>65</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
@@ -1935,10 +2038,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>45</td><td>55</td><td class="line_r">1</td>
+								<td>45</td><td>55</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">뉴스/광고</td>
+								<td class="line_r" id="survey_q17_td04">뉴스/광고</td>
 								<td>170</td><td>55</td><td>105</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>15</td><td class="line_r">1</td>
@@ -1949,24 +2053,11 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td>1</td>
-							</tr>
-							<tr>
-								<td class="line_r">검색</td>
-								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>25</td><td>25</td><td class="line_r">1</td>
-								<td>10</td><td>10</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
-								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">협업 브랜드 - VNG, TCH, Dong Dong</td>
+								<td class="line_r" id="survey_q17_td05">검색</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1978,9 +2069,10 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">기타</td>
+								<td class="line_r" id="survey_q17_td06">협업 브랜드 - VNG, TCH, Dong Dong</td>
 								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>25</td><td>25</td><td class="line_r">1</td>
@@ -1991,10 +2083,26 @@
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
 								<td>0</td><td>0</td><td>1</td>
 							</tr>
 							<tr>
-								<td class="line_r">계</td>
+								<td class="line_r" id="survey_q17_td07">기타</td>
+								<td>80</td><td>35</td><td>35</td><td class="line_r">10</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>25</td><td>25</td><td class="line_r">1</td>
+								<td>10</td><td>10</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td class="line_r">1</td>
+								<td>0</td><td>0</td><td>1</td>
+							</tr>
+							<tr>
+								<td class="line_r" id="survey_q17_tdall">계</td>
 								<td>1160</td><td>530</td><td>560</td><td class="line_r">70</td>
 								<td>60</td><td>40</td><td class="line_r">7</td>
 								<td>105</td><td>95</td><td class="line_r">7</td>
@@ -2003,6 +2111,7 @@
 								<td>45</td><td>55</td><td class="line_r">7</td>
 								<td>30</td><td>20</td><td class="line_r">7</td>
 								<td>55</td><td>45</td><td class="line_r">7</td>
+								<td>45</td><td>55</td><td class="line_r">7</td>
 								<td>45</td><td>55</td><td class="line_r">7</td>
 								<td>45</td><td>55</td><td class="line_r">7</td>
 								<td>55</td><td>45</td><td>7</td>
