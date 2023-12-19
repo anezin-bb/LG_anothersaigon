@@ -109,3 +109,19 @@ etc
     width: 10%;
     height: 100%;
 }*/
+/* 반응형 추가 조절 */
+@media (max-width: 1620px) {
+	input {
+		font-size: 13px;
+		width: 150px;
+	}
+	.adm_top_title {font-size: 19px; width: 70px;}
+	.dash_graph_wrap .bg_w {width: calc(100% - 95px) !important;}
+	.channel_row .adm_top_title {width: 50px;}
+	.channel_row .chk_wrap {min-width: 515px;}
+	.chkText {font-size: 14px;}
+	.topsch_area > .flex_column {gap: 16px;}
+	.age_row .flex_column {gap: 5px;}
+	.age_row .flex_row {row-gap: 5px;}
+	.adm_table_top .table_total {font-size: 18px;}
+}
