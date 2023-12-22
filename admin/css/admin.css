@@ -777,6 +777,50 @@ etc
   }
 }
 /*
+영어 css 이슈
+*/
+html[lang=en] body * {
+  font-family: "Noto Sans", "Spoqa", sans-serif;
+}
+
+html[lang=en] .btn {
+  min-width: 105px;
+}
+
+html[lang=en] .adm_menulist li, html[lang=vi] .adm_menulist_sub li a {
+  letter-spacing: -0.02rem;
+}
+
+html[lang=en] .adm_menulist {
+  padding-left: 0;
+}
+
+html[lang=en] .adm_top_title {
+  width: 125px;
+}
+
+html[lang=en] table.adm_table th, html[lang=vi] table.adm_table td {
+  padding: 20px 5px;
+}
+
+html[lang=en] table.adm_table col:first-child, html[lang=en] table.adm_table th:first-child, html[lang=en] table.adm_table td:first-child {
+  width: 100px !important;
+  min-width: 80px !important;
+}
+
+html[lang=en] table.adm_table col:nth-child(3) {
+  width: auto !important;
+}
+
+html[lang=en] .dashboard_section table col:nth-child(2) {
+  width: auto !important;
+}
+
+html[lang=en] .topsch_area .chk_wrap #m01_scent_7_label {
+  width: 100%;
+}
+
+/*
 베트남어 css 이슈
 */
 html[lang=vi] body * {

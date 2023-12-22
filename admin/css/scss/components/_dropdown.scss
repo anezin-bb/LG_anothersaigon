@@ -41,3 +41,54 @@
         transform: scaleY(1);
     }
 }
+.main_login {
+    .dropdown {
+        position: fixed;
+        bottom:80px;
+        width: 224px;
+        left: 50%;
+        transform: translateX(-50%);
+        .dropbtn {
+            max-width: 224px;
+            color: #fff;
+            border: 1px solid #fff;
+            &::after {
+                width: 16px;
+                height: 16px;
+                background: url('../image/icn_dropdown_w.svg');
+            }
+        }
+        &:hover .dropbtn {
+            border-top: 1px solid transparent;
+        }
+        &:hover .dropbtn::after {
+            transform: rotate(180deg);
+        }
+        .drop_cont {
+            max-width: 224px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            padding: 10px 0;
+            a {
+                color: #fff;
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+@media (max-height: 930px) {
+    .main_login {
+        .dropdown {
+            position: relative;
+            bottom: 0;
+            padding: 60px 0px 80px;
+        }
+        .dropdown_bottom:hover .drop_cont {
+            bottom:122px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0,0,0,.2);
+        }
+    }
+}

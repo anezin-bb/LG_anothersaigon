@@ -37,8 +37,20 @@
 				 -->
 				<div class="w100per btnWrap"><button id="btn_login" type="button" class="btn_login btn" disabled>로그인</button></div>
 			</form>
+			<div class="dropdown_bottom dropdown">
+				<button class="dropbtn" id="login_ad_lang">한국어</button>
+				<div class="drop_cont">
+					<a href="#" id="login_ad_ko_ko">한국어</a>
+					<a href="#" id="login_ad_ko_en">ENGLISH</a>
+					<a href="#" id="login_ad_ko_ti">Tiếng Việt</a>
+				</div>
+			</div>
 		</div>
 	</main>
+	<div id="loading" class="popup_wrap blur_pop">
+		<div class="blur_bg active"></div>
+		<div class="pop_content"><img src="./image/loading.gif" alt="loading..."></div>
+	</div>
 </body>
 <script>
 	$(document).ready(function() {

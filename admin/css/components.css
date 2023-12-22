@@ -167,6 +167,7 @@ main {
   height: 100vh;
   box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .adm_logo {
@@ -183,6 +184,23 @@ main {
   font-weight: 700;
   line-height: normal;
   margin-top: 20px;
+}
+
+/* 스크롤바의 폭 너비 */
+.adm_gnb::-webkit-scrollbar {
+  width: 0px;
+  height: 4px;
+  border: 0;
+}
+
+.adm_gnb::-webkit-scrollbar-thumb {
+  background: #ccc; /* 스크롤바 색상 */
+  border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+.adm_gnb::-webkit-scrollbar-track {
+  background: #fff; /*스크롤바 뒷 배경 색상*/
+  border-radius: 10px;
 }
 
 .adm_menulist {
@@ -876,6 +894,55 @@ input.round_input {
   transform: scaleY(1);
 }
 
+.main_login .dropdown {
+  position: fixed;
+  bottom: 80px;
+  width: 224px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main_login .dropdown .dropbtn {
+  max-width: 224px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.main_login .dropdown .dropbtn::after {
+  width: 16px;
+  height: 16px;
+  background: url("../image/icn_dropdown_w.svg");
+}
+.main_login .dropdown:hover .dropbtn {
+  border-top: 1px solid transparent;
+}
+.main_login .dropdown:hover .dropbtn::after {
+  transform: rotate(180deg);
+}
+.main_login .dropdown .drop_cont {
+  max-width: 224px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 0;
+}
+.main_login .dropdown .drop_cont a {
+  color: #fff;
+}
+.main_login .dropdown .drop_cont a:hover {
+  color: #ccc;
+}
+
+@media (max-height: 930px) {
+  .main_login .dropdown {
+    position: relative;
+    bottom: 0;
+    padding: 60px 0px 80px;
+  }
+  .main_login .dropdown_bottom:hover .drop_cont {
+    bottom: 122px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
 /*
 체크박스 checkbox
 */
@@ -1081,16 +1148,16 @@ table.adm_table tr td a {
 /* 스크롤바의 폭 너비 */
 .scrollbar::-webkit-scrollbar {
   width: 0px;
-  height: 4px;
+  height: 8px;
   border: 0;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
   background: #000; /* 스크롤바 색상 */
-  border-radius: 10px; /* 스크롤바 둥근 테두리 */
+  border-radius: 16px; /* 스크롤바 둥근 테두리 */
 }
 
 .scrollbar::-webkit-scrollbar-track {
   background: #D9D9D9; /*스크롤바 뒷 배경 색상*/
-  border-radius: 10px;
+  border-radius: 16px;
 }/*# sourceMappingURL=components.css.map */
