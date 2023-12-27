@@ -1984,8 +1984,8 @@ html[lang="vi"] .pop_bottom_btns {
 	}
 }
 .policy_wrap p {
-	word-break: break-all;
-	word-wrap: break-word;
+	word-break: keep-all;
+    word-wrap: normal;
 }
 .policy_wrap p a {
 	word-break: break-all;
@@ -2189,3 +2189,5 @@ header h1 img {height: 26px;}
 .language button {padding: 8px; font-size: 13.5px;}
 .language .dropdown_cont button:focus,.language .dropdown_cont button:active {background-color: #F0ECE4;}
 .language .dropdown_cont button:last-child:focus,.language .dropdown_cont button:last-child:active {border-radius: 0px 0px 10px 10px;}
+/* 2023-12-22 진짜 라스트ㅠ */
+.info_floor_sec .slide .slide_img {padding-bottom: 0;}

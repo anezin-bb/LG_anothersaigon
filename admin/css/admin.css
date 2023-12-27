@@ -143,7 +143,7 @@ adm 속성 공통
 .dash_numboard .today_total {
   display: flex;
   flex-direction: row;
-  min-width: 258px;
+  min-width: 255px;
   width: calc(25% - 15px);
   padding: 8px;
   align-items: center;
@@ -853,4 +853,38 @@ html[lang=vi] .dashboard_section table col:nth-child(2) {
 }
 html[lang=vi] .topsch_area .chk_wrap #m01_scent_7_label {
   width: 100%;
+}
+
+/* 2023-12-26 추가 작성 css */
+.dash_numboard .today_total {
+  min-width: 255px;
+}
+
+.dash_numboard .today_total:nth-child(3) {
+  margin-right: 50px;
+}
+
+@media (max-width: 1430px) {
+  .dash_numboard .today_total:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+html[lang=en] table.adm_table.survey_table tr:first-child th:first-child {
+  min-width: 255px !important;
+}
+
+html[lang=vi] table.adm_table.survey_table tr:first-child th:first-child {
+  min-width: 255px !important;
+}
+
+html[lang=en] .adm_table_cont_obs table.adm_table tr th:first-child,
+html[lang=en] .adm_table_cont_obs table.adm_table tr td:first-child {
+  min-width: 250px !important;
+  width: 32% !important;
+}
+
+html[lang=vi] .adm_table_cont_obs table.adm_table tr th:first-child,
+html[lang=vi] .adm_table_cont_obs table.adm_table tr td:first-child {
+  min-width: 250px !important;
+  width: 32% !important;
 }/*# sourceMappingURL=admin.css.map */
