@@ -887,4 +887,16 @@ html[lang=vi] .adm_table_cont_obs table.adm_table tr th:first-child,
 html[lang=vi] .adm_table_cont_obs table.adm_table tr td:first-child {
   min-width: 250px !important;
   width: 32% !important;
+}
+
+html .dash_table_wrap table.adm_table col:first-child {
+  width: 20% !important;
+}
+
+html .dash_table_wrap table.adm_table col:nth-child(2) {
+  width: 60% !important;
+}
+
+html .dash_table_wrap table.adm_table col:nth-child(3) {
+  width: 20% !important;
 }/*# sourceMappingURL=admin.css.map */
